@@ -1,0 +1,99 @@
+{% include head.html %}
+
+<style type="text/css">
+html, body{
+  min-height: 100%;
+  min-width: 960px;
+}
+.box {
+  /*margin: 0;*/
+  height: 50vh;
+  color: white;
+  font-weight: 600;
+}
+
+.row {
+  margin: 0;
+  /*padding: 0*/
+}
+.about {
+  background-color: rgb(142,85,114);
+  /*background-image: url('http://previews.123rf.com/images/slanapotam/slanapotam1402/slanapotam140200024/25839242-Colorful-abstract-geometric-background-with-triangular-polygons-low-poly-Vector-illustration-Stock-Vector.jpg');*/
+  /*background-size: cover;*/
+}
+.about:hover {
+  background-color: rgba(142,85,114, 0.9);
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.current {
+  background-color: #F46036;
+  /*background-image: url('https://newevolutiondesigns.com/images/freebies/geometric-wallpaper-15.jpg');*/
+  /*background-size: cover;*/
+}
+.current:hover {
+  background-color: rgba(244,96,54,0.9);
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.completed {
+  /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/53/7b/65/537b65d3b70ee8a0092bbd81b9448844.jpg');*/
+  /*background-size: cover;*/
+  background-color: #2E294E;
+}
+.completed:hover {
+  background-color: #443C72;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #F2F7F2;
+}
+img {
+  border-radius: 50%;
+}
+.move {
+  height: 8em;
+}
+h3 {
+  line-height: 50vh;
+}
+</style>
+<div class="row">
+  <div class="col m4 contact box">
+    <div class="col s12 move">
+
+    </div>
+    <img class="col s5" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAi8AAAAJDQ5NzczYTUyLTkzZTctNGZmMC04ZDA0LWM2YjBjN2NkMWQxZQ.jpg" alt="" />
+    <ul class="right-align col s5">
+      <li>Email: <a href="#">r.levyts@gmail.com</a></li>
+      <li><a href="#">Github</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+  <a href="/current_projects">
+    <div class="col m8 current box">
+      <div class="valign-wrapper">
+        <h3 class="valign center-block">Current projects/technologies I'm learning</h3>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="row">
+  <div class="col m6 about box">
+    <h2>About me:</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <a href="/finished_projects">
+    <div class="col m6 completed box">
+      <div class="valign-wrapper">
+        <h3 class="valign center-block">Finished projects</h3>
+      </div>
+    </div>
+  </a>
+</div>

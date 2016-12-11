@@ -1,0 +1,24 @@
+{% include nav.html %}
+
+<div class="projects-wrapper">
+    {% for item in site.data.finished_projects %}
+
+      {% assign tags = item.tags | split: " " %}
+        <div class="project-box col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 {{ item.tags }}
+          {% if tags[0] == 'javascript' %} visible {% else %} hidden {% endif %}">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a href="{{ item.url }}">{{ item.name }}</a>
+            </div>
+
+            <div class="panel-body">
+              <img class="project-img" src="{{ item.img }}">
+            </div>
+
+            <div class="panel-footer">
+              <p class="project-description">{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+</div>
