@@ -1,0 +1,55 @@
+- name: Engage Me
+  url: https://dbc-engage-me.herokuapp.com/
+  github_url: https://github.com/LevytsRoman/EngageMe
+  description: >
+    Presentation analytics tool that helps presenters capture, monitor and track the audience's emotional reaction to their content in real-time.
+  img: /assets/images/engage-me-cover.jpeg
+  tags: "rails ruby backend finished"
+
+- name: Tic-tac-toe
+  url: https://dbc-tic-tac-toe.herokuapp.com/
+  github_url: https://github.com/nyc-bobolinks-2016/tic_or_treat
+  description: >
+    Tic-tac-toe game.
+  img: /assets/images/tic-tac-toe-cover.jpg
+  tags: "rails ruby backend finished"
+
+- name: Stack Overflow Clone
+  url: https://dbc-hackoverflow.herokuapp.com/
+  github_url: https://github.com/wvicioso/hackoverflow
+  description: >
+    Stack Overflow clone.
+  img: /assets/images/hack-overflow-cover.png
+  tags: "rails ruby backend finished"
+
+- name: ShootThingsGame
+  url: https://levytsroman.github.io/shootThingsGame/
+  github_url: https://github.com/LevytsRoman/shootThingsGame
+  description: >
+    My first javascript project. Currently refactoring my code to be a lot more dry and using object oriented javascript principles.
+  img: /assets/images/shoot-things-game-cover.png
+  tags: "javascript front-end current"
+
+- name: TipCalculator
+  url: https://levytsroman.github.io/TipCalculator/
+  github_url: https://github.com/LevytsRoman/TipCalculator
+  description: >
+    A little front end project to practice css and jQuery
+  img: /assets/images/tip-calculator-cover.png
+  tags: "jQuery CSS front-end finished"
+
+- name: HobbyWebPage
+  url: https://levytsroman.github.io/MyWebPage/
+  github_url: https://github.com/LevytsRoman/MyWebPage
+  description: >
+    A little front end project, playing with pure CSS
+  img: /assets/images/hobby-web-page-cover.png
+  tags: "HTML5 CSS front-end finished"
+
+- name: Orbit
+  url: https://levytsroman.github.io/SolarSystem/
+  github_url: https://github.com/LevytsRoman/SolarSystem
+  description: >
+    A little front end project to practice animations in CSS
+  img: /assets/images/solar-system-cover.png
+  tags: "jQuery CSS front-end finished"
