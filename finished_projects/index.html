@@ -1,5 +1,29 @@
 ---
-layout: current
+layout: project
 ---
 
-<h1>I'm finished</h1>
+<div class="projects-wrapper">
+    {% for item in site.data.projects %}
+
+      {% assign tags = item.tags %}
+        <div class="{{ item.tags }} {% if tags contains 'finished' %}visible{% else %}hidden{% endif %}">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a href="{{ item.url }}">{{ item.name }}</a>
+            </div>
+
+            <div class="panel-body">
+              <a class="project-img" src="{{ item.github_url }}">github</a>
+            </div>
+
+            <div class="panel-body">
+              <img class="project-img" src="{{ item.img }}">
+            </div>
+
+            <div class="panel-footer">
+              <p class="project-description">{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+</div>
