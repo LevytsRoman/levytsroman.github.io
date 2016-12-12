@@ -1,56 +1,55 @@
-- name: Stack For Yourself
+- name: Engage Me
+  url: https://dbc-engage-me.herokuapp.com/
+  github_url: https://github.com/LevytsRoman/EngageMe
   description: >
-    A compilation of materials to learn web development,
-    presented via a lovely <a href="https://jekyllrb.com/">Jekyll</a> site.
-    Built to share my collection of links, tutorials, and suggested materials.
-  url: https://github.com/mindplace/stack-for-yourself
-  img: /assets/images/stackforyourself.png
-  tags: "front-end"
+    Presentation analytics tool that helps presenters capture, monitor and track the audience's emotional reaction to their content in real-time.
+  img: /assets/images/engage-me-cover.jpeg
+  tags: "rails ruby backend"
 
-- name: Nautical Distance Calculator
-  url: https://github.com/mindplace/nautical-distances-calculator
+- name: Tic-tac-toe
+  url: https://dbc-tic-tac-toe.herokuapp.com/
+  github_url: https://github.com/nyc-bobolinks-2016/tic_or_treat
   description: >
-    Uses a variety of great JavaScript libraries to build a lightweight
-    single-page app that calculates distances between two searched locations.
-  img: /assets/images/nauticaldistancecalculator.png
+    Tic-tac-toe game.
+  img: /assets/images/tic-tac-toe-cover.jpg
+  tags: "rails ruby backend"
+
+- name: Stack Overflow Clone
+  url: https://dbc-hackoverflow.herokuapp.com/
+  github_url: https://github.com/wvicioso/hackoverflow
+  description: >
+    Stack Overflow clone.
+  img: /assets/images/hack-overflow-cover.png
+  tags: "rails ruby backend"
+
+- name: ShootThingsGame
+  url: https://levytsroman.github.io/shootThingsGame/
+  github_url: https://github.com/LevytsRoman/shootThingsGame
+  description: >
+    My first javascript project. Currently refactoring my code to be a lot more dry and using object oriented javascript principles.
+  img: /assets/images/shoot-things-game-cover.png
   tags: "javascript front-end"
 
-- name: Thinking Style Quiz
-  url: https://github.com/mindplace/javascript_browser_games
+- name: TipCalculator
+  url: https://levytsroman.github.io/TipCalculator/
+  github_url: https://github.com/LevytsRoman/TipCalculator
   description: >
-    A small JavaScript quiz helping you discover your thinking style! I happen
-    to be a nut for personality quizzes, especially when they're delivered
-    via a delightful interface built with <a href="http://materializecss.com/">Materialize</a>.
-  img: /assets/images/thinkingstylequiz.png
-  tags: "javascript front-end"
+    A little front end project to practice css and jQuery
+  img: /assets/images/hack-overflow-cover.png
+  tags: "jQuery CSS front-end"
 
-- name: rails-dribbble-oauth
+- name: HobbyWebPage
+  url: https://levytsroman.github.io/MyWebPage/
+  github_url: https://github.com/LevytsRoman/MyWebPage
   description: >
-    Rails engine gem providing a Ruby wrapper for authenticating users through Dribbble.
-    Plug and play to use!
-  url: https://github.com/mindplace/rails-dribbble-oauth
-  img: /assets/images/railsdribbbleoauth.png
-  tags: "rails ruby"
+    A little front end project, playing with pure CSS
+  img: /assets/images/hobby-web-page-cover.png
+  tags: "HTML5 CSS front-end"
 
-- name: Bitly clone
+- name: Orbit
+  url: https://levytsroman.github.io/SolarSystem/
+  github_url: https://github.com/LevytsRoman/SolarSystem
   description: >
-    Small API written in Rails. Accepts a URL and responds with a shortened URL.
-    Keeps track of how many times the shortened URL was used and can deliver a report.
-  url: https://github.com/mindplace/bitly_clone
-  img: /assets/images/bitlyclone.png
-  tags: "rails ruby back-end"
-
-- name: Algorithms
-  description: Lots of algorithms and back-end puzzles solved with Ruby.
-  url: https://github.com/mindplace/mindplace_algorithms
-  img: /assets/images/binarysearch.png
-  tags: "ruby back-end"
-
-- name: "Make Together"
-  description: "A social media platform built as a group effort, meant for web designers and web
-    developers to meet each other, post projects they are seeking collaborators on, and have
-    conversations. My role included leading the team and integrating code, building a custom OAuth
-    Dribbble solution, and deployment."
-  url: http://make-together.herokuapp.com/
-  img: /assets/images/maketogether.png
-  tags: "ruby rails back-end"
+    A little front end project to practice animations in CSS
+  img: /assets/images/solar-system-cover.png
+  tags: "jQuery CSS front-end"
