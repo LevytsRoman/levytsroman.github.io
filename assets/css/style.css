@@ -12,3 +12,7 @@ body {
   width: 500px;
   height: 300px;
 }
+
+.content {
+  min-height: 100vh;
+}
