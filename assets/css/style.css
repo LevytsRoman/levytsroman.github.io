@@ -1,4 +1,14 @@
+body {
+  max-width: 1080px;
+  margin: auto;
+}
+
 .hidden {
   display: none;
-  background-color: blue; 
+  background-color: blue;
+}
+
+.project-img {
+  width: 500px;
+  height: 300px;
 }
