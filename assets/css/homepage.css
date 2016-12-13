@@ -1,10 +1,15 @@
-html, body{
+body {
   min-height: 100%;
-  min-width: 960px;
+  overflow: hidden;
+}
+
+h3 {
+  font-family: 'Abril Fatface', cursive;
 }
 .box {
   /*margin: 0;*/
   height: 50vh;
+  min-height: 300px;
   color: white;
   font-weight: 600;
 }
@@ -35,6 +40,13 @@ html, body{
   border-radius: 5px;
 }
 
+.contact a {
+  margin-left: 10px;
+}
+
+.contact a:hover {
+  color: black;
+}
 .completed {
   /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/53/7b/65/537b65d3b70ee8a0092bbd81b9448844.jpg');*/
   /*background-size: cover;*/
@@ -49,12 +61,24 @@ html, body{
 .contact {
   background-color: #F2F7F2;
 }
-img {
+
+.profile_picture {
   border-radius: 50%;
 }
-.move {
-  height: 8em;
+
+.words {
+  font-size: 1.3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }
-h3 {
-  line-height: 50vh;
+@media all (max-height: 500px) {
+  .box {
+    height: 250px;
+  }
+}
+@media all and (max-width: 600px) {
+  body{
+    min-width: 500px;
+    overflow-y: visible !important;
+  }
 }
