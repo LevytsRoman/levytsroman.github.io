@@ -7,7 +7,7 @@
   tags: "rails ruby backend finished"
 
 - name: Tic-tac-toe
-  url: https://dbc-tic-tac-toe.herokuapp.com/
+  url: https://tic-or-treat.herokuapp.com/
   github_url: https://github.com/nyc-bobolinks-2016/tic_or_treat
   description: >
     Tic-tac-toe game.
