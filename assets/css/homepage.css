@@ -45,7 +45,7 @@ h3 {
 }
 
 .contact a:hover {
-  color: black;
+  color: #F46036;
 }
 .completed {
   /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/53/7b/65/537b65d3b70ee8a0092bbd81b9448844.jpg');*/
@@ -63,7 +63,7 @@ h3 {
 }
 
 .profile_picture {
-  border-radius: 50%;
+  border-radius: 35%;
 }
 
 .words {
