@@ -71,9 +71,12 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
 }
-@media all (max-height: 500px) {
+@media all and (max-height: 600px) {
+  body {
+    overflow: visible;
+  }
   .box {
-    height: 250px;
+    height: 300px;
   }
 }
 @media all and (max-width: 600px) {
