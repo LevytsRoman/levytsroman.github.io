@@ -14,7 +14,7 @@
   letter-spacing: 1.2;
 }
 
-nav ul li a {
+#nav-mobile a, #mobile-demo a {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
   margin: 0 10px 0 10px;
@@ -34,20 +34,20 @@ nav ul li a {
 }
 
 .card {
-  width: 29%;
+  width: 31%;
   height: 400px;
   display: inline-block;
   float: left;
-  margin: 2%;
+  margin: 2% 1% 2% 1%;
 }
 
 .content {
   min-height: 100vh;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 990px) {
   .card {
-    width: 45%;
+    width: 48%;
   }
 }
 

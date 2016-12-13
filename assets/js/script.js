@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 200,
+    edge: 'left',
+    closeOnClick: true,
+    draggable: true
+  });
+
   var colors = {
     'about': 'rgb(142,85,114)',
     'current_projects':  '#F46036',
