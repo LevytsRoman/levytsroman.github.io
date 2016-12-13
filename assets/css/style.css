@@ -44,3 +44,17 @@ nav ul li a {
 .content {
   min-height: 100vh;
 }
+
+@media all and (max-width: 800px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .card {
+    width: 90%;
+    min-width: 500px;
+    margin: 5%;
+  }
+}
