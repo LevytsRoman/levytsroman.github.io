@@ -5,19 +5,20 @@ layout: project
 <div class="content">
   {% for item in site.data.projects %}
     {% assign tags = item.tags %}
-    <div class="project-wrapper {{ item.tags }} {% if tags contains 'finished' %} visible {% else %}hidden{% endif %}">
+    {% if tags contains 'finished' %}
       <div class="card hoverable">
-        <div class="card-image">
+        <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="{{ item.img }}">
-          <a href="{{ item.url }}">
-            <span class="card-title">{{ item.name }}</span>
-          </a>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
             <p>{{ item.long_description }}</p>
+            <br>
+            <h5>Technologies:</h5>
+            <p>{{ item.technologies }}</p>
           </div>
         <div class="card-content">
+          <span class="card-title">{{ item.name }}<i class="material-icons right activator">more_vert</i></span>
           <p>{{ item.short_description }}</p>
         </div>
         <div class="card-action">
@@ -25,6 +26,6 @@ layout: project
           <a href="{{ item.github_url }}">Github</a>
         </div>
       </div>
-    </div>
+    {% endif %}
   {% endfor %}
 </div>

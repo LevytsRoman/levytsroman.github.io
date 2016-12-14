@@ -4,9 +4,8 @@
   short_description: >
     Presentation analytics tool that helps presenters capture, monitor and track the audience's emotional reaction to their content in real-time.
   long_description: >
-    Engage me was a week long final project at <a href='devbootcamp.com'>DevBootcamp</a>. With the help of the Microsoft Cognitive Services API my team was able to display people's emotions in real time, giving the presenter an overview of how they are doing in real time, as well as the ability to look at the audience's emotion-data after the presentation to see shifts in emotions over time.
-
-  technologies: It's build with a ruby on rails backend, HTML5, CSS, javaScript, jQuery and Materialize for forms and styling and Charts.js for the data-visualization.
+    Engage me was a week long final project at <a href='devbootcamp.com'>DevBootcamp</a>. With the help of the Microsoft Cognitive Services API, my team was able to display people's emotions in real time, giving the presenter an overview of how they are doing in real time, as well as the ability to look at the audience's emotion-data after the presentation to see shifts in emotions over time.
+  technologies: It's build with HTML5, CSS, javaScript, a ruby on rails backend, jQuery and materialize for forms and styling and Charts.js for the data-visualization. Hosted on heroku.
   img: /assets/images/engage-me-cover.jpeg
   tags: "rails ruby backend finished"
 
@@ -16,7 +15,8 @@
   short_description: >
     A simple tic-tac-toe game allowing both registered and unregistered users to play against a computer. Logged-in users have the benefit of viewing various statistics about their past games and resuming unfinished games.
   long_description: >
-
+    This mini-project was a rehearsal of working directly with a client with a pressing deadline. We designed, published, and presented a wireframe to get approval to start building. Adjust design and functionality to fit the client's fickle preferences. As a project lead, it was primarily my job to interact with the clients, delegate the responsibilities for each member as well as make executive decisions when we couldn't agree how to proceed.
+  technologies: "The page is built in HTML5, CSS, JavaScript, jQuery, Materialize, and a ruby on rails serverside. Hosted on heroku."
   img: /assets/images/tic-tac-toe-cover.jpg
   tags: "rails ruby backend finished"
 
@@ -26,7 +26,8 @@
   short_description: >
     A standard discussion board app that's an attempt at a very simple version of the popular programming platform <a href='stackoverflow.com'>StackOverflow</a>. It allows users to ask questions, give answers and make comments as well as vote up or down on each of the above.
   long_description: >
-
+    Stack Overflow clone project introduced the complexity of nested custom built routes. It's easy to get confused in an insane amount of controllers spread accross multiple folders. Especially on a team, when people are always making changes and adding new code. But I learned to appreciate RESTular naming conventions as well as overcome my fear of merging conflicts. Myself and another teammate decided to revive this project, improve styling, functionality and iron out a few bugs.
+  technologies: "Built with Sinatra back-end, HTML5, CSS, javascript, jQuery and materialize on client side."
   img: /assets/images/hack-overflow-cover.png
   tags: "rails ruby backend current"
 
@@ -36,7 +37,8 @@
   short_description: >
     A small javascript browser game, featuring a red plane (player) and an unhealthy onslaught of enemy planes flying over a pictureque rendering of my favorite planet (Earth) in MS Paint.
   long_description: >
-
+    This is my very first programming project. Before this, I spent few weeks looking at videos, trying to code along. I realized I learn by doing, rather than repeating what others do in a video, so I started this project to explore vanilla javascript. This is in no way close to finish. At the time I didn't know about making code DRY or Object Oriented Programming. So there is a lot of refactoring that needs to be done. I'd also like to confess that all the images were made by yours truly, with the help of good old MS paint.
+  technologies: "HTML5, CSS, javascript"
   img: /assets/images/shoot-things-game-cover.png
   tags: "javaScript front-end current"
 
@@ -44,9 +46,10 @@
   url: https://levytsroman.github.io/TipCalculator/
   github_url: https://github.com/LevytsRoman/TipCalculator
   short_description: >
-    If you were ever in a restaurant with a group of friends (or people you don't completely loathe) and you've had a hard time figuring out how much each person needs to tip, look no further!!! This light weight web-app will calculate it for you.
+    If you were ever in a restaurant with a group of friends (or people you don't completely loathe) and you've had a hard time figuring out how much each person needs to tip, look no further!!! This lightweight web-app will calculate it for you.
   long_description: >
-
+    This simple project aimed to give me a better understanding of jQuery. It was a part of an online course I took on <a href="udemy.com">udemy</a> that got me interested in programming in the first place. It was also a good way to practice form submission error messages managed by javascript, and explore different ways they could be accomplished.
+  technologies: "HTML5, CSS, javaScript, jQuery"
   img: /assets/images/tip-calculator-cover.png
   tags: "jQuery CSS front-end finished"
 
@@ -56,7 +59,8 @@
   short_description: >
     The first website I've ever made. Consists of four pages, featuring tips on how to improve your graffiti skills, what materials to use, suggestions on where to buy them, a very moderately sized gallery and a little form (just for practice).
   long_description: >
-
+    I made this before I knew of various CSS styling libraries. It could look better, but I think learning to do CSS helped me understand web design much better. I'm comfortable with facing styling challenges that materialize or bootstrap doesn't have an answer for. I also learned to appreciate what these libraries do for me, especially in terms of positioning. Floats are notorious for being difficult to work with and grid system these libraries are offering are invaluable.
+  technologies: "Built with HTML5, CSS"
   img: /assets/images/hobby-web-page-cover.png
   tags: "HTML5 CSS front-end finished"
 
@@ -66,7 +70,8 @@
   short_description: >
     A little animation of the moon spinning around the earth, spinning around the sun. If you look really carefully you can see the sun flare and the stars fading in the background due to an immense amount of light. (*not scientifically accurate)
   long_description: >
-
+    This one is also part of the udemy web-developer course. It still amazes me how powerful CSS can be and how many helpful animations and effects it has to offer.
+  technologies: "Made with HTML5 and CSS"
   img: /assets/images/solar-system-cover.png
   tags: "jQuery CSS front-end finished"
 
@@ -74,8 +79,9 @@
   url: https://levytsroman.github.io/movieLookUp/public
   github_url: https://github.com/LevytsRoman/movieLookUp
   short_description: >
-    A pure front-end app that allows users to search through various shows, movies and series to find content they would like to watch or learn more about movies that they've already seen.
+    A pure front-end app that allows users to search through various shows, movies and series to find the content they would like to watch or learn more about movies that they've already seen.
   long_description: >
-
+    This project is mostly focused on learning/practicing react. React seems to be a very popular framework for front-end web development. I also was mind blown with how fast changes take place and the simplicity with which items can be rerendered with simple change of state (before this it could be quite a pain to try and append appropriate elements in appropriate places after an ajax call). So far the hardest part was to configure my environment with node, npm and nvm.
+  technologies: "Built using HTML5, CSS, javaScript, jQuery, materialize, React."
   img: /assets/images/movie-look-up-cover.jpg
   tags: "jQuery javaScript CSS front-end react current"
