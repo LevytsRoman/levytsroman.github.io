@@ -1,63 +1,81 @@
 - name: Engage Me
   url: https://dbc-engage-me.herokuapp.com/
   github_url: https://github.com/LevytsRoman/EngageMe
-  description: >
+  short_description: >
     Presentation analytics tool that helps presenters capture, monitor and track the audience's emotional reaction to their content in real-time.
+  long_description: >
+    Engage me was a week long final project at <a href='devbootcamp.com'>DevBootcamp</a>. With the help of the Microsoft Cognitive Services API my team was able to display people's emotions in real time, giving the presenter an overview of how they are doing in real time, as well as the ability to look at the audience's emotion-data after the presentation to see shifts in emotions over time.
+
+  technologies: It's build with a ruby on rails backend, HTML5, CSS, javaScript, jQuery and Materialize for forms and styling and Charts.js for the data-visualization.
   img: /assets/images/engage-me-cover.jpeg
   tags: "rails ruby backend finished"
 
 - name: Tic-tac-toe
   url: https://tic-or-treat.herokuapp.com/
   github_url: https://github.com/nyc-bobolinks-2016/tic_or_treat
-  description: >
-    Tic-tac-toe game.
+  short_description: >
+    A simple tic-tac-toe game allowing both registered and unregistered users to play against a computer. Logged-in users have the benefit of viewing various statistics about their past games and resuming unfinished games.
+  long_description: >
+
   img: /assets/images/tic-tac-toe-cover.jpg
   tags: "rails ruby backend finished"
 
 - name: Stack Overflow Clone
   url: https://dbc-hackoverflow.herokuapp.com/
   github_url: https://github.com/wvicioso/hackoverflow
-  description: >
-    Stack Overflow clone.
+  short_description: >
+    A standard discussion board app that's an attempt at a very simple version of the popular programming platform <a href='stackoverflow.com'>StackOverflow</a>. It allows users to ask questions, give answers and make comments as well as vote up or down on each of the above.
+  long_description: >
+
   img: /assets/images/hack-overflow-cover.png
   tags: "rails ruby backend current"
 
 - name: ShootThingsGame
   url: https://levytsroman.github.io/shootThingsGame/
   github_url: https://github.com/LevytsRoman/shootThingsGame
-  description: >
-    My first javascript project. Currently refactoring my code to be a lot more dry and using object oriented javascript principles.
+  short_description: >
+    A small javascript browser game, featuring a red plane (player) and an unhealthy onslaught of enemy planes flying over a pictureque rendering of my favorite planet (Earth) in MS Paint.
+  long_description: >
+
   img: /assets/images/shoot-things-game-cover.png
   tags: "javaScript front-end current"
 
 - name: TipCalculator
   url: https://levytsroman.github.io/TipCalculator/
   github_url: https://github.com/LevytsRoman/TipCalculator
-  description: >
-    A little front end project to practice css and jQuery
+  short_description: >
+    If you were ever in a restaurant with a group of friends (or people you don't completely loathe) and you've had a hard time figuring out how much each person needs to tip, look no further!!! This light weight web-app will calculate it for you.
+  long_description: >
+
   img: /assets/images/tip-calculator-cover.png
   tags: "jQuery CSS front-end finished"
 
 - name: HobbyWebPage
   url: https://levytsroman.github.io/MyWebPage/
   github_url: https://github.com/LevytsRoman/MyWebPage
-  description: >
-    A little front end project, playing with pure CSS
+  short_description: >
+    The first website I've ever made. Consists of four pages, featuring tips on how to improve your graffiti skills, what materials to use, suggestions on where to buy them, a very moderately sized gallery and a little form (just for practice).
+  long_description: >
+
   img: /assets/images/hobby-web-page-cover.png
   tags: "HTML5 CSS front-end finished"
 
 - name: Orbit
   url: https://levytsroman.github.io/SolarSystem/
   github_url: https://github.com/LevytsRoman/SolarSystem
-  description: >
-    A little front end project to practice animations in CSS
+  short_description: >
+    A little animation of the moon spinning around the earth, spinning around the sun. If you look really carefully you can see the sun flare and the stars fading in the background due to an immense amount of light. (*not scientifically accurate)
+  long_description: >
+
   img: /assets/images/solar-system-cover.png
   tags: "jQuery CSS front-end finished"
 
 - name: movieLookUp
   url: https://levytsroman.github.io/movieLookUp/public
   github_url: https://github.com/LevytsRoman/movieLookUp
-  description: >
-    A front end app to practice working with react.
+  short_description: >
+    A pure front-end app that allows users to search through various shows, movies and series to find content they would like to watch or learn more about movies that they've already seen.
+  long_description: >
+
   img: /assets/images/movie-look-up-cover.jpg
   tags: "jQuery javaScript CSS front-end react current"

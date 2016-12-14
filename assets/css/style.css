@@ -20,6 +20,10 @@
   margin: 0 10px 0 10px;
 }
 
+nav {
+  margin-bottom: 2%;
+}
+
 .hidden {
   display: none;
 }
@@ -34,11 +38,11 @@
 }
 
 .card {
-  width: 31%;
-  height: 400px;
+  width: 31.3%;
+  height: 450px;
   display: inline-block;
   float: left;
-  margin: 2% 1% 2% 1%;
+  margin: 1% 1% 1% 1%;
 }
 
 .content {
