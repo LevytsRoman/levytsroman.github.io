@@ -63,9 +63,9 @@ nav {
 
 @media all and (max-width: 600px) {
   .card {
-    width: 100%;
+    width: 98%;
     min-width: 320px;
-    margin-top: 5%;
+    margin: 5% 1% 5% 1%;
   }
 }
 
