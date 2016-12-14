@@ -5,24 +5,27 @@ layout: project
 <div class="content grey-lighten-3">
   {% for item in site.data.projects %}
     {% assign tags = item.tags %}
-    <div class="{{ item.tags }} {% if tags contains 'current' %} visible {% else %}hidden{% endif %}">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img class="activator" src="{{ item.img }}">
-              <span class="card-title">{{ item.name }}</span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
-              <p>{{ item.long_description }}</p>
-            </div>
-            <div class="card-content">
-              <p>{{ item.short_description }}</p>
-            </div>
-            <div class="card-action">
-              <a href="{{ item.url }}">Take me there</a>
-              <a href="{{ item.github_url }}">Github</a>
-            </div>
+    {% if tags contains 'current' %}
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{ item.img }}">
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
+          <p>{{ item.long_description }}</p>
+          <br>
+          <h5>Technologies:</h5>
+          <p>{{ item.technologies }}</p>
+        </div>
+        <div class="card-content">
+          <span class="card-title">{{ item.name }}<i class="material-icons right activator">more_vert</i></span>
+          <p>{{ item.short_description }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ item.url }}">Take me there</a>
+          <a href="{{ item.github_url }}">Github</a>
+        </div>
       </div>
-    </div>
+    {% endif %}
   {% endfor %}
 </div>
