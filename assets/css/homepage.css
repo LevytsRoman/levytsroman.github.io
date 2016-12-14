@@ -81,7 +81,6 @@ h3 {
 }
 @media all and (max-width: 600px) {
   body{
-    min-width: 500px;
     overflow-y: visible !important;
   }
 }
