@@ -8,6 +8,12 @@
   margin-top: 5px;
 }
 
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 600;
+  letter-spacing: 1.2;
+}
+
 .card-title {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
@@ -39,7 +45,7 @@ nav {
 
 .card {
   width: 31.3%;
-  height: 500px;
+  height: 520px;
   display: inline-block;
   float: left;
   margin: 1% 1% 1% 1%;
@@ -61,4 +67,19 @@ nav {
     min-width: 500px;
     margin: 5%;
   }
+}
+
+.description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+}
+
+.about-me p{
+  color: white !important;
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif;
 }

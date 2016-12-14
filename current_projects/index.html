@@ -10,7 +10,7 @@ layout: project
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="{{ item.img }}">
         </div>
-        <div class="card-reveal">
+        <div class="card-reveal description">
           <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
           <p>{{ item.long_description }}</p>
           <br>
@@ -19,7 +19,7 @@ layout: project
         </div>
         <div class="card-content">
           <span class="card-title">{{ item.name }}<i class="material-icons right activator">more_vert</i></span>
-          <p>{{ item.short_description }}</p>
+          <p class='description'>{{ item.short_description }}</p>
         </div>
         <div class="card-action">
           <a href="{{ item.url }}">Take me there</a>
