@@ -20,7 +20,7 @@
   description: >
     Stack Overflow clone.
   img: /assets/images/hack-overflow-cover.png
-  tags: "rails ruby backend finished"
+  tags: "rails ruby backend current"
 
 - name: ShootThingsGame
   url: https://levytsroman.github.io/shootThingsGame/
@@ -28,7 +28,7 @@
   description: >
     My first javascript project. Currently refactoring my code to be a lot more dry and using object oriented javascript principles.
   img: /assets/images/shoot-things-game-cover.png
-  tags: "javascript front-end current"
+  tags: "javaScript front-end current"
 
 - name: TipCalculator
   url: https://levytsroman.github.io/TipCalculator/
@@ -53,3 +53,11 @@
     A little front end project to practice animations in CSS
   img: /assets/images/solar-system-cover.png
   tags: "jQuery CSS front-end finished"
+
+- name: movieLookUp
+  url: https://levytsroman.github.io/movieLookUp/public
+  github_url: https://github.com/LevytsRoman/movieLookUp
+  description: >
+    A front end app to practice working with react.
+  img: /assets/images/movie-look-up-cover.jpg
+  tags: "jQuery javaScript CSS front-end react current"
