@@ -15,14 +15,14 @@ layout: project
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
-            <p>{{ item.full_description }}</p>
+            <p>{{ item.long_description }}</p>
           </div>
         <div class="card-content">
-          <p>{{ item.description }}</p>
+          <p>{{ item.short_description }}</p>
         </div>
         <div class="card-action">
+          <a href="{{ item.url }}">Take me there</a>
           <a href="{{ item.github_url }}">Github</a>
-          <a href="{{ item.url }}">Live preview</a>
         </div>
       </div>
     </div>
