@@ -14,7 +14,7 @@ $(document).ready(function(){
     'finished': '#2E294E'
   }
   var address = window.location.href.split('/'),
-      pagename = address[address.length - 2],
+      pagename = address[address.length - 1],
       navtag = pagename.split('_')[0];
 
   $('body').css('background-color', colors[pagename]);

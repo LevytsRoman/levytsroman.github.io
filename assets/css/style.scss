@@ -1,0 +1,83 @@
+#projects {
+  .brand-logo {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    letter-spacing: 1.2;
+  }
+
+  .card-title {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    letter-spacing: 1.2;
+  }
+
+  #nav-mobile a, #mobile-demo a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+  }
+
+  nav {
+    margin-bottom: 2%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .project-img {
+    width: 500px;
+    height: 300px;
+  }
+
+  .project-wrapper {
+    width: 100%;
+  }
+
+  .card {
+    width: 31.3%;
+    height: 520px;
+    display: inline-block;
+    float: left;
+    margin: 1% 1% 1% 1%;
+  }
+
+  .content {
+    min-height: 100vh;
+  }
+
+  @media all and (max-width: 990px) {
+    .card {
+      width: 48%;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .card {
+      width: 98%;
+      min-width: 320px;
+      margin: 5% 1% 5% 1%;
+    }
+  }
+
+  .description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+  }
+
+  .about-me p{
+    color: white !important;
+    margin: 4%;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+}
