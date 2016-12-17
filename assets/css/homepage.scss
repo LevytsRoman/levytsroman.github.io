@@ -1,0 +1,86 @@
+#homepage {
+  overflow: hidden;
+
+  h3 {
+    font-family: 'Abril Fatface', cursive;
+  }
+  .box {
+    /*margin: 0;*/
+    height: 50vh;
+    min-height: 300px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .row {
+    margin: 0;
+    /*padding: 0*/
+  }
+  .about {
+    background-color: rgb(142,85,114);
+    /*background-image: url('http://previews.123rf.com/images/slanapotam/slanapotam1402/slanapotam140200024/25839242-Colorful-abstract-geometric-background-with-triangular-polygons-low-poly-Vector-illustration-Stock-Vector.jpg');*/
+    /*background-size: cover;*/
+  }
+  .about:hover {
+    background-color: rgba(142,85,114, 0.9);
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .current {
+    background-color: #F46036;
+    /*background-image: url('https://newevolutiondesigns.com/images/freebies/geometric-wallpaper-15.jpg');*/
+    /*background-size: cover;*/
+  }
+  .current:hover {
+    background-color: rgba(244,96,54,0.9);
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .contact a {
+    margin-left: 10px;
+  }
+
+  .contact a:hover {
+    color: #F46036;
+  }
+  .completed {
+    /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/53/7b/65/537b65d3b70ee8a0092bbd81b9448844.jpg');*/
+    /*background-size: cover;*/
+    background-color: #2E294E;
+  }
+  .completed:hover {
+    background-color: #443C72;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .contact {
+    background-color: #F2F7F2;
+  }
+
+  .profile_picture {
+    border-radius: 35%;
+  }
+
+  .words {
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+  }
+  @media all and (max-height: 600px) {
+    body {
+      overflow: visible;
+    }
+    .box {
+      height: 300px;
+    }
+  }
+  @media all and (max-width: 600px) {
+    body{
+      overflow-y: visible !important;
+    }
+  }
+
+}

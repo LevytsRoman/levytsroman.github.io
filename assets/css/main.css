@@ -1,0 +1,114 @@
+#homepage {
+  overflow: hidden; }
+  #homepage h3 {
+    font-family: 'Abril Fatface', cursive; }
+  #homepage .box {
+    /*margin: 0;*/
+    height: 50vh;
+    min-height: 300px;
+    color: white;
+    font-weight: 600; }
+  #homepage .row {
+    margin: 0;
+    /*padding: 0*/ }
+  #homepage .about {
+    background-color: #8e5572;
+    /*background-image: url('http://previews.123rf.com/images/slanapotam/slanapotam1402/slanapotam140200024/25839242-Colorful-abstract-geometric-background-with-triangular-polygons-low-poly-Vector-illustration-Stock-Vector.jpg');*/
+    /*background-size: cover;*/ }
+  #homepage .about:hover {
+    background-color: rgba(142, 85, 114, 0.9);
+    border: 2px solid white;
+    border-radius: 5px; }
+  #homepage .current {
+    background-color: #F46036;
+    /*background-image: url('https://newevolutiondesigns.com/images/freebies/geometric-wallpaper-15.jpg');*/
+    /*background-size: cover;*/ }
+  #homepage .current:hover {
+    background-color: rgba(244, 96, 54, 0.9);
+    border: 2px solid white;
+    border-radius: 5px; }
+  #homepage .contact a {
+    margin-left: 10px; }
+  #homepage .contact a:hover {
+    color: #F46036; }
+  #homepage .completed {
+    /*background-image: url('https://s-media-cache-ak0.pinimg.com/originals/53/7b/65/537b65d3b70ee8a0092bbd81b9448844.jpg');*/
+    /*background-size: cover;*/
+    background-color: #2E294E; }
+  #homepage .completed:hover {
+    background-color: #443C72;
+    border: 2px solid white;
+    border-radius: 5px; }
+  #homepage .contact {
+    background-color: #F2F7F2; }
+  #homepage .profile_picture {
+    border-radius: 35%; }
+  #homepage .words {
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200; }
+  @media all and (max-height: 600px) {
+    #homepage body {
+      overflow: visible; }
+    #homepage .box {
+      height: 300px; } }
+  @media all and (max-width: 600px) {
+    #homepage body {
+      overflow-y: visible !important; } }
+
+#projects .brand-logo {
+  margin-left: 5px;
+  margin-top: 5px; }
+#projects h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 600;
+  letter-spacing: 1.2; }
+#projects .card-title {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 600;
+  letter-spacing: 1.2; }
+#projects #nav-mobile a, #projects #mobile-demo a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  margin: 0 10px 0 10px; }
+#projects nav {
+  margin-bottom: 2%; }
+#projects .hidden {
+  display: none; }
+#projects .project-img {
+  width: 500px;
+  height: 300px; }
+#projects .project-wrapper {
+  width: 100%; }
+#projects .card {
+  width: 31.3%;
+  height: 520px;
+  display: inline-block;
+  float: left;
+  margin: 1% 1% 1% 1%; }
+#projects .content {
+  min-height: 100vh; }
+@media all and (max-width: 990px) {
+  #projects .card {
+    width: 48%; } }
+@media all and (max-width: 600px) {
+  #projects .card {
+    width: 98%;
+    min-width: 320px;
+    margin: 5% 1% 5% 1%; } }
+#projects .description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em; }
+#projects .about-me p {
+  color: white !important;
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  min-height: 100%; }
+
+/*# sourceMappingURL=main.css.map */
