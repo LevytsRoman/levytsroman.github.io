@@ -76,7 +76,7 @@
   tags: "jQuery CSS front-end finished"
 
 - name: movieLookUp
-  url: https://levytsroman.github.io/movieLookUp/public
+  url: https://akhinchey.github.io/movieLookUp/
   github_url: https://github.com/LevytsRoman/movieLookUp
   short_description: >
     A pure front-end app that allows users to search through various shows, movies and series to find the content they would like to watch or learn more about movies that they've already seen.
