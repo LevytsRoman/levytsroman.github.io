@@ -1,4 +1,4 @@
-#projects {
+#projects, .about-me {
   .brand-logo {
     margin-left: 5px;
     margin-top: 5px;
@@ -15,17 +15,6 @@
     font-weight: 600;
     letter-spacing: 1.2;
   }
-
-  #nav-mobile a, #mobile-demo a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    margin: 0 10px 0 10px;
-  }
-
-  nav {
-    margin-bottom: 2%;
-  }
-
   .hidden {
     display: none;
   }
@@ -70,7 +59,7 @@
     font-size: 1.1em;
   }
 
-  .about-me p{
+  .about-me p {
     color: white !important;
     margin: 4%;
     font-size: 25px;
@@ -79,5 +68,14 @@
     text-indent: 50px;
     font-family: 'Raleway', sans-serif;
   }
-  
+
+}
+#nav-mobile a, #mobile-demo a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  margin: 0 10px 0 10px;
+}
+
+nav {
+  margin-bottom: 2%;
 }
