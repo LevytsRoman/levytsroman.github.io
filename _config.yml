@@ -22,6 +22,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username: levytsroman
 
+sass:
+  sass_dir: assets/css/main.css
+  style: :nested
+
 # Build settings
 markdown: kramdown
 theme: minima

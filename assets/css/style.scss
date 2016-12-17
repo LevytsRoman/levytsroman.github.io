@@ -15,17 +15,6 @@
     font-weight: 600;
     letter-spacing: 1.2;
   }
-
-  #nav-mobile a, #mobile-demo a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    margin: 0 10px 0 10px;
-  }
-
-  nav {
-    margin-bottom: 2%;
-  }
-
   .hidden {
     display: none;
   }
@@ -80,4 +69,13 @@
     font-family: 'Raleway', sans-serif;
   }
 
+}
+#nav-mobile a, #mobile-demo a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  margin: 0 10px 0 10px;
+}
+
+nav {
+  margin-bottom: 2%;
 }
