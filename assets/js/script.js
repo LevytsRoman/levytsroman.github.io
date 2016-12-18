@@ -17,8 +17,6 @@ $(document).ready(function(){
       pagename = address[address.length - 1],
       navtag = pagename.split('_')[0];
 
-      debugger
-
   $('body').css('background-color', colors[pagename]);
   $('.card-action a').css('color', colors[pagename]);
   $('nav a').attr('style', 'color: ' + colors[pagename] + ' !important;');
