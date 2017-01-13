@@ -1,7 +1,6 @@
-.brand-logo {
+#projects .brand-logo, .about-me .brand-logo {
   margin-left: 5px;
   margin-top: 5px; }
-
 #projects h3, .about-me h3 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
@@ -36,6 +35,14 @@
 #projects .description, .about-me .description {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em; }
+#projects .about-me p, .about-me .about-me p {
+  color: white !important;
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif; }
 
 #nav-mobile a, #mobile-demo a {
   font-family: 'Josefin Sans', sans-serif;
@@ -45,26 +52,5 @@
 nav {
   margin-bottom: 2%;
 }
-
-.about-me .bio {
-  color: white;
-  padding: 2%; }
-
-.technologies {
-  background-color: white;
-  color: #8e5572;
-  padding: 0 2% 0 2%; }
-
-.about-me p {
-  margin: 4%;
-  font-size: 25px;
-  font-weight: 400;
-  text-align: justify;
-  text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
-
-.about-me li {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px !important; }
 
 /*# sourceMappingURL=style.css.map */
