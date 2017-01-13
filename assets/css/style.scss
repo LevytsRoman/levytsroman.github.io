@@ -1,8 +1,9 @@
+.brand-logo {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 #projects, .about-me {
-  .brand-logo {
-    margin-left: 5px;
-    margin-top: 5px;
-  }
 
   h3 {
     font-family: 'Abril Fatface', cursive;
@@ -59,6 +60,7 @@
     font-size: 1.1em;
   }
 
+
   .about-me p {
     color: white !important;
     margin: 4%;
@@ -68,7 +70,9 @@
     text-indent: 50px;
     font-family: 'Raleway', sans-serif;
   }
+
 }
+
 #nav-mobile a, #mobile-demo a {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
@@ -77,4 +81,30 @@
 
 nav {
   margin-bottom: 2%;
+}
+
+
+.about-me .bio {
+  color: white;
+  padding: 2%;
+}
+
+.technologies {
+  background-color: white;
+  color: #8e5572;
+  padding: 0 2% 0 2%;
+}
+
+.about-me p {
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-me li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px !important;
 }
