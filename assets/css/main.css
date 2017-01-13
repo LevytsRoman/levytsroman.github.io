@@ -55,8 +55,11 @@
   @media all and (max-width: 600px) {
     #homepage body {
       overflow-y: visible !important; } }
-
-.brand-logo {
+#homepage ul li {
+  display: inline-block;
+}
+#projects .brand-logo, .about-me .brand-logo {
+>>>>>>> change about me box on homepage
   margin-left: 5px;
   margin-top: 5px; }
 
@@ -126,8 +129,11 @@ nav {
 
 body {
   min-height: 100%; }
-  i.right {
-    cursor: pointer !important;
-  }
+i.right, .contact-link-img, .homepage-section {
+  cursor: pointer !important;
+}
+.about-text {
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=main.css.map */
