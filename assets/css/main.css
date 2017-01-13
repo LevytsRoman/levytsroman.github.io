@@ -126,5 +126,8 @@ nav {
 
 body {
   min-height: 100%; }
+  i.right {
+    cursor: pointer !important;
+  }
 
 /*# sourceMappingURL=main.css.map */
