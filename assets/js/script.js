@@ -8,9 +8,7 @@ $(document).ready(function(){
 
   var colors = {
     'about': 'rgb(142,85,114)',
-    'current_projects':  '#F46036',
     'current': '#F46036',
-    'finished_projects': '#2E294E',
     'finished': '#2E294E'
   }
   var address = window.location.href.split('/'),
