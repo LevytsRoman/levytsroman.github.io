@@ -10,14 +10,14 @@ layout: default
           <div class="col s12 m12 center-align">
             <img class="profile_picture" src="/assets/images/profile_picture.jpg" width='150' height='150' alt="" />
             <ul class="col s12 center-align">
-              <li><a href="mailto:r.levyts@gmail.com"><img class="contact-link-img" src='/assets/images/gmail_icon.png' width='20' height='20'></a></li>
-              <li><a href="https://github.com/LevytsRoman"><img class="contact-link-img" src='/assets/images/github_icon.png' width='20' height='20'></a></li>
-              <li><a href="https://www.linkedin.com/in/levytsroman"><img class="contact-link-img" src='/assets/images/linkedIn_icon.png' width='20' height='20'></a></li>
+              <li><a href="mailto:{{site.email}}"><img class="contact-link-img" src='/assets/images/gmail_icon.png' width='20' height='20'></a></li>
+              <li><a href={{site.github_link}}><img class="contact-link-img" src='/assets/images/github_icon.png' width='20' height='20'></a></li>
+              <li><a href={{site.linked_in_link}}><img class="contact-link-img" src='/assets/images/linkedIn_icon.png' width='20' height='20'></a></li>
             </ul>
           </div>
         </div>
         <div class="col s12">
-          <div class="col s12 m12 grey-text center-align"><em class='about-text'>Hi, I'm a coder, and this is my page. Feel free to click around. </em></div>
+          <div class="col s12 m12 grey-text center-align"><em class='about-text'>{{site.description}}</em></div>
         </div>
     </div>
     </div>
