@@ -7,10 +7,10 @@ layout: default
 <div class="about-me">
   <div class="bio">
     <div class="row">
-      <img class="col s12 m5" src="/assets/images/movie-look-up-cover.jpg" alt="" />
+      <img class="col s12 m4" src="assets/images/profile_picture.jpg" alt="" style="border-radius: 10%;"/>
       <div class="col s12 m7">
-        <h3 class='center-align'>Why I program</h3>
-        <p>I'm a recent DevBootcamp graduate going into programming from a mathematical background. I got into programming because I love making things, but in most cases that requires tools and a workshop. Now I can work anytime, anywhere with all the latest tools readily available at my fingertips.</p>
+        <h3 class='center-align'>Who I am</h3>
+        <p>{{site.about_me}}</p>
       </div>
     </div>
   </div>
@@ -20,30 +20,10 @@ layout: default
       <div class="col s12 m12 l7">
         <h3 class='center-align'>Familiar with:</h3>
         <ul class='row'>
-          <div class='col s12 m4'>
-            <li> - javaScript</li>
-            <li> - rails</li>
-            <li> - ruby</li>
-            <li> - HTML5</li>
-            <li> - CSS3</li>
-            <li> - React</li>
-          </div>
-          <div class='col s12 m4'>
-            <li> - jQuery</li>
-            <li> - Charts.js</li>
-            <li> - Materialize</li>
-            <li> - Bootstrap</li>
-            <li> - jekyll</li>
-            <li> - SQLite</li>
-          </div>
-          <div class='col s12 m4'>
-            <li> - postgress</li>
-            <li> - sinatra</li>
-            <li> - heroku</li>
-            <li> - git</li>
-            <li> - github</li>
-            <li> - node</li>
-          </div>
+          {% assign technologies = site.technologies | split: ' ' %}
+          {% for item in technologies%}
+            <li> - {{item}}</li>
+          {% endfor %}
         </ul>
       </div>
       <img class="col s12 m12 l5" src="http://sites.psu.edu/xvc5068/wp-content/uploads/sites/25980/2015/06/lenguajes-programacion.png" alt="" />
