@@ -26,15 +26,15 @@ twitter_username: ""
 github_link: "https://www.github.com/levytsroman"
 technologies: "javascript rails ruby HTML5 CSS3 React jQuery Charts.js Materialize Bootstrap jekyll SQLite postgress sinatra heroku git github"
 sections:
-  current:
-    url: /current
-    heading: Current projects
-    words: A list of unfinished projects that are queueing to be completed
+  projects:
+    url: /projects
+    heading: Projects
+    words: A list of projects and experiments
     class: m8 current
-  finished:
-    url: /finished
-    heading: Finished projects
-    words: Programmer's work is never done but for now I'm satisfied.
+  algorithms:
+    url: /algorithms
+    heading: Algorithms
+    words: Solutions and animations of common programming algorithms
     class: m6 completed
   about:
     url: /about
