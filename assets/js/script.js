@@ -24,20 +24,15 @@ $(document).ready(function(){
   $("a:contains('" + pagename + "')").css('color', "white");
 
   $('select').change(function(event){
-    debugger
     var tag = $(this).val(),
-        projects = $('.card');
-
-        for(var i=0; i < projects.length; i++){
-          console.log("I is :" + i);
-          var $project = $(projects[i]);
-          // debugger
-          if($project.attr('tags').indexOf(tag) > -1 || tag === "all"){
-            // debugger
-            $project.show();
-          } else {
-            $project.hide();
-          }
-        }
+      projects = $('.card');
+    for(var i=0; i < projects.length; i++){
+      var $project = $(projects[i]);
+      if($project.attr('tags').indexOf(tag) > -1 || tag === "all"){
+        $project.show();
+      } else {
+        $project.hide();
+      }
+    }
   })
 });
