@@ -6,8 +6,6 @@ layout: default
 
 <div class="content grey-lighten-3" id="projects">
   {% for item in site.data.projects %}
-    {% assign tags = item.tags %}
-    {% if tags contains page.page_tag %}
       <div class="card hoverable">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="{{ item.img }}">
@@ -28,7 +26,6 @@ layout: default
           <a href="{{ item.github_url }}">Github</a>
         </div>
       </div>
-    {% endif %}
   {% endfor %}
 </div>
 

@@ -8,8 +8,8 @@ $(document).ready(function(){
 
   var colors = {
         'about': 'rgb(142,85,114)',
-        'current': '#F46036',
-        'finished': '#2E294E'
+        'projects': '#F46036',
+        'algorithms': '#2E294E'
       },
       address = window.location.href.split('/'),
       pagename = address[address.length - 1]
