@@ -25,7 +25,7 @@ linked_in_link: "https://www.linkedin.com/in/levytsroman"
 twitter_username: ""
 github_link: "https://www.github.com/levytsroman"
 technologies: javascript rails ruby HTML5 CSS3 React jQuery Charts.js Materialize Bootstrap jekyll SQLite postgress sinatra heroku git github
-select_options: HTML5/CSS/javaScript
+select_options: front-end back-end Ruby-on-Rails React finished current javaScript
 sections:
   projects:
     url: /projects

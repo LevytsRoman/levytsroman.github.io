@@ -7,7 +7,7 @@
     Engage me was a week long final project at <a href='devbootcamp.com'>DevBootcamp</a>. With the help of the Microsoft Cognitive Services API, my team was able to display people's emotions in real time, giving the presenter an overview of how they are doing in real time, as well as the ability to look at the audience's emotion-data after the presentation to see shifts in emotions over time.
   technologies: It's build with HTML5, CSS, javaScript, a ruby on rails back-end, jQuery and materialize for forms and styling and Charts.js for the data-visualization. Hosted on heroku.
   img: /assets/images/project_covers/engage-me-cover.jpeg
-  tags: rails ruby back-end finished
+  tags: back-end Ruby-on-Rails finished javaScript
 
 - name: Tic-tac-toe
   url: https://tic-or-treat.herokuapp.com/
@@ -18,7 +18,7 @@
     This mini-project was a rehearsal of working directly with a client with a pressing deadline. We designed, published, and presented a wireframe to get approval to start building. Adjust design and functionality to fit the client's fickle preferences. As a project lead, it was primarily my job to interact with the clients, delegate the responsibilities for each member as well as make executive decisions when we couldn't agree how to proceed.
   technologies: The page is built in HTML5, CSS, JavaScript, jQuery, Materialize, and a ruby on rails serverside. Hosted on heroku.
   img: /assets/images/project_covers/tic-tac-toe-cover.jpg
-  tags: rails ruby back-end finished
+  tags: back-end Ruby-on-Rails finished javaScript
 
 - name: Stack Overflow Clone
   url: https://dbc-hackoverflow.herokuapp.com/
@@ -29,7 +29,7 @@
     Stack Overflow clone project introduced the complexity of nested custom built routes. It's easy to get confused in an insane amount of controllers spread accross multiple folders. Especially on a team, when people are always making changes and adding new code. But I learned to appreciate RESTular naming conventions as well as overcome my fear of merging conflicts. Myself and another teammate decided to revive this project, improve styling, functionality and iron out a few bugs.
   technologies: Built with Sinatra back-end, HTML5, CSS, javaScript, jQuery and materialize on client side.
   img: /assets/images/project_covers/hack-overflow-cover.png
-  tags: rails ruby back-end current
+  tags: back-end current javaScript
 
 - name: ShootThingsGame
   url: https://levytsroman.github.io/shootThingsGame/
@@ -51,7 +51,7 @@
     This simple project aimed to give me a better understanding of jQuery. It was a part of an online course I took on <a href='udemy.com'>udemy</a> that got me interested in programming in the first place. It was also a good way to practice form submission error messages managed by javaScript, and explore different ways they could be accomplished.
   technologies: HTML5, CSS, javaScript, jQuery
   img: /assets/images/project_covers/tip-calculator-cover.png
-  tags: jQuery CSS front-end finished
+  tags: front-end, javaScript, finished
 
 - name: HobbyWebPage
   url: https://levytsroman.github.io/MyWebPage/
@@ -62,7 +62,7 @@
     I made this before I knew of various CSS styling libraries. It could look better, but I think learning to do CSS helped me understand web design much better. I'm comfortable with facing styling challenges that materialize or bootstrap doesn't have an answer for. I also learned to appreciate what these libraries do for me, especially in terms of positioning. Floats are notorious for being difficult to work with and grid system these libraries are offering are invaluable.
   technologies: Built with HTML5, CSS
   img: /assets/images/project_covers/hobby-web-page-cover.png
-  tags: HTML5 CSS front-end finished
+  tags: front-end finished
 
 - name: Orbit
   url: https://levytsroman.github.io/SolarSystem/
@@ -73,7 +73,7 @@
     This one is also part of the udemy web-developer course. It still amazes me how powerful CSS can be and how many helpful animations and effects it has to offer.
   technologies: Made with HTML5 and CSS
   img: /assets/images/project_covers/solar-system-cover.png
-  tags: jQuery CSS front-end finished
+  tags: front-end finished
 
 - name: movieLookUp
   url: https://akhinchey.github.io/movieLookUp/
@@ -84,4 +84,4 @@
     This project is mostly focused on learning/practicing react. React seems to be a very popular framework for front-end web development. I also was mind blown with how fast changes take place and the simplicity with which items can be rerendered with simple change of state (before this it could be quite a pain to try and append appropriate elements in appropriate places after an ajax call). So far the hardest part was to configure my environment with node, npm and nvm.
   technologies: Built using HTML5, CSS, javaScript, jQuery, materialize, React.
   img: /assets/images/project_covers/movie-look-up-cover.jpg
-  tags: jQuery javaScript CSS front-end React current
+  tags: React javaScript front-end current
