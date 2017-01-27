@@ -3,10 +3,20 @@ layout: default
 ---
 
 {% include nav.html %}
+<div class="input-field col s12">
+    <select>
+      <option value="all" selected>all</option>
+      {% assign tags = site.select_options | split: " " %}
+      {% for item in tags %}
+        <option value={{item}}>{{item}}</option>
+      {% endfor %}
+    </select>
+    <label>Filter by:</label>
+</div>
 
 <div class="content grey-lighten-3" id="projects">
   {% for item in site.data.projects %}
-      <div class="card hoverable">
+      <div class="card hoverable" tags="{{item.tags}}">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="{{ item.img }}">
         </div>
