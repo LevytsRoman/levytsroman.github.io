@@ -21,31 +21,11 @@ layout: default
         </div>
     </div>
     </div>
-    <a href="/current" class="homepage-section">
-      <div class="col s12 m8 current box valign-wrapper center-align">
-        <div class="row">
-          <h3 class="col s12">Current projects</h3>
-          <p class="col s12 words">A list of unfinished projects that are queueing to be completed</p>
-        </div>
-      </div>
-    </a>
+    {% include box.html section=site.sections.current %}
   </div>
   <div class="row">
-    <a href="/about" class="homepage-section">
-      <div class="col s12 m6 about box valign-wrapper center-align">
-        <div class="row">
-          <h3 class="col s12">About me</h3>
-          <p class="col s12 words">Who I am, where I come from, and why I do what I do.</p>
-        </div>
-      </div>
-    </a>
-    <a href="/finished" class="homepage-section">
-      <div class="col s12 m6 completed box valign-wrapper center-align">
-        <div class="row">
-          <h3 class="col s12">Finished projects</h3>
-          <p class="col s12 words">Programmer's work is never done but for now I'm satisfied.</p>
-        </div>
-      </div>
-    </a>
+    {% include box.html section=site.sections.about %}
+
+    {% include box.html section=site.sections.finished %}
   </div>
 </div>
