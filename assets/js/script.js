@@ -26,13 +26,56 @@ $(document).ready(function(){
   $('select').change(function(event){
     var tag = $(this).val(),
       projects = $('.card');
+
+      for(var i=0; i < projects.length; i++){
+        var $project = $(projects[i]);
+        if($project.attr('tags').indexOf(tag) > -1 || tag === "all"){
+          $project.show();
+        } else {
+          $project.hide();
+        }
+      }
+  })
+
+  $('.tag').click(function(event){
+    event.preventDefault();
+    $(this).children().remove('i');
+
+    var $button = $(this),
+        tag = $(this).attr('val'),
+        projects = $('.card'),
+        buttons = $('.btn'),
+        active_tags = [];
+
+    if($button.attr('class').indexOf('active_tag') > -1){
+      $button.removeClass("active_tag");
+      $button.html(tag);
+    } else {
+      $button.html(tag + '<i class="material-icons left">close</i>');
+      $button.addClass("active_tag");
+    }
+    for(var j=0; j < buttons.length; j++){
+      // console.log("hello" + $(buttons[j]).attr('class').indexOf('active_tag'))
+      if($(buttons[j]).attr('class').indexOf('active_tag') > -1){
+        // debugger
+        active_tags.push($(buttons[j]).attr('val'));
+      }
+    }
+
+    // debugger
+
     for(var i=0; i < projects.length; i++){
       var $project = $(projects[i]);
-      if($project.attr('tags').indexOf(tag) > -1 || tag === "all"){
+
+      for(){
+
+      }
+      if($project.attr('tags').indexOf(tag) > -1 || tag === "all" || tag === ""){
         $project.show();
       } else {
         $project.hide();
       }
     }
   })
+
 });

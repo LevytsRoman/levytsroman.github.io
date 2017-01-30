@@ -19,7 +19,13 @@ layout: default
         </select>
     </div>
   </div>
-  
+  <div class="row">
+    {% assign tags = site.select_options | split: " " %}
+    {% for item in tags %}
+      <a class="waves-effect waves-light btn tag" val={{item}} >{{item}}</a>  
+    {% endfor %}
+  </div>
+
   {% for item in site.data.projects %}
       <div class="card hoverable" tags="{{item.tags}}">
         <div class="card-image waves-effect waves-block waves-light">
