@@ -66,14 +66,11 @@ $(document).ready(function(){
 
     for(var i=0; i < projects.length; i++){
       var $project = $(projects[i]);
-
-      for(){
-
-      }
-      if($project.attr('tags').indexOf(tag) > -1 || tag === "all" || tag === ""){
-        $project.show();
-      } else {
-        $project.hide();
+      $project.hide();
+      for(var k=0; k < active_tags.length; k++){
+        if($project.attr('tags').indexOf(active_tags[k]) > -1 || active_tags[k] === "all" || active_tags[k] === ""){
+          $project.show();
+        }
       }
     }
   })
