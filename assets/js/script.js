@@ -23,20 +23,6 @@ $(document).ready(function(){
 
   $("a:contains('" + pagename + "')").css('color', "white");
 
-  $('select').change(function(event){
-    var tag = $(this).val(),
-      projects = $('.card');
-
-      for(var i=0; i < projects.length; i++){
-        var $project = $(projects[i]);
-        if($project.attr('tags').indexOf(tag) > -1 || tag === "all"){
-          $project.show();
-        } else {
-          $project.hide();
-        }
-      }
-  })
-
   $('.tag').click(function(event){
     event.preventDefault();
     $(this).children().remove('i');
