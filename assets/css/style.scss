@@ -69,7 +69,6 @@
     text-indent: 50px;
     font-family: 'Raleway', sans-serif;
   }
-
 }
 
 #nav-mobile a, #mobile-demo a {
@@ -81,7 +80,6 @@
 nav {
   margin-bottom: 2%;
 }
-
 
 .about-me .bio {
   color: white;
@@ -109,16 +107,17 @@ nav {
   width: 30%;
   float: left;
 }
+
 i {
   cursor: pointer;
 }
+
 .tag {
   background-color: lightgrey;
   color: white;
-  border-radius: 50px;
   height: 1.5rem;
   line-height: 1.5rem;
-  margin: 5px;
+  margin: 3px;
   font-size: 1rem;
   font-weight: 800px;
 }
