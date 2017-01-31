@@ -1,47 +1,3 @@
-$(document).ready(function(){
-  $(".button-collapse").sideNav({
-    menuWidth: 200,
-    edge: 'left',
-    closeOnClick: true,
-    draggable: true
-  });
-
-  var colors = {
-        'about': 'rgb(142,85,114)',
-        'projects': '#F46036',
-        'algorithms': '#2E294E'
-      },
-      address = window.location.href.split('/'),
-      pagename = address[address.length - 1];
-
-  $('body').css('background-color', colors[pagename]);
-  $('.card-action a').css('color', colors[pagename]);
-  $('nav a').attr('style', 'color: ' + colors[pagename] + '');
-  $("a:contains('" + pagename + "')").parent().css('background-color', colors[pagename]);
-  $("a:contains('" + pagename + "')").css('color', "white");
-
-  $('.tag').click(function(event){
-    event.preventDefault();
-
-    $(this).children().remove('i');
-
-    var button = $(this),
-        tag = $(this).attr('val'),
-        projects = $('.card'),
-        buttons = $('.btn'),
-        active_tags = [],
-        needToClearFilters = tag === "clear-filters";
-
-    if(needToClearFilters){
-      clearFilters();
-    } else{
-      toggleTags(button, tag);
-      active_tags = addActiveTags(buttons);
-      showProjects(projects, active_tags);
-    }
-  })
-});
-
 function clearFilters(){
   $(".closing-icon").remove();
   $(".active_tag").removeClass('active_tag');
@@ -78,7 +34,7 @@ function showProjects(projects, active_tags){
       var active_tag = active_tags[k],
       projectContainsTag = project.attr('tags').indexOf(active_tag) > -1;
 
-      if( projectContainsTag){
+      if(projectContainsTag){
         project.show();
       }
     })
@@ -90,3 +46,51 @@ function showProjects(projects, active_tags){
     projects.show();
   }
 }
+
+function hideCloseIcons(element){
+  element.children().remove('i');
+}
+
+$(document).ready(function(){
+  $(".button-collapse").sideNav({
+    menuWidth: 200,
+    edge: 'left',
+    closeOnClick: true,
+    draggable: true
+  });
+
+  var colors = {
+        'about': 'rgb(142,85,114)',
+        'projects': '#F46036',
+        'algorithms': '#2E294E'
+      },
+      address = window.location.href.split('/'),
+      pagename = address[address.length - 1];
+
+  $('body').css('background-color', colors[pagename]);
+  $('.card-action a').css('color', colors[pagename]);
+  $('nav a').attr('style', 'color: ' + colors[pagename] + '');
+  $("a:contains('" + pagename + "')").parent().css('background-color', colors[pagename]);
+  $("a:contains('" + pagename + "')").css('color', "white");
+
+  $('.tag').click(function(event){
+    event.preventDefault();
+
+    hideCloseIcons($(this));
+
+    var button = $(this),
+        tag = $(this).attr('val'),
+        projects = $('.card'),
+        buttons = $('.btn'),
+        active_tags = [],
+        needToClearFilters = tag === "clear-filters";
+
+    if(needToClearFilters){
+      clearFilters();
+    } else{
+      toggleTags(button, tag);
+      active_tags = addActiveTags(buttons);
+      showProjects(projects, active_tags);
+    }
+  })
+});
