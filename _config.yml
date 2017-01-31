@@ -25,23 +25,7 @@ linked_in_link: "https://www.linkedin.com/in/levytsroman"
 twitter_username: ""
 github_link: "https://www.github.com/levytsroman"
 technologies: javascript rails ruby HTML5 CSS3 React jQuery Charts.js Materialize Bootstrap jekyll SQLite postgress sinatra heroku git github
-select_options: all front-end back-end Ruby-on-Rails React finished current javaScript
-sections:
-  projects:
-    url: /projects
-    heading: Projects
-    words: A list of projects and experiments
-    class: m8 current
-  algorithms:
-    url: /algorithms
-    heading: Algorithms
-    words: Solutions and animations of common programming algorithms
-    class: m6 completed
-  about:
-    url: /about
-    heading: About me
-    words: Who I am, where I come from, and why I do what I do.
-    class: m6 about
+select_options: clear-filters front-end back-end Ruby-on-Rails React finished current javaScript
 sass:
   sass_dir: assets/css/main.css
   style: :nested

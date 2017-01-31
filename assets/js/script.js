@@ -1,5 +1,48 @@
+function clearFilters(){
+  $(".closing-icon").remove();
+  $(".active_tag").removeClass('active_tag');
+  $('.card').show();
+}
+
+function toggleTags(button, tag){
+  if(button.attr('class').indexOf('active_tag') > -1){
+    button.removeClass("active_tag");
+    button.html(tag);
+  } else {
+    button.html(tag + '<i class="material-icons left closing-icon">close</i>');
+    button.addClass("active_tag");
+  }
+}
+
+function addActiveTags(buttons){
+  var active_tags = [];
+  for(var j=0; j < buttons.length; j++){
+    current_button = $(buttons[j]);
+    if(current_button.attr('class').indexOf('active_tag') > -1){
+      active_tags.push(current_button.attr('val'));
+    }
+  }
+  return active_tags;
+}
+
+function showProjects(projects, active_tags){
+  projects.each(function(i){
+    var project = $(projects[i]);
+    project.hide();
+
+    $.each(active_tags, function(k){
+      var active_tag = active_tags[k],
+      projectContainsTag = project.attr('tags').indexOf(active_tag) > -1,
+      activeTagsAreEmpty = active_tags == [];
+
+      if( projectContainsTag || activeTagsAreEmpty){
+        project.show();
+      }
+    })
+  })
+}
+
 $(document).ready(function(){
-  $('select').material_select();
 
   $(".button-collapse").sideNav({
     menuWidth: 200,
@@ -20,43 +63,26 @@ $(document).ready(function(){
   $('.card-action a').css('color', colors[pagename]);
   $('nav a').attr('style', 'color: ' + colors[pagename] + '');
   $("a:contains('" + pagename + "')").parent().css('background-color', colors[pagename]);
-
   $("a:contains('" + pagename + "')").css('color', "white");
 
   $('.tag').click(function(event){
     event.preventDefault();
+
     $(this).children().remove('i');
 
-    var $button = $(this),
+    var button = $(this),
         tag = $(this).attr('val'),
         projects = $('.card'),
         buttons = $('.btn'),
-        active_tags = [];
+        active_tags = [],
+        needToClearFilters = tag === "clear-filters";
 
-    if($button.attr('class').indexOf('active_tag') > -1){
-      $button.removeClass("active_tag");
-      $button.html(tag);
-    } else {
-      $button.html(tag + '<i class="material-icons left">close</i>');
-      $button.addClass("active_tag");
-    }
-
-    for(var j=0; j < buttons.length; j++){
-      $current_button = $(buttons[j]);
-      if($current_button.attr('class').indexOf('active_tag') > -1){
-        active_tags.push($current_button.attr('val'));
-      }
-    }
-
-    for(var i=0; i < projects.length; i++){
-      var $project = $(projects[i]);
-      $project.hide();
-      for(var k=0; k < active_tags.length; k++){
-        var active_tag = active_tags[k];
-        if($project.attr('tags').indexOf(active_tag) > -1 || active_tag === "all" || active_tag === ""){
-          $project.show();
-        }
-      }
+    if(needToClearFilters){
+      clearFilters();
+    } else{
+      toggleTags(button, tag);
+      active_tags = addActiveTags(buttons);
+      showProjects(projects, active_tags);
     }
   })
 });
