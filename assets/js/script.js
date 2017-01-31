@@ -43,7 +43,6 @@ function showProjects(projects, active_tags){
 }
 
 $(document).ready(function(){
-
   $(".button-collapse").sideNav({
     menuWidth: 200,
     edge: 'left',
@@ -57,7 +56,7 @@ $(document).ready(function(){
         'algorithms': '#2E294E'
       },
       address = window.location.href.split('/'),
-      pagename = address[address.length - 1]
+      pagename = address[address.length - 1];
 
   $('body').css('background-color', colors[pagename]);
   $('.card-action a').css('color', colors[pagename]);
