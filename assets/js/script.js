@@ -32,14 +32,19 @@ function showProjects(projects, active_tags){
 
     $.each(active_tags, function(k){
       var active_tag = active_tags[k],
-      projectContainsTag = project.attr('tags').indexOf(active_tag) > -1,
-      activeTagsAreEmpty = active_tags == [];
+      projectContainsTag = project.attr('tags').indexOf(active_tag) > -1;
 
-      if( projectContainsTag || activeTagsAreEmpty){
+      if( projectContainsTag){
         project.show();
       }
     })
   })
+  
+  var activeTagsAreEmpty = active_tags.length === 0;
+
+  if(activeTagsAreEmpty){
+    projects.show();
+  }
 }
 
 $(document).ready(function(){
