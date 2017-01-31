@@ -25,7 +25,7 @@ linked_in_link: "https://www.linkedin.com/in/levytsroman"
 twitter_username: ""
 github_link: "https://www.github.com/levytsroman"
 technologies: javascript rails ruby HTML5 CSS3 React jQuery Charts.js Materialize Bootstrap jekyll SQLite postgress sinatra heroku git github
-select_options: clear-filters front-end back-end Ruby-on-Rails React finished current javaScript
+select_options: clear-filters HTML5 CSS3 javaScript jQuery materialize charts.js React jekyll Ruby-on-Rails Sinatra front-end back-end finished current
 sass:
   sass_dir: assets/css/main.css
   style: :nested

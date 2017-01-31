@@ -32,18 +32,26 @@ function showProjects(projects, active_tags){
 
     $.each(active_tags, function(k){
       var active_tag = active_tags[k],
-      projectContainsTag = project.attr('tags').indexOf(active_tag) > -1,
-      activeTagsAreEmpty = active_tags == [];
+      projectContainsTag = project.attr('tags').indexOf(active_tag) > -1;
 
-      if( projectContainsTag || activeTagsAreEmpty){
+      if(projectContainsTag){
         project.show();
       }
     })
   })
+
+  var activeTagsAreEmpty = active_tags.length === 0;
+
+  if(activeTagsAreEmpty){
+    projects.show();
+  }
+}
+
+function hideCloseIcons(element){
+  element.children().remove('i');
 }
 
 $(document).ready(function(){
-
   $(".button-collapse").sideNav({
     menuWidth: 200,
     edge: 'left',
@@ -57,7 +65,7 @@ $(document).ready(function(){
         'algorithms': '#2E294E'
       },
       address = window.location.href.split('/'),
-      pagename = address[address.length - 1]
+      pagename = address[address.length - 1];
 
   $('body').css('background-color', colors[pagename]);
   $('.card-action a').css('color', colors[pagename]);
@@ -68,7 +76,7 @@ $(document).ready(function(){
   $('.tag').click(function(event){
     event.preventDefault();
 
-    $(this).children().remove('i');
+    hideCloseIcons($(this));
 
     var button = $(this),
         tag = $(this).attr('val'),
