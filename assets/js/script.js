@@ -55,12 +55,15 @@ $(document).ready(function(){
       var project = $(projects[i]);
       project.hide();
 
-      for(var k=0; k < active_tags.length; k++){
-        var active_tag = active_tags[k];
-        if(project.attr('tags').indexOf(active_tag) > -1 || active_tags == []){
+      $.each(active_tags, function(k){
+        var active_tag = active_tags[k],
+        projectContainsTag = project.attr('tags').indexOf(active_tag) > -1,
+        activeTagsAreEmpty = active_tags == [];
+
+        if( projectContainsTag || activeTagsAreEmpty){
           project.show();
         }
-      }
+      })
     })
   }
 
@@ -73,9 +76,10 @@ $(document).ready(function(){
         tag = $(this).attr('val'),
         projects = $('.card'),
         buttons = $('.btn'),
-        active_tags = [];
+        active_tags = [],
+        needToClearFilters = tag === "clear-filters";
 
-    if(tag === "clear-filters"){
+    if(needToClearFilters){
       clearFilters();
     } else{
       toggleTags(button, tag);
