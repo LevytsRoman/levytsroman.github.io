@@ -1,3 +1,34 @@
 ---
-layout: about-me
+layout: default
 ---
+
+{% include nav.html %}
+
+<div class="about-me">
+  <div class="bio">
+    <div class="row">
+      <img class="col s12 m4" src="assets/images/profile_picture.jpg" alt="" style="border-radius: 10%;"/>
+      <div class="col s12 m7">
+        <h3 class='center-align'>Who I am</h3>
+        <p>{{site.about_me}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="technologies">
+    <div class="row">
+      <div class="col s12 m12 l7">
+        <h3 class='center-align'>Familiar with:</h3>
+        <ul class='row'>
+          {% assign technologies = site.technologies | split: ' ' %}
+          {% for item in technologies%}
+            <li> - {{item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <img class="col s12 m12 l5" src="http://sites.psu.edu/xvc5068/wp-content/uploads/sites/25980/2015/06/lenguajes-programacion.png" alt="" />
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='/assets/js/script.js'></script>
