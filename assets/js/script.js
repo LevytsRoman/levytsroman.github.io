@@ -28,17 +28,7 @@ $(document).ready(function(){
     // render all cards
   }
 
-  $('.tag').click(function(event){
-    event.preventDefault();
-
-    $(this).children().remove('i');
-
-    var button = $(this),
-        tag = $(this).attr('val'),
-        projects = $('.card'),
-        buttons = $('.btn'),
-        active_tags = [];
-
+  function toggleTags(button, tag){
     if(button.attr('class').indexOf('active_tag') > -1){
       button.removeClass("active_tag");
       button.html(tag);
@@ -46,14 +36,20 @@ $(document).ready(function(){
       button.html(tag + '<i class="material-icons left">close</i>');
       button.addClass("active_tag");
     }
+  }
 
+  function addActiveTags(buttons){
+    var active_tags = [];
     for(var j=0; j < buttons.length; j++){
       current_button = $(buttons[j]);
       if(current_button.attr('class').indexOf('active_tag') > -1){
-        active_tags.push($current_button.attr('val'));
+        active_tags.push(current_button.attr('val'));
       }
     }
+    return active_tags;
+  }
 
+  function showProjects(projects, active_tags){
     projects.each(function(i){
       var project = $(projects[i]);
       project.hide();
@@ -65,5 +61,23 @@ $(document).ready(function(){
         }
       }
     })
+  }
+
+  $('.tag').click(function(event){
+    event.preventDefault();
+
+    $(this).children().remove('i');
+
+    var button = $(this),
+        tag = $(this).attr('val'),
+        projects = $('.card'),
+        buttons = $('.btn'),
+        active_tags = [];
+
+    toggleTags(button, tag);
+
+    active_tags = addActiveTags(buttons);
+
+    showProjects(projects, active_tags);
   })
 });
