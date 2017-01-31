@@ -112,3 +112,20 @@ nav {
 i {
   cursor: pointer;
 }
+.tag {
+  background-color: lightgrey;
+  color: white;
+  border-radius: 50px;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  margin: 1%;
+  font-size: 1rem;
+}
+
+.active_tag {
+  background-color: darkgrey;
+}
+
+.tag:hover {
+  background-color: darkgrey;
+}
