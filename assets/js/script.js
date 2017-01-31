@@ -24,8 +24,9 @@ $(document).ready(function(){
   $("a:contains('" + pagename + "')").css('color', "white");
 
   function clearFilters(){
-    // remove all close icons
-    // render all cards
+    $(".closing-icon").remove();
+    $(".active_tag").removeClass('active_tag');
+    $('.card').show();
   }
 
   function toggleTags(button, tag){
@@ -33,7 +34,7 @@ $(document).ready(function(){
       button.removeClass("active_tag");
       button.html(tag);
     } else {
-      button.html(tag + '<i class="material-icons left">close</i>');
+      button.html(tag + '<i class="material-icons left closing-icon">close</i>');
       button.addClass("active_tag");
     }
   }
@@ -74,10 +75,12 @@ $(document).ready(function(){
         buttons = $('.btn'),
         active_tags = [];
 
-    toggleTags(button, tag);
-
-    active_tags = addActiveTags(buttons);
-
-    showProjects(projects, active_tags);
+    if(tag === "clear-filters"){
+      clearFilters();
+    } else{
+      toggleTags(button, tag);
+      active_tags = addActiveTags(buttons);
+      showProjects(projects, active_tags);
+    }
   })
 });
