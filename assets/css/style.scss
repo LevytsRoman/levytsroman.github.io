@@ -153,8 +153,14 @@ i {
   font-family: 'Raleway', sans-serif;
 }
 
-#algorithms h3 {
+#algorithms h3, .algorithm {
   color: white;
+}
+
+.algorithm h3{
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 600;
+  letter-spacing: 1.2;
 }
 
 #algorithms a {

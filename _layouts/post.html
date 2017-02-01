@@ -67,15 +67,22 @@ layout: default
 
 {% include nav.html %}
 
-<div class="row">
+<div class="row algorithm">
   <div class="col s10 offset-s1">
     <div class="col s12 center-align">
-      <h1>{{ page.title }}</h1>
+      <h3>{{ page.title }}</h3>
     </div>
-    <small>Posted on {{page.date}}</small>
-    {{content}}
+    <div class="time left" style="display: block">
+      <span style="color: black">Posted on:</span>
+      <time  style="color: darkgrey" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </time>
+    </div>
+    <div class="" style="display: block">
+      {{ content }}
+    </div>
+    <a href="/algorithms">back to algorithms</a>
   </div>
 </div>
 
-<a href="/algorithms">back to algorithms</a>
 <script type="text/javascript" src='/assets/js/script.js'></script>

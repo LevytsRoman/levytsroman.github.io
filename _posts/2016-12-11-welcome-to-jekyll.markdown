@@ -12,13 +12,10 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
-def fuckyourself(some_var)
-  puts "#{some_var} is the input"
-end
-function boris(hello){
-  var hello = "noob" + hello;
-  console.log(hello);
-  return hello;
+  function example(a, b){
+    var answer = a + b;
+    return answer;
+  }
 }
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
