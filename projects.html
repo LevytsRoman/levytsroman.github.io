@@ -4,9 +4,20 @@ layout: default
 
 {% include nav.html %}
 
+<div class="row">
+  <div class="col s10 offset-s1 center-align">
+    <p class="projects-paragraph">
+      This is a list of the projects I've worked on. Feel free to scroll through them or use the filter button below to display filtering options.
+    </p>
+    <a id="filter" class="waves-effect waves-light btn">filter</a>
+  </div>
+</div>
+
+
+
 <div class="content grey-lighten-3" id="projects">
-  <div class="row">
-    <div class="col s12 ">  
+  <div class="row" style="display: none" id="tags">
+    <div class="col s12 ">
     {% assign tags = site.select_options | split: " " %}
     {% for item in tags %}
       <a class="waves-effect waves-light btn tag" val={{item}} >{{item}}</a>

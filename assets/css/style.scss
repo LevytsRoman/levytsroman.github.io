@@ -92,13 +92,17 @@ nav {
   padding: 0 2% 0 2%;
 }
 
-.about-me p {
+.about-me p, .projects-paragraph {
   margin: 4%;
   font-size: 25px;
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
   font-family: 'Raleway', sans-serif;
+}
+
+.projects-paragraph {
+  color: white;
 }
 
 .about-me li {
@@ -113,8 +117,8 @@ i {
 }
 
 .tag {
-  background-color: lightgrey;
-  color: white;
+  background-color: white;
+  color: black;
   height: 1.5rem;
   line-height: 1.5rem;
   margin: 3px;
@@ -122,10 +126,19 @@ i {
   font-weight: 800px;
 }
 
-.active_tag {
-  background-color: darkgrey;
+#filter {
+  background-color: white;
+  color: black;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400px;
 }
 
-.tag:hover {
+.active_tag {
+  background-color: lightgrey;
+}
+
+.tag:hover, #filter:hover {
   background-color: darkgrey;
 }

@@ -93,4 +93,16 @@ $(document).ready(function(){
       showProjects(projects, active_tags);
     }
   })
+
+  $("#filter").click(function(e){
+    e.preventDefault();
+    var text = $('#filter').text();
+    var options = {
+      "filter": "hide filters",
+      "hide filters": "filter"
+    }
+    // debugger
+    $("#filter").text(options[text]);
+    $("#tags").toggle(200);
+  })
 });
