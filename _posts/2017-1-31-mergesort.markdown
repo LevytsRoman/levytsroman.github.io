@@ -2,6 +2,7 @@
 layout: post
 title:  "Mergesort"
 date:   2017-1-31 03:05:34 -0500
+short_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation...
 categories: algorithms
 ---
 

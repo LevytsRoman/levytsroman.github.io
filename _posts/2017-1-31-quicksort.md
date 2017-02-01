@@ -2,6 +2,7 @@
 layout: post
 title:  "Quicksort"
 date:   2017-1-31 03:05:34 -0500
+short_description: Merge sort is a popular computer science sorting algorithms that utilizes a divide and conqure approach to sort an array...
 categories: algorithms
 ---
 

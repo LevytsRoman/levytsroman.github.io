@@ -158,13 +158,23 @@ i {
 }
 
 #algorithms a {
-  color: white;
+  color: #2E294E;
 }
 
 #algorithms a:hover {
   color: black;
 }
 
-#algorithms a {
-  color: white;
+.post {
+  border-bottom: solid 1px #2E294E;
+}
+
+.small-info {
+  color: darkgrey !important;
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif;
 }

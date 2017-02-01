@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-12-11 03:05:34 -0500
+short_description: Merge sort is a popular computer science sorting algorithms that utilizes a divide and conqure approach to sort an array...
 categories: algorithms
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
