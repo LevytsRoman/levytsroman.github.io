@@ -88,7 +88,7 @@
 
 - name: Personal Site
   url: https://levytsroman.github.io/
-  github_url: https://github.com/levytsroman.github.io/
+  github_url: https://github.com/LevytsRoman/levytsroman.github.io
   short_description: >
     A personal site made using jekyll framework. It allows me to easily add new projects, save time and effort by providing equivalents of partials and layouts as well as potential to serve as a template for those interested in using it.
   long_description: >
