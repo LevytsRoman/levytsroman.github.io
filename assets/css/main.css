@@ -54,41 +54,41 @@
   margin-left: 5px;
   margin-top: 5px; }
 
-#projects h3, .about-me h3 {
+#projects h3, .about-me h3, #algorithms h3 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
   letter-spacing: 1.2; }
-#projects .card-title, .about-me .card-title {
+#projects .card-title, .about-me .card-title, #algorithms .card-title {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
   letter-spacing: 1.2; }
-#projects .hidden, .about-me .hidden {
+#projects .hidden, .about-me .hidden, #algorithms .hidden {
   display: none; }
-#projects .project-img, .about-me .project-img {
+#projects .project-img, .about-me .project-img, #algorithms .project-img {
   width: 500px;
   height: 300px; }
-#projects .project-wrapper, .about-me .project-wrapper {
+#projects .project-wrapper, .about-me .project-wrapper, #algorithms .project-wrapper {
   width: 100%; }
-#projects .card, .about-me .card {
+#projects .card, .about-me .card, #algorithms .card {
   width: 31.3%;
   height: 520px;
   display: inline-block;
   float: left;
   margin: 1% 1% 1% 1%; }
-#projects .content, .about-me .content {
+#projects .content, .about-me .content, #algorithms .content {
   min-height: 100vh; }
 @media all and (max-width: 990px) {
-  #projects .card, .about-me .card {
+  #projects .card, .about-me .card, #algorithms .card {
     width: 48%; } }
 @media all and (max-width: 600px) {
-  #projects .card, .about-me .card {
+  #projects .card, .about-me .card, #algorithms .card {
     width: 98%;
     min-width: 320px;
     margin: 5% 1% 5% 1%; } }
-#projects .description, .about-me .description {
+#projects .description, .about-me .description, #algorithms .description {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em; }
-#projects .about-me p, .about-me .about-me p {
+#projects .about-me p, .about-me .about-me p, #algorithms .about-me p {
   color: white !important;
   margin: 4%;
   font-size: 25px;
@@ -156,6 +156,27 @@ i {
 
 .tag:hover, #filter:hover {
   background-color: darkgrey; }
+
+#algorithms p {
+  color: white !important;
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif; }
+
+#algorithms h3 {
+  color: white; }
+
+#algorithms a {
+  color: white; }
+
+#algorithms a:hover {
+  color: black; }
+
+#algorithms a {
+  color: white; }
 
 body {
   min-height: 100%; }

@@ -3,7 +3,7 @@
   margin-top: 5px;
 }
 
-#projects, .about-me {
+#projects, .about-me, #algorithms {
 
   h3 {
     font-family: 'Abril Fatface', cursive;
@@ -141,4 +141,30 @@ i {
 
 .tag:hover, #filter:hover {
   background-color: darkgrey;
+}
+
+#algorithms p {
+  color: white !important;
+  margin: 4%;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#algorithms h3 {
+  color: white;
+}
+
+#algorithms a {
+  color: white;
+}
+
+#algorithms a:hover {
+  color: black;
+}
+
+#algorithms a {
+  color: white;
 }

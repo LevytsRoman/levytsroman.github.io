@@ -4,16 +4,26 @@ layout: default
 
 {% include nav.html %}
 
-<div class="row">
+<div class="row" id="algorithms">
   <div class="col s10 m12 center-align">
-    <h1 style="margin-top: 15%; color: white;">Coming soon ...</h1>
+    <h3>Welcome to the Algorithms section</h1>
+    <p>
+      Here you can find descriptions as well as solutions for some common algorithms in programming as well as
+      descriptions of datastructures.
+    </p>
+    {% for post in site.posts %}
+      <div class="col s12 m8 offset-m2">
+        <div class="row left-align">
+          <h3><a href="{{post.url}}" class="">{{post.title}}</a></h3>
+          <span>Posted on:</span>
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
-{% for post in site.posts %}
-  <a href="{{post.url}}">{{post.title}}</a>
-  {{ site.baseurl }}{% link _posts/2017-1-31-mergesort.markdown %}
-  <br>
-{% endfor %}
 
 <script type="text/javascript" src='/assets/js/script.js'></script>
