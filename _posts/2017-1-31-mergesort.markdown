@@ -10,10 +10,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 {% highlight javascript %}
 
-function boris(hello){
-  var hello = "noob" + hello;
-  console.log(hello);
-  return hello;
+function example(a, b){
+  var answer = a + b;
+  return answer;
+}
 }
 
 {% endhighlight %}
