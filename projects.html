@@ -42,9 +42,9 @@ layout: default
           <p class='description'>{{ item.short_description }}</p>
         </div>
         <div class="card-action">
-          {% if item.url != "" %}
-          <a href="{{ item.url }}">Take me there</a>
-          {% endif %}
+          {% unless item.url == "" %}
+            <a href="{{ item.url }}">Take me there</a>
+          {% endunless %}
           <a href="{{ item.github_url }}">Github</a>
         </div>
       </div>
