@@ -10,4 +10,10 @@ layout: default
   </div>
 </div>
 
+{% for post in site.posts %}
+  <a href="{{post.url}}">{{post.title}}</a>
+  {{ site.baseurl }}{% link _posts/2017-1-31-mergesort.markdown %}
+  <br>
+{% endfor %}
+
 <script type="text/javascript" src='/assets/js/script.js'></script>

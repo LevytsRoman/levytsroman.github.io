@@ -51,6 +51,14 @@ function hideCloseIcons(element){
   element.children().remove('i');
 }
 
+function assignColors(pagename, color){
+  $('body').css('background-color', color);
+  $('.card-action a').css('color', color);
+  $('nav a').attr('style', 'color: ' + color + '');
+  $("a:contains('" + pagename + "')").parent().css('background-color', color);
+  $("a:contains('" + pagename + "')").css('color', "white");
+}
+
 $(document).ready(function(){
   $(".button-collapse").sideNav({
     menuWidth: 200,
@@ -64,8 +72,7 @@ $(document).ready(function(){
         'projects': '#F46036',
         'algorithms': '#2E294E'
       },
-      urlString = window.location.href,
-      color = "";
+      urlString = window.location.href;
 
   $.each(colors, function(key,val){
     if(urlString.indexOf(key) > -1){
@@ -74,11 +81,7 @@ $(document).ready(function(){
     }
   });
 
-  $('body').css('background-color', color);
-  $('.card-action a').css('color', color);
-  $('nav a').attr('style', 'color: ' + color + '');
-  $("a:contains('" + pagename + "')").parent().css('background-color', color);
-  $("a:contains('" + pagename + "')").css('color', "white");
+  assignColors(pagename, color);
 
   $('.tag').click(function(event){
     event.preventDefault();
