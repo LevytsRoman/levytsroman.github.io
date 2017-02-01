@@ -2,7 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-12-11 03:05:34 -0500
-categories: jekyll update
+short_description: Merge sort is a popular computer science sorting algorithms that utilizes a divide and conqure approach to sort an array...
+categories: algorithms
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -11,10 +12,14 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+def fuckyourself(some_var)
+  puts "#{some_var} is the input"
 end
-print_hi('Tom')
+function boris(hello){
+  var hello = "noob" + hello;
+  console.log(hello);
+  return hello;
+}
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 

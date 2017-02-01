@@ -51,6 +51,14 @@ function hideCloseIcons(element){
   element.children().remove('i');
 }
 
+function assignColors(pagename, color){
+  $('body').css('background-color', color);
+  $('.card-action a').css('color', color);
+  $('nav a').attr('style', 'color: ' + color + '');
+  $("a:contains('" + pagename + "')").parent().css('background-color', color);
+  $("a:contains('" + pagename + "')").css('color', "white");
+}
+
 $(document).ready(function(){
   $(".button-collapse").sideNav({
     menuWidth: 200,
@@ -64,14 +72,16 @@ $(document).ready(function(){
         'projects': '#F46036',
         'algorithms': '#2E294E'
       },
-      address = window.location.href.split('/'),
-      pagename = address[address.length - 1];
+      urlString = window.location.href;
 
-  $('body').css('background-color', colors[pagename]);
-  $('.card-action a').css('color', colors[pagename]);
-  $('nav a').attr('style', 'color: ' + colors[pagename] + '');
-  $("a:contains('" + pagename + "')").parent().css('background-color', colors[pagename]);
-  $("a:contains('" + pagename + "')").css('color', "white");
+  $.each(colors, function(key,val){
+    if(urlString.indexOf(key) > -1){
+      color = val;
+      pagename = key;
+    }
+  });
+
+  assignColors(pagename, color);
 
   $('.tag').click(function(event){
     event.preventDefault();
@@ -94,15 +104,15 @@ $(document).ready(function(){
     }
   })
 
-  $("#filter").click(function(e){
-    e.preventDefault();
-    var text = $('#filter').text();
-    var options = {
-      "filter": "hide filters",
-      "hide filters": "filter"
-    }
-    // debugger
+  $("#filter").click(function(event){
+    event.preventDefault();
+    var text = $('#filter').text(),
+        options = {
+          "filter": "hide filters",
+          "hide filters": "filter"
+        };
+
     $("#filter").text(options[text]);
-    $("#tags").toggle(200);
+    $("#tags").toggle(400);
   })
 });
