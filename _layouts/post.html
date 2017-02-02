@@ -9,16 +9,18 @@ layout: default
     <div class="col s12 center-align">
       <h3>{{ page.title }}</h3>
     </div>
-    <div class="time left col s12">
-      <span style="color: black">Posted on:</span>
-      <time  style="color: darkgrey" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <div class="time col s12 right-align">
+      <span style="color: white">Posted on:</span>
+      <time style="color: darkgrey" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%B %-d, %Y" }}
       </time>
     </div>
     <div class="col s12 algorithm-content">
       {{ content }}
     </div>
-    <a href="/algorithms">back to algorithms</a>
+    <div class="col s12">
+      <a href="/algorithms" class="back-link">&#8592; back to algorithms</a>
+    </div>
   </div>
 </div>
 
