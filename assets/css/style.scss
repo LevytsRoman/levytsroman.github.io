@@ -143,7 +143,7 @@ i {
   background-color: darkgrey;
 }
 
-#algorithms p {
+#algorithms p, .algorithm-content {
   color: white !important;
   margin: 4%;
   font-size: 25px;
@@ -157,7 +157,7 @@ i {
   color: white;
 }
 
-.algorithm h3{
+.algorithm h3 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
   letter-spacing: 1.2;
@@ -168,11 +168,16 @@ i {
 }
 
 #algorithms a:hover {
-  color: black;
+  opacity: 0.9;
 }
 
 .post {
   border-bottom: solid 1px #2E294E;
+}
+
+.time {
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
 }
 
 .small-info {

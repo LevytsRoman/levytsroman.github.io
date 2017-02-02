@@ -157,7 +157,7 @@ i {
 .tag:hover, #filter:hover {
   background-color: darkgrey; }
 
-#algorithms p {
+#algorithms p, .algorithm-content {
   color: white !important;
   margin: 4%;
   font-size: 25px;
@@ -178,10 +178,14 @@ i {
   color: #2E294E; }
 
 #algorithms a:hover {
-  color: black; }
+  opacity: 0.9; }
 
 .post {
   border-bottom: solid 1px #2E294E; }
+
+.time {
+  font-style: italic;
+  font-family: 'Raleway', sans-serif; }
 
 .small-info {
   color: darkgrey !important;
