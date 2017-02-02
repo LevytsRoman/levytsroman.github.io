@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Quicksort"
+date:   2017-1-31 03:05:34 -0500
+short_description: Merge sort is a popular computer science sorting algorithms that utilizes a divide and conqure approach to sort an array...
+categories: algorithms
+---
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="code">
+  {% highlight ruby %}
+  def quick_sort(arr, l, r)
+    return arr if l > r
+
+    idx = sort(arr, l, r)
+    quick_sort(arr, l, idx - 1)
+    quick_sort(arr, idx + 1, r)
+  end
+
+  def sort(arr, l, r)
+    i = l + 1
+    j = l + 1
+    p = arr[l]
+
+    while i <= r && j <= r
+      if arr[i] < p
+        arr[i],arr[j] = arr[j],arr[i]
+        j += 1
+      end
+      i += 1
+    end
+
+    arr[j - 1],arr[l] = arr[l],arr[j - 1]
+
+    return j - 1
+  end
+  {% endhighlight %}
+</div>
