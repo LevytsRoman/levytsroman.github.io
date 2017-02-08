@@ -9,7 +9,7 @@ layout: default
     <div class="col s12 center-align">
       <h3>{{ page.title }}</h3>
     </div>
-    <div class="time col s12 right-align">
+    <div class="time col s12 right-align" style="padding-right: 5%">
       <span style="color: white">Posted on:</span>
       <time style="color: darkgrey" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%B %-d, %Y" }}
