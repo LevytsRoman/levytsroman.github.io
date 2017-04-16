@@ -204,6 +204,16 @@ i {
 .back-link:hover {
   text-decoration: underline; }
 
+#scroll-top {
+  display: none;
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  background-color: darkgrey; }
+
+body {
+  transition: all 1s; }
+
 .highlight {
   background-color: #ffffcc;
   border-radius: 5px; }
