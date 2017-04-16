@@ -72,7 +72,8 @@ $(document).ready(function(){
         'projects': '#F46036',
         'algorithms': '#2E294E'
       },
-      urlString = window.location.href;
+      urlString = window.location.href,
+      scrollHeight = $(document).scrollTop();
 
   $.each(colors, function(key,val){
     if(urlString.indexOf(key) > -1){
@@ -114,5 +115,20 @@ $(document).ready(function(){
 
     $("#filter").text(options[text]);
     $("#tags").toggle(400);
+  })
+
+  $(window).scroll(() => {
+    var scrollPos = $(document).scrollTop();
+        documentHeight = $(document).height();
+    if(scrollPos/documentHeight > 0.1){
+      $('#scroll-top').css('display', 'block');
+    }else {
+      $('#scroll-top').css('display', 'none');
+    }
+  })
+
+  $('#scroll-top').click((e)=>{
+    e.preventDefault();
+    $(document).scrollTop(0);
   })
 });
