@@ -129,6 +129,7 @@ $(document).ready(function(){
 
   $('#scroll-top').click((e)=>{
     e.preventDefault();
-    $(document).scrollTop(0);
+    $("html, body").animate({ scrollTop: 0 }, 250);
+    return false;
   })
 });
