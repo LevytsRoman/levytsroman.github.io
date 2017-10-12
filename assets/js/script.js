@@ -60,9 +60,6 @@ function assignColors(pagename, color){
 }
 
 function initializeScripts(){
-
-
-
   $(".button-collapse").sideNav({
     menuWidth: 200,
     edge: 'left',
@@ -78,26 +75,27 @@ function initializeScripts(){
       urlString = window.location.href,
       scrollHeight = $(document).scrollTop();
 
+  var pagename = ''
   $.each(colors, function(key,val){
     if(urlString.indexOf(key) > -1){
       color = val;
       pagename = key;
     }
   });
-  Barba.Pjax.getTransition = function() {
-    return slideOutTransition;
-  };
-  
-  // if(urlString === 'http://localhost:4000/projects'){
-  //
-  // } else {
-  //   Barba.Pjax.getTransition = function() {
-  //     return FadeTransition;
-  //   };
-  // }
 
+  if(urlString === 'http://localhost:4000/'){
+    Barba.Pjax.getTransition = function() {
+      return slideOutTransition;
+    };
+  } else {
+    Barba.Pjax.getTransition = function() {
+      return FadeTransition;
+    };
+  }
 
-  assignColors(pagename, color);
+  if(pagename){
+    assignColors(pagename, color);
+  }
 
   $('.tag').click(function(event){
     event.preventDefault();
@@ -151,6 +149,7 @@ function initializeScripts(){
 
 $(document).ready(function(){
   Barba.Pjax.start();
+
   initializeScripts();
 });
 
@@ -166,7 +165,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
 });
 
 var slideOutTransition = Barba.BaseTransition.extend({
-  tart: function() {
+  start: function() {
     Promise
       .all([this.newContainerLoading, this.fadeOut()])
       .then(this.fadeIn.bind(this));
@@ -176,7 +175,28 @@ var slideOutTransition = Barba.BaseTransition.extend({
     /**
      * this.oldContainer is the HTMLElement of the old Container
      */
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    // debugger
+    // $('body').css('backgroundColor', 'black')
+    $(this.oldContainer).find('.contact').animate({
+      left: '-=500px',
+      top: '-=500px'
+    }, 600)
+    $(this.oldContainer).find('.about').animate({
+      left: '+=500px',
+      top: '+=500px'
+    }, 600)
+    $(this.oldContainer).find('.current').animate({
+      left: '+=500px',
+      top: '-=500px'
+    }, 600)
+    $(this.oldContainer).find('.completed').animate({
+      left: '-=500px',
+      top: '+=500px'
+    }, 600)
+    // $(this.oldContainer).find('.current').animate({ opacity: 0 })
+    // $(this.oldContainer).find('.completed').animate({ opacity: 0 })
+    // $(this.oldContainer).find('.about').animate({ opacity: 0 })
+    return $(this.oldContainer).find('.contact').animate({ opacity: 0 }, 600).promise();
   },
 
   fadeIn: function() {
@@ -226,7 +246,7 @@ var FadeTransition = Barba.BaseTransition.extend({
     /**
      * this.oldContainer is the HTMLElement of the old Container
      */
-
+    $(this.oldContainer).addClass('animated bounceOutLeft');
     return $(this.oldContainer).animate({ opacity: 0 }).promise();
   },
 
@@ -246,7 +266,7 @@ var FadeTransition = Barba.BaseTransition.extend({
       visibility : 'visible',
       opacity : 0
     });
-
+    $el.addClass('animated bounceInRight');
     $el.animate({ opacity: 1 }, 400, function() {
       /**
        * Do not forget to call .done() as soon your transition is finished!
