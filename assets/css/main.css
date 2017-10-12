@@ -10,29 +10,34 @@
   #homepage .row {
     margin: 0; }
   #homepage .about {
-    background-color: #8e5572; }
+    background-image: url("https://wallpapercave.com/wp/ZDRooQC.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(142, 85, 114, 0.7);
+    background-size: cover; }
   #homepage .about:hover {
-    background-color: rgba(142, 85, 114, 0.9);
-    border: 2px solid white;
-    border-radius: 5px; }
+    box-shadow: inset 0 0 0 1000px rgba(142, 85, 114, 0.4); }
   #homepage .current {
-    background-color: #F46036; }
+    box-shadow: inset 0 0 0 1000px rgba(244, 96, 54, 0.8);
+    background-image: url("http://media.istockphoto.com/photos/desk-gadgets-and-housing-projects-flat-lay-wooden-background-picture-id532340518");
+    background-size: cover; }
   #homepage .current:hover {
-    background-color: rgba(244, 96, 54, 0.9);
-    border: 2px solid white;
-    border-radius: 5px; }
+    box-shadow: inset 0 0 0 1000px rgba(244, 96, 54, 0.4); }
   #homepage .contact a {
     margin-left: 10px; }
   #homepage .contact a:hover {
     color: #F46036; }
   #homepage .completed {
-    background-color: #2E294E; }
+    box-shadow: inset 0 0 0 1000px rgba(46, 41, 78, 0.9);
+    background-image: url("http://cdn.playbuzz.com/cdn/679aaf87-4845-43cb-b971-550f3d1cb0a0/5b56aaaa-c52e-49ac-814f-6cf1987f461e.jpeg");
+    background-size: cover; }
   #homepage .completed:hover {
     background-color: #443C72;
-    border: 2px solid white;
-    border-radius: 5px; }
+    box-shadow: inset 0 0 0 1000px rgba(46, 41, 78, 0.7); }
   #homepage .contact {
-    background-color: #F2F7F2; }
+    background-image: url("/assets/images/profile_picture.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(242, 247, 242, 0.9); }
+  #homepage .contact:hover {
+    box-shadow: inset 0 0 0 1000px rgba(242, 247, 242, 0.5); }
   #homepage .profile_picture {
     border-radius: 35%; }
   #homepage .words {
