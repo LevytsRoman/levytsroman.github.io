@@ -4,6 +4,10 @@ function clearFilters(){
   $('.card').show();
 }
 
+function showContactForm(){
+  
+}
+
 function toggleTags(button, tag){
   if(button.attr('class').indexOf('active_tag') > -1){
     button.removeClass("active_tag");

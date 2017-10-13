@@ -5,11 +5,16 @@ projects:
   class: m8 current
 algorithms:
   url: /algorithms
-  heading: Algorithms
-  words: Solutions and animations of common programming algorithms
+  heading: Fun stuff
+  words: Some weird shit like random joke or random useless website
   class: m6 completed
-about:
-  url: /about
-  heading: About me
-  words: Who I am, where I come from, and why I do what I do.
+contact:
+  url: ''
+  heading: Contact
+  words: Feel free to shoot me an email
   class: m6 about
+me:
+  url: /about
+  heading: Me
+  words: Hi, I'm a programmer
+  class: m4 contact

@@ -4,32 +4,20 @@ layout: default
 
 <div id="homepage">
   <div class="row">
-    <div class="col s12 m4 contact box valign-wrapper">
-      <div class="row">
-        <div class="col s12">
-          <div class="col s12 m12 center-align">
-            <!-- <img class="profile_picture" src="/assets/images/profile_picture.jpg" width='150' height='150' alt="" /> -->
-            <ul class="col s12 center-align">
-              <li><a href="mailto:{{site.email}}"><img class="contact-link-img" src='/assets/images/gmail_icon.png' width='20' height='20'></a></li>
-              <li><a href={{site.github_link}}><img class="contact-link-img" src='/assets/images/github_icon.png' width='20' height='20'></a></li>
-              <li><a href={{site.linked_in_link}}><img class="contact-link-img" src='/assets/images/linkedIn_icon.png' width='20' height='20'></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="col s12 m12 center-align"><em class='about-text'>{{site.description}}</em></div>
-        </div>
-    </div>
-    </div>
+    {% include box.html section=site.data.sections.me %}
     {% include box.html section=site.data.sections.projects %}
   </div>
   <div class="row">
     {% include box.html section=site.data.sections.algorithms %}
 
-    {% include box.html section=site.data.sections.about %}
+    {% include box.html section=site.data.sections.contact %}
   </div>
 </div>
 <form class="" action="https://formspree.io/r.levyts@gmail.com" method="POST">
   <input type="text" name="" value="">
   <input type="submit" name="" value="send">
 </form>
+function stuff(){
+  $('.about').css({position: 'absolute', left: $('body').width()/2 + 'px'})
+  
+}

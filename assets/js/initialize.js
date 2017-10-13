@@ -26,6 +26,10 @@ function initializeScripts(){
     Barba.Pjax.getTransition = function() {
       return slideOutTransition;
     };
+  } else if(urlString === 'http://localhost:4000/contact' ){
+    Barba.Praj.getTransition = function() {
+      return ContactTransition;
+    }
   } else {
     Barba.Pjax.getTransition = function() {
       return FadeTransition;
