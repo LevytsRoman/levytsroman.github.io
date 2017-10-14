@@ -10,7 +10,8 @@ var slideOutTransition = Barba.BaseTransition.extend({
      * this.oldContainer is the HTMLElement of the old Container
      */
     // debugger
-    // $('body').css('backgroundColor', 'black')
+    $('body').css('backgroundColor', 'black')
+
     var contactWidth = $('.contact').width(),
         contactHeight = $('.contact').height(),
         currentWidth = $('.current').width(),
