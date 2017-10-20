@@ -6,6 +6,11 @@ function initializeScripts(){
     draggable: true
   });
 
+  $('.my-borders').css({
+    height: '0px',
+    width: '0px'
+  })
+
   var colors = {
         'about': 'rgb(142,85,114)',
         'projects': '#F46036',
@@ -21,15 +26,11 @@ function initializeScripts(){
       pagename = key;
     }
   });
-
+  // debugger
   if(urlString === 'http://localhost:4000/'){
     Barba.Pjax.getTransition = function() {
-      return slideOutTransition;
+      return HideShowTransition;
     };
-  } else if(urlString === 'http://localhost:4000/contact' ){
-    Barba.Praj.getTransition = function() {
-      return ContactTransition;
-    }
   } else {
     Barba.Pjax.getTransition = function() {
       return FadeTransition;
