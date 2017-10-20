@@ -4,8 +4,45 @@
   "syntaxhighlight"
 ;
 
-
 body {
   min-height: 100%;
-  background-color: black;
+}
+
+.homepage-section {
+  display: block;
+  height: 50vh;
+  min-height: 300px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.box {
+  height: 50vh;
+}
+
+.my-borders {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  background-color: white;
+}
+
+.Me-border {
+  bottom: 0;
+  right: 0;
+}
+.stuff-border {
+  top: 0;
+  right: 0;
+}
+.Contact-border {
+  top: 0;
+  left: 0;
+}
+.Projects-border {
+  bottom: 0;
+  left: 0;
 }

@@ -2,12 +2,6 @@
   overflow: hidden; }
   #homepage h3 {
     font-family: 'Abril Fatface', cursive; }
-  #homepage .box {
-    height: 50vh;
-    min-height: 300px;
-    color: white;
-    font-weight: 600;
-    position: relative; }
   #homepage .row {
     margin: 0; }
   #homepage .about {
@@ -59,6 +53,24 @@
 .brand-logo {
   margin-left: 5px;
   margin-top: 5px; }
+
+.barba-old-container {
+  position: absolute;
+  z-index: 5;
+  visibility: visible !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  overflow-y: hidden !important; }
+
+.barba-new-container {
+  position: absolute;
+  overflow: hidden !important;
+  visibility: visible !important;
+  z-index: 0;
+  width: 100%;
+  top: 0px;
+  left: 0px; }
 
 #projects h3, .about-me h3, #algorithms h3 {
   font-family: 'Abril Fatface', cursive;
@@ -216,9 +228,6 @@ i {
   top: 85%;
   left: 90%;
   background-color: darkgrey !important; }
-
-body {
-  transition: all 1s; }
 
 @media only screen and (max-width: 500px) {
   #scroll-top {
@@ -493,7 +502,41 @@ body {
 
 /* Literal.Number.Integer.Long */
 body {
-  min-height: 100%;
-  background-color: black; }
+  min-height: 100%; }
+
+.homepage-section {
+  display: block;
+  height: 50vh;
+  min-height: 300px;
+  color: white;
+  font-weight: 600;
+  position: relative; }
+
+.box {
+  height: 50vh; }
+
+.my-borders {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  background-color: white; }
+
+.Me-border {
+  bottom: 0;
+  right: 0; }
+
+.stuff-border {
+  top: 0;
+  right: 0; }
+
+.Contact-border {
+  top: 0;
+  left: 0; }
+
+.Projects-border {
+  bottom: 0;
+  left: 0; }
 
 /*# sourceMappingURL=main.css.map */

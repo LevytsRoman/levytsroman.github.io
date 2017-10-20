@@ -1,15 +1,16 @@
 #homepage {
+  
   overflow: hidden;
   h3 {
     font-family: 'Abril Fatface', cursive;
   }
-  .box {
-    height: 50vh;
-    min-height: 300px;
-    color: white;
-    font-weight: 600;
-    position: relative;
-  }
+  // .box {
+  //   height: 50vh;
+  //   min-height: 300px;
+  //   color: white;
+  //   font-weight: 600;
+  //   position: relative;
+  // }
   .row {
     margin: 0;
   }
@@ -25,7 +26,6 @@
     // border: 2px solid white;
     // border-radius: 5px;
   }
-
   .current {
     // background-color: #F46036;
     box-shadow: inset 0 0 0 1000px rgba(244,96,54,0.8);
