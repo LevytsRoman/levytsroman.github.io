@@ -18,7 +18,7 @@ function initializeScripts(){
       },
       urlString = window.location.href,
       scrollHeight = $(document).scrollTop();
-
+  
   var pagename = ''
   $.each(colors, function(key,val){
     if(urlString.indexOf(key) > -1){

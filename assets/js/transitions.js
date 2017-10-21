@@ -136,7 +136,7 @@ var FadeTransition = Barba.BaseTransition.extend({
     // $(this.oldContainer).addClass('animated bounceOutLeft');
     // debugger
     //  else {
-    //   return $(this.oldContainer).animate({ opacity: 0 }, 1000).promise();
+      // return $(this.oldContainer).animate({ opacity: 0 }, 1000).promise();
     // }
   },
 
@@ -290,28 +290,41 @@ var FadeTransition = Barba.BaseTransition.extend({
         $('.barba-old-container').removeClass('barba-old-container')
         $('.barba-new-container').removeClass('barba-new-container')
 
-        $(this.oldContainer).animate({
-          opacity: 0
-        }, 400, () => {
-          var _this = this;
-          var $el = $(this.newContainer);
+        var $el = $(this.newContainer);
 
-
-          $el.css({
-            visibility : 'visible',
-            opacity : 0
-          });
-          // debugger
-          // $el.addClass('animated bounceInRight');
-          $el.animate({ opacity: 1 }, 400, function() {
-            _this.done();
-            /**
-            * Do not forget to call .done() as soon your transition is finished!
-            * .done() will automatically remove from the DOM the old Container
-            */
-
-          });
+        $el.css({
+          visibility : 'visible',
+          opacity : 0
         });
+
+        $(this.oldContainer).animate({ opacity: 0 }, 100, ()=>{
+          $(this.oldContainer).hide();
+          $el.animate({opacity: 1}, 100, ()=>{
+            this.done();
+          })
+        })
+        // $(this.oldContainer).animate({
+        //   opacity: 0
+        // }, 400, () => {
+          // var _this = this;
+          // var $el = $(this.newContainer);
+          //
+          //
+          // $el.css({
+          //   visibility : 'visible',
+          //   opacity : 0
+          // });
+        //   // debugger
+        //   // $el.addClass('animated bounceInRight');
+        //   $el.animate({ opacity: 1 }, 400, function() {
+        //     _this.done();
+        //     /**
+        //     * Do not forget to call .done() as soon your transition is finished!
+        //     * .done() will automatically remove from the DOM the old Container
+        //     */
+        //
+        //   });
+        // });
       }
     });
   }
