@@ -61,12 +61,12 @@
   top: 0px;
   left: 0px;
   width: 100%;
+  background-color: transparent;
   overflow-y: hidden !important; }
 
 .barba-new-container {
   position: absolute;
   overflow: hidden !important;
-  visibility: visible !important;
   z-index: 0;
   width: 100%;
   top: 0px;

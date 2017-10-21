@@ -5,7 +5,7 @@ function clearFilters(){
 }
 
 function showContactForm(){
-  
+
 }
 
 function toggleTags(button, tag){
@@ -56,6 +56,7 @@ function hideCloseIcons(element){
 }
 
 function assignColors(pagename, color){
+  // debugger
   $('body').css('background-color', color);
   $('.card-action a').css('color', color);
   $('nav a').attr('style', 'color: ' + color + '');

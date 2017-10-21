@@ -7,6 +7,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
     initializeScripts();
     document.body.scrollTop = 0;
     $('html').css('overflow-y', 'hidden')
+
     $(this.newContainer).addClass('barba-new-container')
     $(this.newContainer).show()
 
@@ -62,6 +63,9 @@ var HideShowTransition = Barba.BaseTransition.extend({
     // var pro5
     Promise.all([pro1,pro2,pro3,pro4]).then(values => {
       // debugger
+      // This line below fixes a weird bug that only happens on one page ...
+      $('.top-row').css('background-color', 'transparent')
+
       var contactWidth = $('.contact').width(),
           contactHeight = $('.contact').height(),
           currentWidth = $('.current').width(),
@@ -87,13 +91,15 @@ var HideShowTransition = Barba.BaseTransition.extend({
         left: '-=' + completedWidth + 'px',
         top: '+=' + completedHeight + 'px'
       }, 500, function(){
+        // debugger
+        $('.barba-old-container').removeClass('barba-old-container')
+        $('.barba-new-container').removeClass('barba-new-container');
+
         $(this.oldContainer).find('.about').finish();
         $(this.oldContainer).find('.current').finish();
         $(this.oldContainer).find('.completed').finish();
         $(this.oldContainer).find('.contact').finish();
         $('.my-borders').finish();
-        $(this.newContainer).removeClass('barba-new-container');
-        // $(this.oldContainer).hide();
         $('html').css('overflow-y', 'visible')
         // $('body').css('background-color','purple')
         // debugger
@@ -143,10 +149,12 @@ var FadeTransition = Barba.BaseTransition.extend({
     //  debugger
     //  $(this.newContainer).css('z-index', 10)
     // debugger
-    Promise.all([this._newContainerPromise]).then(()=>{
+    Promise.all([this._newContainerPromise]).then(() => {
       initializeScripts();
-      $(this.newContainer).addClass('barba-old-container')
+
+
       if(this.newContainer.baseURI === "http://localhost:4000/"){
+        $(this.newContainer).addClass('barba-old-container');
         $('.my-borders').css({
           height: '2px',
           width: '2px'
@@ -278,33 +286,33 @@ var FadeTransition = Barba.BaseTransition.extend({
           })
         })
         // return $(this.oldContainer).animate({ opacity: 1 }, 1000).promise();
+      } else {
+        $('.barba-old-container').removeClass('barba-old-container')
+        $('.barba-new-container').removeClass('barba-new-container')
+
+        $(this.oldContainer).animate({
+          opacity: 0
+        }, 400, () => {
+          var _this = this;
+          var $el = $(this.newContainer);
+
+
+          $el.css({
+            visibility : 'visible',
+            opacity : 0
+          });
+          // debugger
+          // $el.addClass('animated bounceInRight');
+          $el.animate({ opacity: 1 }, 400, function() {
+            _this.done();
+            /**
+            * Do not forget to call .done() as soon your transition is finished!
+            * .done() will automatically remove from the DOM the old Container
+            */
+
+          });
+        });
       }
-      // else {
-      //
-      // }
-
-    })
-
-    // debugger
-    // $(this.newContainer).removeClass('barba-old-container')
-    // $(this.oldContainer).hide();
-    // _this.done();
-    // var _this = this;
-    // var $el = $(this.newContainer);
-    //
-    //
-    // $el.css({
-    //   visibility : 'visible',
-    //   opacity : 0
-    // });
-    // // debugger
-    // // $el.addClass('animated bounceInRight');
-    // $el.animate({ opacity: 1 }, 400, function() {
-    //   /**
-    //    * Do not forget to call .done() as soon your transition is finished!
-    //    * .done() will automatically remove from the DOM the old Container
-    //    */
-    //
-    // });
+    });
   }
 });
