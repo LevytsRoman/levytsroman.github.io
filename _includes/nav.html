@@ -1,15 +1,18 @@
-<nav>
-  <div class="nav-wrapper white s12">
+<nav class="z-depth-0">
+  <div class="nav-wrapper s12">
     <a href="/" class="brand-logo"><img src="/assets/images/logo1.png" alt="website logo" /></a>
     <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       {% for my_section in site.data.sections %}
-        <li><a href={{my_section[1].url}}>{{my_section[0]}}</a></li>
+        <li><a href={{my_section[1].url}} class="black-text">{{my_section[0]}}</a><div class="nav-underline"></div></li>
       {% endfor %}
     </ul>
     <ul class="side-nav" id="mobile-demo">
       {% for my_section in site.data.sections %}
-        <li><a href={{my_section[1].url}}>{{my_section[0]}}</a></li>
+        <li>
+          <a href={{my_section[1].url}}>{{my_section[0]}}</a>
+
+        </li>
       {% endfor %}
     </ul>
   </div>

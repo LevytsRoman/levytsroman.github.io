@@ -6,6 +6,37 @@
 
 body {
   min-height: 100%;
+  background-color: black;
+}
+
+nav {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+nav ul li a {
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  transition: none !important;
+  background-color: transparent;
+}
+
+.nav-underline {
+  margin: 0 25px 0 25px;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width .3s;
+}
+
+.nav-underlined {
+  width: 30%;
+}
+
+.nav-hover-underlined {
+  width: 30%;
 }
 
 .homepage-section {
@@ -15,6 +46,16 @@ body {
   color: white;
   font-weight: 600;
   position: relative;
+}
+
+.my_container {
+  max-width: 1080px;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.project {
+
 }
 
 .box {

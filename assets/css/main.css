@@ -116,8 +116,8 @@
   font-family: 'Raleway', sans-serif; }
 
 #nav-mobile a, #mobile-demo a {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
   margin: 0 10px 0 10px; }
 
 nav {
@@ -144,7 +144,7 @@ nav {
   color: white; }
 
 .about-me li {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5em !important;
   width: 30%;
   float: left; }
@@ -502,7 +502,32 @@ i {
 
 /* Literal.Number.Integer.Long */
 body {
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: black; }
+
+nav {
+  margin-top: 40px;
+  margin-bottom: 100px; }
+
+nav ul li a {
+  font-weight: 600; }
+
+nav ul li a:hover {
+  transition: none !important;
+  background-color: transparent; }
+
+.nav-underline {
+  margin: 0 25px 0 25px;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width .3s; }
+
+.nav-underlined {
+  width: 30%; }
+
+.nav-hover-underlined {
+  width: 30%; }
 
 .homepage-section {
   display: block;
@@ -511,6 +536,11 @@ body {
   color: white;
   font-weight: 600;
   position: relative; }
+
+.my_container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .box {
   height: 50vh; }

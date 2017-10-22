@@ -59,7 +59,8 @@ function assignColors(pagename, color){
   // debugger
   $('body').css('background-color', color);
   $('.card-action a').css('color', color);
-  $('nav a').attr('style', 'color: ' + color + '');
+  // debugger
+  $('.nav-wrapper').css('background-color', color);
   $("a:contains('" + pagename + "')").parent().css('background-color', color);
   $("a:contains('" + pagename + "')").css('color', "white");
 }

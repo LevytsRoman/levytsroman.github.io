@@ -18,7 +18,7 @@ function initializeScripts(){
       },
       urlString = window.location.href,
       scrollHeight = $(document).scrollTop();
-  
+
   var pagename = ''
   $.each(colors, function(key,val){
     if(urlString.indexOf(key) > -1){
@@ -39,6 +39,7 @@ function initializeScripts(){
 
   if(pagename){
     assignColors(pagename, color);
+    $('nav a[href="/' + pagename + '"]').parent().find('div').addClass('nav-underlined');
   }
 
   $('.tag').click(function(event){
@@ -61,6 +62,12 @@ function initializeScripts(){
       showProjects(projects, active_tags);
     }
   })
+
+  $("nav ul li a").hover(function(e){
+    $(e.target).parent().find('div').addClass('nav-hover-underlined');
+  }, function(e){
+    $(e.target).parent().find('div').removeClass('nav-hover-underlined');
+  });
 
   $("#filter").click(function(event){
     event.preventDefault();
