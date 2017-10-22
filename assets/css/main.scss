@@ -23,6 +23,12 @@ nav ul li a:hover {
   background-color: transparent;
 }
 
+nav ul li {
+  transition: none !important;
+  background-color: transparent !important;
+  color: white;
+}
+
 .nav-underline {
   margin: 0 25px 0 25px;
   width: 0%;
