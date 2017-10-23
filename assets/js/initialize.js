@@ -10,6 +10,35 @@ function initializeScripts(){
     height: '0px',
     width: '0px'
   })
+  // $('.carousel.carousel-slider').carousel({fullWidth: true});
+  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+
+  $('.project_list').on('click', '.next', function(e){
+    // debugger
+    // pro1 = Promise.new()
+    var thisId = $(this).parent().parent().parent().parent().parent().attr('id');
+    var nextId = (parseInt(thisId) + 1).toString();
+    $('#' + thisId).modal('close');
+
+    var nextId = (parseInt(thisId) + 1).toString();
+    $('#' + nextId).modal('open')
+  })
+
+  $('.modal').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      inDuration: 200, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+        // alert("Ready");
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+      },
+      complete: function(e) {
+        // debugger
+      } // Callback for Modal close
+    });
 
   var colors = {
         'about': 'rgb(142,85,114)',
@@ -80,7 +109,7 @@ function initializeScripts(){
     $("#filter").text(options[text]);
     $("#tags").toggle(400);
   })
-
+  // debugger
   $(window).scroll(() => {
     var scrollPos = $(document).scrollTop();
         documentHeight = $(document).height();

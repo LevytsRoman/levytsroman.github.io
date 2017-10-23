@@ -1,3 +1,79 @@
 ---
 layout: not_homepage
 ---
+
+<div class="quote_box row">
+  <p class="quote">Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
+  <p class="author right"> - Pele</p>
+</div>
+
+<div class="project_list">
+  {% for item in site.data.projects %}
+    <div class="project row" style="background-image: url({{item.cover}}); background-size: cover;">
+      <div class="cover {% cycle 'left', 'right'%} col m5 s12">
+        <div class="valign-wrapper">
+          <div class="col s8 offset-s2">
+            <h3 class="heading">{{item.name}}</h3>
+            <button class="fill col s12 modal-trigger" href="#{{item.id}}">learn more</button>
+          </div>
+          <!-- Modal Trigger -->
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="{{item.id}}" class="modal">
+          <div class="modal-content">
+            <div class="row">
+              <div class="carousel carousel-slider center col m8 12" data-indicators="true">
+                {% for image in item.images %}
+                <div class="red white-text carousel-item" style="background-image: url({{image}}); background-size: cover;">
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col m4 s12">
+                <div class="row">
+                  <a href="#!" class="right modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right activator">close</i></a>
+                </div>
+                <h3>{{item.title}}</h3>
+                <a target="_blank" href="{{item.url}}">live</a>
+                <a target="_blank" href="{{item.github_url}}">github</a>
+
+                <p class="description">{{item.description}}</p>
+                Skills:
+                <p>
+                {% for tech in item.technologies %}
+                  <i class="skill_icon {{tech}}"></i>
+                {% endfor %}
+                </p>
+                <div class="col s8 offset-s2">
+                  <button class="next slide slide_left">&nbsp;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+    <!-- <div class="card hoverable" tags="{{item.tags}}">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{ item.img }}">
+      </div>
+      <div class="card-reveal description">
+        <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
+        <p>{{ item.long_description }}</p>
+        <br>
+        <h5>Technologies:</h5>
+        <p>{{ item.technologies }}</p>
+      </div>
+      <div class="card-content">
+        <span class="card-title">{{ item.name }}<i class="material-icons right activator">more_vert</i></span>
+        <p class='description'>{{ item.short_description }}</p>
+      </div>
+      <div class="card-action">
+        {% unless item.url == "" %}
+          <a href="{{ item.url }}">Take me there</a>
+        {% endunless %}
+        <a href="{{ item.github_url }}">Github</a>
+      </div>
+    </div> -->

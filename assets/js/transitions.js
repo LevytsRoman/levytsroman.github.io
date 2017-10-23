@@ -151,7 +151,6 @@ var FadeTransition = Barba.BaseTransition.extend({
     Promise.all([this._newContainerPromise]).then(() => {
       initializeScripts();
 
-
       if(this.newContainer.baseURI === "http://localhost:4000/"){
         $(this.newContainer).addClass('barba-old-container');
         $('.my-borders').css({

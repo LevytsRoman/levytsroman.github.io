@@ -6,7 +6,7 @@
 
 body {
   min-height: 100%;
-  background-color: black;
+  // background-color: black;
 }
 
 nav {
@@ -45,6 +45,13 @@ nav ul li {
   width: 30%;
 }
 
+.heading {
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #292929;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .homepage-section {
   display: block;
   height: 50vh;
@@ -54,14 +61,194 @@ nav ul li {
   position: relative;
 }
 
+.quote_box {
+  padding: 0 5% 0 5%;
+}
+
+.quote {
+  font-size: 2rem;
+  text-indent: 15%;
+  margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.author {
+  padding-right: 5%;
+  margin-top: 0;
+  font-size: 1.7rem;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
 .my_container {
   max-width: 1080px;
   margin-left: auto ;
   margin-right: auto ;
 }
 
-.project {
+.project_list {
 
+}
+
+.modal .modal-content {
+  padding: 0 !important;
+  margin: 0;
+  height: 100%;
+}
+
+.modal {
+  height: 80vh;
+  width: 90%;
+}
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
+}
+
+.valign-wrapper {
+  height: 100%;
+}
+
+.modal .modal-content .row {
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  position: relative;
+  display:block;
+  height: 45px;
+  line-height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  // padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .8px;
+  color: #292929;
+  border: 2px #292929 solid !important;
+  border-radius: 3px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.2s ease-in;
+  -o-transition:      0.2s ease-in;
+  -ms-transition:     0.2s ease-in;
+  -moz-transition:    0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+}
+
+button:focus {
+  background-color: transparent;
+}
+
+button.fill:hover {
+  background-color: transparent;
+  color: #ED542A;
+}
+
+button.fill:before {
+  content: "";
+  position: absolute;
+  background: #292929;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+button.fill:hover:before {
+  top: 0;
+}
+
+.slide:after{
+  content:"next project";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align:center;
+  -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.slide:before {
+  content:"See it →";
+  height:100%;
+  width:100%;
+  position:absolute;
+  color:#383736;
+  left:-100%;
+  opacity: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.slide:hover{
+  background:#383736;
+  border: 2px #292929 solid !important;
+
+}
+
+.slide:hover:before{
+  left:0;
+  opacity:1;
+  color:#fff;
+}
+.slide:hover:after{
+  left:100%;
+  opacity:0;
+}
+
+.slide.slide_left:hover{
+  background:none;
+}
+
+.slide.slide_left:before {
+  left:100%;
+  color:#383736;
+  -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.slide.slide_left:hover:before{
+  left:0;
+}
+
+.description {
+  font-family: 'Raleway', sans-serif;
+}
+
+.cover {
+  background-color: #ED542A;
+  // opacity: 1;
+  // color: white;
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  // opacity: 0.9;
+}
+
+// .project_img {
+//   height: 100%;
+//   -webkit-filter: grayscale(65%); /* Safari 6.0 - 9.0 */
+//   filter: grayscale(65%);
+// }
+
+.project {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+.skill_icon {
+  font-size: 30px;
 }
 
 .box {
@@ -92,4 +279,12 @@ nav ul li {
 .Projects-border {
   bottom: 0;
   left: 0;
+}
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 601px) {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    font-size: 2.5rem;
+  }
 }
