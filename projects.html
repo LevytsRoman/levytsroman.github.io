@@ -13,7 +13,7 @@ layout: not_homepage
       <div class="cover {% cycle 'left', 'right'%} col m5 s12">
         <div class="valign-wrapper">
           <div class="col s8 offset-s2">
-            <h3 class="heading">{{item.name}}</h3>
+            <h3 class="heading">{{item.title}}</h3>
             <button class="fill col s12 modal-trigger" href="#{{item.id}}">learn more</button>
           </div>
           <!-- Modal Trigger -->
@@ -23,9 +23,10 @@ layout: not_homepage
         <div id="{{item.id}}" class="modal">
           <div class="modal-content">
             <div class="row">
-              <div class="carousel carousel-slider center col m8 12" data-indicators="true">
+              <div class="carousel carousel-slider center col m8 s12" data-indicators="true">
                 {% for image in item.images %}
-                <div class="red white-text carousel-item" style="background-image: url({{image}}); background-size: cover;">
+                <div class="black white-text carousel-item">
+                  <img class="responsive-img" src="{{image}}" alt="">
                 </div>
                 {% endfor %}
               </div>
@@ -33,17 +34,19 @@ layout: not_homepage
                 <div class="row">
                   <a href="#!" class="right modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right activator">close</i></a>
                 </div>
-                <h3>{{item.title}}</h3>
+                <h3 class="heading">{{item.title}}</h3>
                 <a target="_blank" href="{{item.url}}">live</a>
                 <a target="_blank" href="{{item.github_url}}">github</a>
 
                 <p class="description">{{item.description}}</p>
-                Skills:
-                <p>
-                {% for tech in item.technologies %}
-                  <i class="skill_icon {{tech}}"></i>
-                {% endfor %}
-                </p>
+                <div class="skills">
+                  <h5>Skills:</h5>
+                  <p>
+                    {% for tech in item.technologies %}
+                    <i class="skill_icon devicon-{{tech}}"></i>
+                    {% endfor %}
+                  </p>
+                </div>
                 <div class="col s8 offset-s2">
                   <button class="next slide slide_left">&nbsp;</button>
                 </div>

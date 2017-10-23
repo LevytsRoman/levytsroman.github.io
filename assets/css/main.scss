@@ -86,10 +86,6 @@ nav ul li {
   margin-right: auto ;
 }
 
-.project_list {
-
-}
-
 .modal .modal-content {
   padding: 0 !important;
   margin: 0;
@@ -98,7 +94,8 @@ nav ul li {
 
 .modal {
   height: 80vh;
-  width: 90%;
+  max-width: 1080px;
+  width: 80%;
 }
 
 .carousel {
@@ -168,6 +165,11 @@ button.fill:hover:before {
   top: 0;
 }
 
+.slide {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
 .slide:after{
   content:"next project";
   position:absolute;
@@ -220,7 +222,10 @@ button.fill:hover:before {
 }
 
 .description {
+  color: #292929;
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .cover {
@@ -239,15 +244,21 @@ button.fill:hover:before {
 //   filter: grayscale(65%);
 // }
 
+.skills {
+  margin-bottom: 40px;
+  color: #292929;
+}
+
 .project {
   width: 90%;
   height: 400px;
   margin: auto;
   margin-top: 40px;
-
+  box-shadow: 0 0 1000px 10px black inset;
 }
 
 .skill_icon {
+  color: #292929;
   font-size: 30px;
 }
 
@@ -286,5 +297,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (max-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-size: 2.5rem;
+  }
+  .modal {
+    width: 100%;
+    height: 100vh;
   }
 }

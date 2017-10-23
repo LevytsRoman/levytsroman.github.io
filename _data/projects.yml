@@ -4,18 +4,41 @@
   github_url: https://github.com/LevytsRoman/EngageMe
   description: Presentation analytics tool that helps presenters capture, monitor and track the audience's emotional reaction to their content in real-time.
   technologies: [
-                  devicon-html5-plain-wordmark,
-                  devicon-jquery-plain-wordmark,
-                  devicon-javascript-plain,
-                  devicon-ruby-plain-wordmark,
-                  devicon-rails-plain-wordmark,
-                  devicon-react-original-wordmark,
-                  devicon-postgresql-plain-wordmark
+                  html5-plain,
+                  css3-plain-wordmark
+                  javascript-plain,
+                  jquery-plain,
+                  ruby-plain,
+                  rails-plain,
+                  postgresql-plain,
+                  heroku-original
                 ]
   cover: /assets/images/project_covers/engage-me-cover.jpeg
-  images: ['https://lorempixel.com/800/400/food/1', 'https://lorempixel.com/800/400/food/2', 'https://lorempixel.com/800/400/food/3', 'https://lorempixel.com/800/400/food/4']
+  images: [
+    '/assets/images/project_images/engageme1.png', '/assets/images/project_images/engageme2.png'
+  ]
 
-# - name: Engage Me
+- id: 2
+  title: Tic tac toe
+  url: https://tic-or-treat.herokuapp.com/
+  github_url: https://github.com/nyc-bobolinks-2016/tic_or_treat
+  description: A simple tic-tac-toe game allowing both registered and unregistered users to play against a computer. Logged-in users have the benefit of viewing various statistics about their past games and resuming unfinished games.
+  technologies: [
+                  html5-plain,
+                  css3-plain-wordmark
+                  javascript-plain,
+                  react-original,
+                  ruby-plain,
+                  rails-plain,
+                  postgresql-plain,
+                  heroku-original
+                ]
+  cover: /assets/images/project_covers/tic-tac-toe-cover.jpg
+  images: [
+    '/assets/images/project_images/engageme1.png', '/assets/images/project_images/engageme2.png'
+  ]
+
+# - name: Tic-tac-toe
 #   url: https://dbc-engage-me.herokuapp.com/
 #   github_url: https://github.com/LevytsRoman/EngageMe
 #   short_description: >
