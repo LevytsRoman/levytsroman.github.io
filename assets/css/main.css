@@ -7,9 +7,9 @@
   #homepage .about {
     background-image: url("/assets/images/face-2384027_1280.jpg");
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(111, 111, 111, 0.8); }
+    box-shadow: inset 0 0 0 1000px rgba(242, 247, 242, 0.8); }
   #homepage .about:hover {
-    box-shadow: inset 0 0 0 1000px rgba(111, 111, 111, 0.5); }
+    box-shadow: inset 0 0 0 1000px rgba(242, 247, 242, 0.5); }
   #homepage .projects {
     box-shadow: inset 0 0 0 1000px rgba(244, 96, 54, 0.8);
     background-image: url("/assets/images/construction-2682641_1920.jpg");
