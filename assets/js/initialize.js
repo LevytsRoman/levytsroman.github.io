@@ -27,7 +27,7 @@ function initializeScripts(){
 
   $('.modal').modal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
-      opacity: .5, // Opacity of modal background
+      opacity: .8, // Opacity of modal background
       inDuration: 200, // Transition in duration
       outDuration: 200, // Transition out duration
       startingTop: '0%', // Starting top style attribute

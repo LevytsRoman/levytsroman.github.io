@@ -25,7 +25,7 @@ layout: not_homepage
             <div class="row">
               <div class="carousel carousel-slider center col s12 m12 l9" data-indicators="true">
                 {% for image in item.images %}
-                <div class="black white-text carousel-item">
+                <div class="white-text carousel-item">
                   <div class="image_wrapper">
                     <img class="project_img" src="{{image}}" alt="">
                   </div>
@@ -33,22 +33,38 @@ layout: not_homepage
                 {% endfor %}
               </div>
               <div class="col s12 m12 l3">
-                <div class="container">
-                  <h3 class="heading">{{item.title}}</h3>
-                  <a target="_blank" href="{{item.url}}">live</a>
-                  <a target="_blank" href="{{item.github_url}}">github</a>
-
-                  <p class="description">{{item.description}}</p>
-                  <div class="skills">
-                    <h5>Skills:</h5>
-                    <p>
+                <div class="projects_container">
+                  <div class="row">
+                    <div class="col s6 m6 l12">
+                      <h3 class="modal_heading">{{item.title}}</h3>
+                      <div class="skills hide-on-large-only">
+                        <h5>Built with:</h5>
+                        {% for tech in item.technologies %}
+                        <i class="skill_icon devicon-{{tech}}"></i>
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <div class="col s6 m6 l12">
+                      <p class="description">{{item.description}}</p>
+                    </div>
+                    <div class="skills hide-on-med-and-down">
+                      <h5>Built with:</h5>
                       {% for tech in item.technologies %}
                       <i class="skill_icon devicon-{{tech}}"></i>
                       {% endfor %}
-                    </p>
+                    </div>
+
                   </div>
-                  <div class="col s8 offset-s2">
-                    <button id="{{item.id}}" class="next slide slide_left">&nbsp;</button>
+                  <div class="buttons row">
+                    <div class="col s4 m4 l12">
+                      <a target="_blank" href="{{item.url}}"><button class="fill col s12">live</button></a>
+                    </div>
+                    <div class="col s4 m4 l12">
+                      <a target="_blank" href="{{item.github_url}}"><button class="fill col s12">github</button></a>
+                    </div>
+                    <div class="col s4 m4 l12">
+                      <button id="{{item.id}}" class="next fill col s12">Next</button>
+                    </div>
                   </div>
                 </div>
               </div>
