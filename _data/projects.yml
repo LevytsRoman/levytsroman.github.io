@@ -15,7 +15,10 @@
                 ]
   cover: /assets/images/project_covers/engage-me-cover.jpeg
   images: [
-    '/assets/images/project_images/engageme1.png', '/assets/images/project_images/engageme2.png'
+    '/assets/images/project_images/engage_me/engageme1.png', '/assets/images/project_images/engage_me/engageme2.png',
+    '/assets/images/project_images/engage_me/engageme3.png', '/assets/images/project_images/engage_me/engageme4.png',
+    '/assets/images/project_images/engage_me/engageme5.png', '/assets/images/project_images/engage_me/engageme6.png',
+    '/assets/images/project_images/engage_me/engageme7.png', '/assets/images/project_images/engage_me/engageme8.png'
   ]
 
 - id: 2
@@ -35,7 +38,8 @@
                 ]
   cover: /assets/images/project_covers/tic-tac-toe-cover.jpg
   images: [
-    '/assets/images/project_images/engageme1.png', '/assets/images/project_images/engageme2.png'
+    '/assets/images/project_images/tic_tac_toe/tictactoe1.png', '/assets/images/project_images/tic_tac_toe/tictactoe2.png',
+    '/assets/images/project_images/tic_tac_toe/tictactoe3.png'
   ]
 
 # - name: Tic-tac-toe

@@ -16,8 +16,9 @@ function initializeScripts(){
   $('.project_list').on('click', '.next', function(e){
     // debugger
     // pro1 = Promise.new()
-    var thisId = $(this).parent().parent().parent().parent().parent().attr('id');
+    var thisId = $(this).attr('id');
     var nextId = (parseInt(thisId) + 1).toString();
+
     $('#' + thisId).modal('close');
 
     var nextId = (parseInt(thisId) + 1).toString();
@@ -29,8 +30,8 @@ function initializeScripts(){
       opacity: .5, // Opacity of modal background
       inDuration: 200, // Transition in duration
       outDuration: 200, // Transition out duration
-      startingTop: '4%', // Starting top style attribute
-      endingTop: '10%', // Ending top style attribute
+      startingTop: '0%', // Starting top style attribute
+      endingTop: '0%', // Ending top style attribute
       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
         // alert("Ready");
         $('.carousel.carousel-slider').carousel({fullWidth: true});

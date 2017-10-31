@@ -23,32 +23,33 @@ layout: not_homepage
         <div id="{{item.id}}" class="modal">
           <div class="modal-content">
             <div class="row">
-              <div class="carousel carousel-slider center col m8 s12" data-indicators="true">
+              <div class="carousel carousel-slider center col s12 m12 l9" data-indicators="true">
                 {% for image in item.images %}
                 <div class="black white-text carousel-item">
-                  <img class="responsive-img" src="{{image}}" alt="">
+                  <div class="image_wrapper">
+                    <img class="project_img" src="{{image}}" alt="">
+                  </div>
                 </div>
                 {% endfor %}
               </div>
-              <div class="col m4 s12">
-                <div class="row">
-                  <a href="#!" class="right modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right activator">close</i></a>
-                </div>
-                <h3 class="heading">{{item.title}}</h3>
-                <a target="_blank" href="{{item.url}}">live</a>
-                <a target="_blank" href="{{item.github_url}}">github</a>
+              <div class="col s12 m12 l3">
+                <div class="container">
+                  <h3 class="heading">{{item.title}}</h3>
+                  <a target="_blank" href="{{item.url}}">live</a>
+                  <a target="_blank" href="{{item.github_url}}">github</a>
 
-                <p class="description">{{item.description}}</p>
-                <div class="skills">
-                  <h5>Skills:</h5>
-                  <p>
-                    {% for tech in item.technologies %}
-                    <i class="skill_icon devicon-{{tech}}"></i>
-                    {% endfor %}
-                  </p>
-                </div>
-                <div class="col s8 offset-s2">
-                  <button class="next slide slide_left">&nbsp;</button>
+                  <p class="description">{{item.description}}</p>
+                  <div class="skills">
+                    <h5>Skills:</h5>
+                    <p>
+                      {% for tech in item.technologies %}
+                      <i class="skill_icon devicon-{{tech}}"></i>
+                      {% endfor %}
+                    </p>
+                  </div>
+                  <div class="col s8 offset-s2">
+                    <button id="{{item.id}}" class="next slide slide_left">&nbsp;</button>
+                  </div>
                 </div>
               </div>
             </div>
