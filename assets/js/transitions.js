@@ -26,18 +26,18 @@ var HideShowTransition = Barba.BaseTransition.extend({
       height: '2px',
       width: '2px'
     })
-    // var pos = $('.Me-border').position().left + 'px'
-    // $('.stuff-border').css({left: pos})
+    // var pos = $('.about').position().left + 'px'
+    // $('.algorithms-border').css({left: pos})
     var pro1 = new Promise((resolve, reject) => {
-      $('.Me-border').animate({
+      $('.about-border').animate({
         height: '100%'
       }, 400, function(){
         resolve()
       })
 		});
-
+    // debugger
     var pro2 = new Promise((resolve, reject) => {
-      $('.Projects-border').animate({
+      $('.projects-border').animate({
         width: '100%'
       }, 400, function(){
         resolve()
@@ -45,7 +45,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
 		});
 
     var pro3 = new Promise((resolve, reject) => {
-      $('.stuff-border').animate({
+      $('.algorithms-border').animate({
         width: '100%'
       }, 400, function(){
         resolve()
@@ -53,7 +53,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
 		});
 
     var pro4 = new Promise((resolve, reject) => {
-      $('.Contact-border').animate({
+      $('.contact-border').animate({
         height: '100%'
       }, 400, function(){
         resolve()
@@ -68,36 +68,36 @@ var HideShowTransition = Barba.BaseTransition.extend({
 
       var contactWidth = $('.contact').width(),
           contactHeight = $('.contact').height(),
-          currentWidth = $('.current').width(),
-          currentHeight = $('.current').height(),
-          completedWidth = $('.completed').width(),
-          completedHeight = $('.completed').height(),
+          projectsWidth = $('.projects').width(),
+          projectsHeight = $('.projects').height(),
+          algorithmsWidth = $('.algorithms').width(),
+          algorithmsHeight = $('.algorithms').height(),
           aboutWidth = $('.about').width(),
           aboutHeight = $('.about').height();
 
       $(this.oldContainer).find('.about').animate({
-        left: '+='+ aboutWidth +'px',
-        top: '+=' + aboutHeight + 'px'
+        left: '-='+ aboutWidth +'px',
+        top: '-=' + aboutHeight + 'px'
       }, 400)
       $(this.oldContainer).find('.contact').animate({
-        left: '-=' + contactWidth + 'px',
-        top: '-=' + contactHeight + 'px'
+        left: '+=' + contactWidth + 'px',
+        top: '+=' + contactHeight + 'px'
       }, 400)
-      $(this.oldContainer).find('.current').animate({
-        left: '+=' + currentWidth + 'px',
-        top: '-=' + currentHeight + 'px'
+      $(this.oldContainer).find('.projects').animate({
+        left: '+=' + projectsWidth + 'px',
+        top: '-=' + projectsHeight + 'px'
       }, 400)
-      $(this.oldContainer).find('.completed').animate({
-        left: '-=' + completedWidth + 'px',
-        top: '+=' + completedHeight + 'px'
+      $(this.oldContainer).find('.algorithms').animate({
+        left: '-=' + algorithmsWidth + 'px',
+        top: '+=' + algorithmsHeight + 'px'
       }, 400, function(){
         // debugger
         $('.barba-old-container').removeClass('barba-old-container')
         $('.barba-new-container').removeClass('barba-new-container');
 
         $(this.oldContainer).find('.about').finish();
-        $(this.oldContainer).find('.current').finish();
-        $(this.oldContainer).find('.completed').finish();
+        $(this.oldContainer).find('.projects').finish();
+        $(this.oldContainer).find('.algorithms').finish();
         $(this.oldContainer).find('.contact').finish();
         $('.my-borders').finish();
         $('html').css('overflow-y', 'visible')
@@ -106,8 +106,8 @@ var HideShowTransition = Barba.BaseTransition.extend({
 
         _this.done();
       }.bind(this))
-      // $(this.oldContainer).find('.current').animate({ opacity: 0 })
-      // $(this.oldContainer).find('.completed').animate({ opacity: 0 })
+      // $(this.oldContainer).find('.projects').animate({ opacity: 0 })
+      // $(this.oldContainer).find('.algorithms').animate({ opacity: 0 })
       // $(this.oldContainer).find('.about').animate({ opacity: 0 })
     })
   }
@@ -123,7 +123,7 @@ var FadeTransition = Barba.BaseTransition.extend({
      */
 
     // As soon the loading is finished and the old page is faded out, let's fade the new page
-    // Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+    // Barba.Dispatcher.on('newPageReady', function(projectsStatus, oldStatus, container) {
     // }.bind(this));
     Promise.all([this.newContainerLoading, this.fadeIn()]);
   },
@@ -150,86 +150,85 @@ var FadeTransition = Barba.BaseTransition.extend({
     // debugger
     Promise.all([this._newContainerPromise]).then(() => {
       initializeScripts();
-
       if(this.newContainer.baseURI === "http://localhost:4000/"){
         $(this.newContainer).addClass('barba-old-container');
         $('.my-borders').css({
           height: '2px',
           width: '2px'
         })
-        $('.Me-border').css({height: '100%'})
-        $('.Contact-border').css({height: '100%'})
-        $('.Projects-border').css({width: '100%'})
-        $('.stuff-border').css({width: '100%'})
+        $('.about-border').css({height: '100%'})
+        $('.contact-border').css({height: '100%'})
+        $('.projects-border').css({width: '100%'})
+        $('.algorithms-border').css({width: '100%'})
 
         // debugger
-        // var pos = $('.Me-border').position().left + 'px'
-        // $('.stuff-border').css({left: pos})
+        // var pos = $('.about').position().left + 'px'
+        // $('.algorithms-border').css({left: pos})
         var contactXPos = $('.contact').position().left,
         contactYPos = $('.contact').position().top,
-        currentXPos = $('.current').position().left,
-        currentYPos = $('.current').position().top,
-        completedXPos = $('.completed').position().left,
-        completedYPos = $('.completed').position().top,
+        projectsXPos = $('.projects').position().left,
+        projectsYPos = $('.projects').position().top,
+        algorithmsXPos = $('.algorithms').position().left,
+        algorithmsYPos = $('.algorithms').position().top,
         aboutXPos = $('.about').position().left,
         aboutYPos = $('.about').position().top
         contactWidth = $('.contact').width(),
         contactHeight = $('.contact').height(),
-        currentWidth = $('.current').width(),
-        currentHeight = $('.current').height(),
-        completedWidth = $('.completed').width(),
-        completedHeight = $('.completed').height(),
+        projectsWidth = $('.projects').width(),
+        projectsHeight = $('.projects').height(),
+        algorithmsWidth = $('.algorithms').width(),
+        algorithmsHeight = $('.algorithms').height(),
         aboutWidth = $('.about').width(),
         aboutHeight = $('.about').height();
         // debugger
 
         $(this.newContainer).find('.about').css({
-          left: '+='+ aboutWidth +'px',
-          top: '+=' + aboutHeight + 'px'
+          left: '-='+ aboutWidth +'px',
+          top: '-=' + aboutHeight + 'px'
         })
         $(this.newContainer).find('.contact').css({
-          left: '-=' + contactWidth + 'px',
-          top: '-=' + contactHeight + 'px'
+          left: '+=' + contactWidth + 'px',
+          top: '+=' + contactHeight + 'px'
         })
-        $(this.newContainer).find('.current').css({
-          left: '+=' + currentWidth + 'px',
-          top: '-=' + currentHeight + 'px'
+        $(this.newContainer).find('.projects').css({
+          left: '+=' + projectsWidth + 'px',
+          top: '-=' + projectsHeight + 'px'
         })
-        $(this.newContainer).find('.completed').css({
-          left: '-=' + completedWidth + 'px',
-          top: '+=' + completedHeight + 'px'
+        $(this.newContainer).find('.algorithms').css({
+          left: '-=' + algorithmsWidth + 'px',
+          top: '+=' + algorithmsHeight + 'px'
         })
 
         // debugger
         var _this = this;
         var pro1 = new Promise((resolve, reject) => {
           $(this.newContainer).find('.about').animate({
-            left: '-='+ aboutWidth +'px',
-            top: '-=' + aboutHeight + 'px'
+            left: '+='+ aboutWidth +'px',
+            top: '+=' + aboutHeight + 'px'
           }, 400, function(){
             resolve()
           })
         });
         var pro2 = new Promise((resolve, reject) => {
           $(this.newContainer).find('.contact').animate({
-            left: '+=' + contactWidth + 'px',
-            top: '+=' + contactHeight + 'px'
+            left: '-=' + contactWidth + 'px',
+            top: '-=' + contactHeight + 'px'
           }, 400, function(){
             resolve()
           })
         });
         var pro3 = new Promise((resolve, reject) => {
-          $(this.newContainer).find('.current').animate({
-            left: '-=' + currentWidth + 'px',
-            top: '+=' + currentHeight + 'px'
+          $(this.newContainer).find('.projects').animate({
+            left: '-=' + projectsWidth + 'px',
+            top: '+=' + projectsHeight + 'px'
           }, 400, function(){
             resolve()
           })
         });
         var pro4 = new Promise((resolve, reject) => {
-          $(this.newContainer).find('.completed').animate({
-            left: '+=' + completedWidth + 'px',
-            top: '-=' + completedHeight + 'px'
+          $(this.newContainer).find('.algorithms').animate({
+            left: '+=' + algorithmsWidth + 'px',
+            top: '-=' + algorithmsHeight + 'px'
           }, 400, function(){
             resolve()
           })
@@ -241,10 +240,10 @@ var FadeTransition = Barba.BaseTransition.extend({
         Promise.all(pros).then(() => {
           $(this.newContainer).removeClass('barba-old-container')
           //  $(this.oldContainer).css();
-          console.log("me")
+
           _this.done();
           var proBorder1 = new Promise((resolve, reject) => {
-            $('.Me-border').css({
+            $('.about-border').animate({
               height: '0%'
             }, 400, function(){
               resolve()
@@ -252,7 +251,7 @@ var FadeTransition = Barba.BaseTransition.extend({
       		});
 
           var proBorder2 = new Promise((resolve, reject) => {
-            $('.Projects-border').animate({
+            $('.projects-border').animate({
               width: '0%'
             }, 400, function(){
               resolve()
@@ -260,7 +259,7 @@ var FadeTransition = Barba.BaseTransition.extend({
       		});
 
           var proBorder3 = new Promise((resolve, reject) => {
-            $('.stuff-border').animate({
+            $('.algorithms-border').animate({
               width: '0%'
             }, 400, function(){
               resolve()
@@ -268,7 +267,7 @@ var FadeTransition = Barba.BaseTransition.extend({
       		});
 
           var proBorder4 = new Promise((resolve, reject) => {
-            $('.Contact-border').animate({
+            $('.contact-border').animate({
               height: '0%'
             }, 400, function(){
               resolve()
@@ -277,10 +276,11 @@ var FadeTransition = Barba.BaseTransition.extend({
           var borderPromises = [proBorder1,proBorder2,proBorder3,proBorder4]
 
           Promise.all(borderPromises).then(()=>{
+            // debugger
             $(this.newContainer).removeClass('barba-old-container')
             //  $(this.oldContainer).css();
             console.log("me")
-            _this.done();
+            // _this.done();
           })
         })
         // return $(this.oldContainer).animate({ opacity: 1 }, 1000).promise();
@@ -297,7 +297,7 @@ var FadeTransition = Barba.BaseTransition.extend({
         // debugger
         $(this.oldContainer).animate({ opacity: 0 }, 300, ()=>{
           $(this.oldContainer).hide();
-          $el.animate({opacity: 1}, 300, ()=>{
+          $el.animate({opacity: 1}, 300, () => {
             this.done();
           })
         })

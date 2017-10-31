@@ -1,10 +1,18 @@
+$eerie-black: #1C1C1C;
+$mint-cream: #F4FFF8;
+$blue-sapphire: #19647E;
+$stil-de-grain-yellow: #F5CB5C;
+$cardinal: #C61F30;
+
+$modal-text: #ED542A;
+$dark-grey: #292929;
+
 @import
   "homepage",
   "style",
   "syntaxhighlight"
 ;
 
-$modal-text: #ED542A;
 
 body {
   min-height: 100%;
@@ -62,6 +70,7 @@ nav ul li {
 }
 
 .heading {
+  color: $dark-grey;
   font-weight: bold;
   font-size: 2.3rem;
   font-family: 'Open Sans', sans-serif;
@@ -139,7 +148,7 @@ nav ul li {
 }
 
 .modal .modal-content .row {
-  background-color: #292929;
+  background-color: $dark-grey;
   color: white;
   height: 100%;
   margin: 0;
@@ -160,8 +169,8 @@ button {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: .8px;
-  color: #292929;
-  border: 2px #292929 solid !important;
+  color: $dark-grey;
+  border: 2px $dark-grey solid !important;
   border-radius: 3px;
   text-transform: uppercase;
   outline: 0;
@@ -193,7 +202,7 @@ button.fill:hover {
 button.fill:before {
   content: "";
   position: absolute;
-  background: #292929;
+  background: $dark-grey;
   bottom: 0;
   left: 0;
   right: 0;
@@ -203,7 +212,7 @@ button.fill:before {
 }
 
 .buttons button.fill:hover {
-  color: #292929
+  color: $dark-grey
 }
 
 .buttons button.fill:before {
@@ -262,7 +271,7 @@ button.fill:hover:before {
 
 .slide:hover{
   background:#383736;
-  border: 2px #292929 solid !important;
+  border: 2px $dark-grey solid !important;
 
 }
 
@@ -345,19 +354,22 @@ button.fill:hover:before {
   background-color: white;
 }
 
-.Me-border {
+.about-border {
   bottom: 0;
   right: 0;
 }
-.stuff-border {
+
+.algorithms-border {
   top: 0;
   right: 0;
 }
-.Contact-border {
+
+.contact-border {
   top: 0;
   left: 0;
 }
-.Projects-border {
+
+.projects-border {
   bottom: 0;
   left: 0;
 }
