@@ -2,6 +2,25 @@
 layout: not_homepage
 ---
 
+<div class="quote_box row">
+  <p class="quote">I don’t have time for hobbies. At the end of the day, I treat my job as a hobby. It’s something I love doing.</p>
+  <p class="author right"> – David Beckham</p>
+</div>
+
+<div class="container">
+  <div class="words">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <div class="stuff">
+    <h3>my arsenal:</h3>
+    {% assign technologies = site.technologies | split: ' ' %}
+    {% for item in technologies%}
+      <div class="">
+        - {{item}}
+      </div>
+    {% endfor %}
+  </div>
+</div>
 <!-- <div class="about-me">
   <div class="bio">
     <div class="row">

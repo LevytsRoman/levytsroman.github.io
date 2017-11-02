@@ -1,44 +1,50 @@
 #homepage {
   overflow: hidden; }
-  #homepage h3 {
-    font-family: 'Abril Fatface', cursive; }
+  #homepage .home_heading {
+    font-family: "Josefin Slab", serif;
+    font-size: 4rem; }
   #homepage .row {
     margin: 0; }
   #homepage .about {
     background-image: url("/assets/images/face-2384027_1280.jpg");
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(242, 247, 242, 0.8); }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear; }
   #homepage .about:hover {
-    box-shadow: inset 0 0 0 1000px rgba(242, 247, 242, 0.5); }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .projects {
-    box-shadow: inset 0 0 0 1000px rgba(244, 96, 54, 0.8);
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear;
     background-image: url("/assets/images/construction-2682641_1920.jpg");
     background-size: cover; }
   #homepage .projects:hover {
-    box-shadow: inset 0 0 0 1000px rgba(244, 96, 54, 0.4); }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact a {
     margin-left: 10px; }
   #homepage .contact a:hover {
     color: #F46036; }
   #homepage .algorithms {
-    box-shadow: inset 0 0 0 1000px rgba(46, 41, 78, 0.9);
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear;
     background-image: url("/assets/images/art-1478831_1920.jpg");
     background-size: cover; }
   #homepage .algorithms:hover {
     background-color: #443C72;
-    box-shadow: inset 0 0 0 1000px rgba(46, 41, 78, 0.7); }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact {
     background-image: url("/assets/images/new-york-2617630_1920.jpg");
-    box-shadow: inset 0 0 0 1000px rgba(142, 85, 114, 0.7);
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear;
     background-size: cover; }
   #homepage .contact:hover {
-    box-shadow: inset 0 0 0 1000px rgba(142, 85, 114, 0.4); }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .profile_picture {
     border-radius: 35%; }
   #homepage .words {
-    font-size: 1.3em;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200; }
+    font-size: 1.3rem;
+    letter-spacing: +2px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100; }
   #homepage li {
     display: inline-block; }
   @media all and (max-height: 600px) {
@@ -72,6 +78,16 @@
   top: 0px;
   left: 0px; }
 
+.barba-new-container-back {
+  position: absolute;
+  z-index: 5;
+  visibility: visible !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: transparent;
+  overflow-y: hidden !important; }
+
 #projects h3, .about-me h3, #algorithms h3 {
   font-family: 'Abril Fatface', cursive;
   font-weight: 600;
@@ -104,7 +120,7 @@
     min-width: 320px;
     margin: 5% 1% 5% 1%; } }
 #projects .description, .about-me .description, #algorithms .description {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.1em; }
 #projects .about-me p, .about-me .about-me p, #algorithms .about-me p {
   color: white !important;
@@ -113,10 +129,10 @@
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 #nav-mobile a, #mobile-demo a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.3rem;
   margin: 0 10px 0 10px; }
 
@@ -138,7 +154,7 @@ nav {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .projects-paragraph {
   color: white; }
@@ -182,7 +198,7 @@ i {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 #algorithms h3 {
   color: white; }
@@ -204,7 +220,7 @@ i {
 
 .time {
   font-style: italic;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .small-info {
   color: darkgrey !important;
@@ -213,10 +229,10 @@ i {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .back-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2em; }
 
 .back-link:hover {
@@ -509,7 +525,8 @@ nav {
   margin-bottom: 100px; }
 
 nav ul li a {
-  font-weight: 600; }
+  font-weight: 600;
+  color: black; }
 
 .image_wrapper {
   object-fit: fill; }
@@ -528,8 +545,7 @@ nav ul li a:hover {
 
 nav ul li {
   transition: none !important;
-  background-color: transparent !important;
-  color: white; }
+  background-color: transparent !important; }
 
 .nav-underline {
   margin: 0 25px 0 25px;
@@ -546,16 +562,15 @@ nav ul li {
 
 .heading {
   color: #292929;
-  font-weight: bold;
+  font-weight: 200px;
   font-size: 2.3rem;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Josefin Slab", serif; }
 
 .homepage-section {
   display: block;
   height: 50vh;
   min-height: 300px;
-  color: white;
-  font-weight: 600;
+  color: #EFF2EF;
   position: relative; }
 
 .quote_box {
@@ -563,15 +578,16 @@ nav ul li {
 
 .quote {
   font-size: 2rem;
+  font-weight: 300;
   text-indent: 15%;
   margin-bottom: 0;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .author {
   padding-right: 5%;
   margin-top: 0;
   font-size: 1.7rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Josefin Slab", serif;
   font-style: italic; }
 
 .my_container {
@@ -602,26 +618,25 @@ nav ul li {
 
 .modal .modal-content .row {
   background-color: #292929;
-  color: white;
+  color: #EFF2EF;
   height: 100%;
   margin: 0; }
 
 .modal_heading {
-  color: #ED542A; }
+  color: #F46036; }
 
 button {
   position: relative;
+  font-family: "Raleway", sans-serif;
   display: block;
   height: 45px;
   line-height: 45px;
-  margin: 10px 7px;
-  font-weight: 700;
+  margin: 5px;
   font-size: 15px;
   letter-spacing: .8px;
   color: #292929;
-  border: 2px #292929 solid !important;
+  border: 1px #292929 solid !important;
   border-radius: 3px;
-  text-transform: uppercase;
   outline: 0;
   overflow: hidden;
   background: none;
@@ -634,15 +649,15 @@ button {
   -webkit-transition: 0.2s ease-in; }
 
 .buttons button {
-  color: #ED542A;
-  border: 2px #ED542A solid !important; }
+  color: #F46036;
+  border: 1px #F46036 solid !important; }
 
 button:focus {
   background-color: transparent; }
 
 button.fill:hover {
   background-color: transparent;
-  color: #ED542A; }
+  color: #EFF2EF; }
 
 button.fill:before {
   content: "";
@@ -659,84 +674,19 @@ button.fill:before {
   color: #292929; }
 
 .buttons button.fill:before {
-  background: #ED542A; }
+  background: #F46036; }
 
 button.fill:hover:before {
   top: -5px; }
 
-.slide {
-  margin-top: 40px;
-  margin-bottom: 0; }
-
-.slide:after {
-  content: "next project";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  text-align: center;
-  -webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.slide_github:after {
-  content: "next project";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  text-align: center;
-  -webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.slide_live:after {
-  content: "next project";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  text-align: center;
-  -webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.slide:before {
-  content: "See it";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  color: #383736;
-  left: -100%;
-  opacity: 0;
-  -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.slide:hover {
-  background: #383736;
-  border: 2px #292929 solid !important; }
-
-.slide:hover:before {
-  left: 0;
-  opacity: 1;
-  color: #fff; }
-
-.slide:hover:after {
-  left: 100%;
-  opacity: 0; }
-
-.slide.slide_left:hover {
-  background: none; }
-
-.slide.slide_left:before {
-  left: 100%;
-  color: #383736;
-  -webkit-transition: all 425ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.slide.slide_left:hover:before {
-  left: 0; }
-
 .description {
-  color: #ED542A;
-  font-family: 'Raleway', sans-serif;
+  color: #F46036;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 40px;
   margin-top: 40px; }
 
 .cover {
-  background-color: #ED542A;
+  background-color: lightgrey;
   width: 40%;
   height: 100%;
   margin: 0;
@@ -744,7 +694,7 @@ button.fill:hover:before {
 
 .skills {
   margin-bottom: 40px;
-  color: #ED542A; }
+  color: #F46036; }
 
 .project {
   width: 90%;
@@ -754,7 +704,7 @@ button.fill:hover:before {
   box-shadow: 0 0 1000px 10px black inset; }
 
 .skill_icon {
-  color: #ED542A;
+  color: #F46036;
   font-size: 1.5rem; }
 
 .box {
@@ -766,7 +716,7 @@ button.fill:hover:before {
   height: 0px;
   width: 0px;
   position: absolute;
-  background-color: white; }
+  background-color: #EFF2EF; }
 
 .about-border {
   bottom: 0;

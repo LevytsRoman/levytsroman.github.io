@@ -13,6 +13,7 @@ function initializeScripts(){
   // $('.carousel.carousel-slider').carousel({fullWidth: true});
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
 
+  $('#textarea1').trigger('autoresize');
   $('.project_list').on('click', '.next', function(e){
     // debugger
     // pro1 = Promise.new()
@@ -68,7 +69,7 @@ function initializeScripts(){
   }
 
   if(pagename){
-    assignColors(pagename, color);
+    // assignColors(pagename, color);
     $('nav a[href="/' + pagename + '"]').parent().find('div').addClass('nav-underlined');
   }
 

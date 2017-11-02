@@ -2,7 +2,7 @@ projects:
   url: /projects
   heading: Projects
   words: A list of projects and experiments
-  class: m8 projects
+  class: m7 projects
   border: projects
 algorithms:
   url: /algorithms
@@ -16,9 +16,9 @@ contact:
   words: Feel free to shoot me an email
   class: m6 contact
   border: contact
-me:
+about:
   url: /about
   heading: Me
   words: Hi, I'm a programmer
-  class: m4 about
+  class: m5 about
   border: about
