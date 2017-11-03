@@ -11,9 +11,7 @@
     </ul>
     <ul class="side-nav" id="mobile-demo">
       {% for my_section in site.data.sections %}
-        <li>
-          <a href={{my_section[1].url}}>{{my_section[0]}}</a>
-        </li>
+        <li><a href={{my_section[1].url}}>{{my_section[0]}}</a><div class="nav-underline"></div></li>
       {% endfor %}
     </ul>
   </div>

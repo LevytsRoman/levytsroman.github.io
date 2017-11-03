@@ -20,11 +20,17 @@ $color4: #8e5572;
 $color6: #292929;
 
 // $text-color: #F1FAEE;
+// $text-color: #EFF2EF;
 $text-color: #EFF2EF;
-$modal-text: #F46036;
-$dark-grey: #292929;
 
-$cover-color: lightgrey;
+// $modal-text: #FFEE93;
+$modal-text: #FCF5C7;
+
+$dark-grey: #292929;
+$background-color: #FCF5C7;
+
+$cover-color: #FFEE93;
+
 @import
   "homepage",
   "style",
@@ -37,6 +43,7 @@ $cover-color: lightgrey;
 // }
 
 body {
+  background-color: $background-color;
   min-height: 100%;
 }
 
@@ -108,6 +115,7 @@ nav ul li {
 
 .quote_box {
   padding: 0 5% 0 5%;
+  margin-bottom: 50px;
 }
 
 .quote {
@@ -124,6 +132,19 @@ nav ul li {
   font-size: 1.7rem;
   font-family: $font1;
   font-style: italic;
+}
+
+.skills_heading {
+  margin-top: 60px;
+  font-size: 2rem;
+}
+
+.skill_names {
+  font-size: 1.2rem;
+  color: $dark-grey;
+  font-style: $font2;
+  font-weight: 200;
+  margin-left: 10px;
 }
 
 .my_container {
@@ -219,7 +240,7 @@ button:focus {
 
 button.fill:hover {
   background-color: transparent;
-  color: $text-color;
+  color: $cover-color;;
 }
 
 button.fill:before {
@@ -248,9 +269,11 @@ button.fill:hover:before {
 
 .description {
   color: $modal-text;
+  letter-spacing: +1px;
   font-family: $font2;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 200;
+  margin-top: 30px;
 }
 
 .cover {
@@ -288,6 +311,10 @@ button.fill:hover:before {
   font-size: 1.5rem;
 }
 
+.about_skill_icon {
+  color: $dark-grey;
+  font-size: 1.5rem;
+}
 .box {
   height: 50vh;
 }
@@ -320,6 +347,53 @@ button.fill:hover:before {
   bottom: 0;
   left: 0;
 }
+
+.about_img {
+  margin-top: 15px;
+  margin-right: 15px;
+  -webkit-filter: sepia(0.3);
+  filter: sepia(0.3);
+}
+
+.about_paragraph {
+  font-size: 1.5em;
+  letter-spacing: +.5px;
+  font-weight: 200;
+}
+
+/* label color */
+.input-field label {
+ color: $dark-grey !important;
+}
+/* label focus color */
+.input-field input:focus + label {
+ color: $dark-grey !important;
+}
+/* label underline focus color */
+.input-field input:focus {
+ border-bottom: 1px solid $dark-grey !important;
+ box-shadow: 0 1px 0 0 $dark-grey !important;
+}
+/* valid color */
+.input-field input.valid {
+ border-bottom: 1px solid darkgreen !important;
+ box-shadow: 0 1px 0 0 darkgreen !important;
+}
+/* invalid color */
+.input-field input.invalid {
+ border-bottom: 1px solid red !important;
+ box-shadow: 0 1px 0 0 red !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: $dark-grey !important;
+}
+textarea:focus {
+ outline: none !important;
+ border-bottom: 1px solid $dark-grey !important;
+ box-shadow: 0 1px 0 0 $dark-grey !important;
+}
+
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   font-size: 3rem;
 }
@@ -331,6 +405,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   }
   .carousel.carousel-item {
     height: auto;
+  }
+  .nav-underlined, .nav-underline {
+    margin-left: 40px;
   }
 }
 

@@ -14,16 +14,18 @@ function initializeScripts(){
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
 
   $('#textarea1').trigger('autoresize');
+
   $('.project_list').on('click', '.next', function(e){
-    // debugger
-    // pro1 = Promise.new()
     var thisId = $(this).attr('id');
     var nextId = (parseInt(thisId) + 1).toString();
 
     $('#' + thisId).modal('close');
 
-    var nextId = (parseInt(thisId) + 1).toString();
-    $('#' + nextId).modal('open')
+    // need to rework this to use promise rather then setTimeout
+    setTimeout(function(){
+      var nextId = (parseInt(thisId) + 1).toString();
+      $('#' + nextId).modal('open')
+    }, 200)
   })
 
   $('.modal').modal({
@@ -35,6 +37,7 @@ function initializeScripts(){
       endingTop: '0%', // Ending top style attribute
       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
         // alert("Ready");
+        modal_open = true
         $('.carousel.carousel-slider').carousel({fullWidth: true});
       },
       complete: function(e) {
@@ -45,6 +48,7 @@ function initializeScripts(){
   var colors = {
         'about': 'rgb(142,85,114)',
         'projects': '#F46036',
+        'contact': '#fcb',
         'algorithms': '#2E294E'
       },
       urlString = window.location.href,
