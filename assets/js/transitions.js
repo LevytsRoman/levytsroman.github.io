@@ -169,7 +169,7 @@ var FadeTransition = Barba.BaseTransition.extend({
         $('.projects-border').css({width: '100%'})
         $('.algorithms-border').css({width: '100%'})
 
-        // debugger
+        // $('.algorithms-border').css({left: - $('.contact-border').offset().left + $('.about-border').offset().left + 'px', top: '-1px'})
         // var pos = $('.about').position().left + 'px'
         // $('.algorithms-border').css({left: pos})
         var contactXPos = $('.contact').position().left,

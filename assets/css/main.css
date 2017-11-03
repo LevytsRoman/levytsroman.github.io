@@ -548,10 +548,7 @@ nav ul li {
   background-color: black;
   transition: width .3s; }
 
-.nav-underlined {
-  width: 30%; }
-
-.nav-hover-underlined {
+.nav-underlined, .nav-hover-underlined {
   width: 30%; }
 
 .heading {
@@ -663,7 +660,7 @@ button:focus {
 
 button.fill:hover {
   background-color: transparent;
-  color: #FFEE93; }
+  color: #f9f0ae; }
 
 button.fill:before {
   content: "";
@@ -694,7 +691,7 @@ button.fill:hover:before {
   margin-top: 30px; }
 
 .cover {
-  background-color: #FFEE93;
+  background-color: #f9f0ae;
   width: 40%;
   height: 100%;
   margin: 0;
@@ -801,7 +798,10 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: auto; }
 
   .nav-underlined, .nav-underline {
-    margin-left: 40px; } }
+    margin-left: 40px; }
+
+  .nav-underlined, .nav-hover-underlined {
+    width: 15%; } }
 @media only screen and (max-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-size: 2.5rem; } }

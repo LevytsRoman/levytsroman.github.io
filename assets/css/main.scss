@@ -29,7 +29,7 @@ $modal-text: #FCF5C7;
 $dark-grey: #292929;
 $background-color: #FCF5C7;
 
-$cover-color: #FFEE93;
+$cover-color: #f9f0ae;
 
 @import
   "homepage",
@@ -89,11 +89,7 @@ nav ul li {
   transition: width .3s;
 }
 
-.nav-underlined {
-  width: 30%;
-}
-
-.nav-hover-underlined {
+.nav-underlined, .nav-hover-underlined {
   width: 30%;
 }
 
@@ -408,6 +404,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   }
   .nav-underlined, .nav-underline {
     margin-left: 40px;
+  }
+  .nav-underlined, .nav-hover-underlined {
+    width: 15%;
   }
 }
 
