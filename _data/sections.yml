@@ -4,12 +4,6 @@ projects:
   words: A list of projects and experiments
   class: m7 projects
   border: projects
-algorithms:
-  url: /algorithms
-  heading: Fun stuff
-  words: Some weird shit like random joke or random useless website
-  class: m6 algorithms
-  border: algorithms
 contact:
   url: /contact
   heading: Contact

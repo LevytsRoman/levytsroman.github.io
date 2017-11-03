@@ -22,9 +22,16 @@ var HideShowTransition = Barba.BaseTransition.extend({
     $(this.oldContainer).addClass('barba-old-container')
     // $('body').css('backgroundColor', 'black')
     // debugger
+    var le = $('.algorithms-border').position().left - $('.about-border').position().left
+
+    $('.algorithms-border').css({
+      right: le + 'px',
+      top: '-1px'
+    })
+
     $('.my-borders').css({
-      height: '2px',
-      width: '2px'
+      height: '1px',
+      width: '1px'
     })
     // var pos = $('.about').position().left + 'px'
     // $('.algorithms-border').css({left: pos})
@@ -153,9 +160,10 @@ var FadeTransition = Barba.BaseTransition.extend({
       if(this.newContainer.baseURI === "http://localhost:4000/"){
         $(this.newContainer).addClass('barba-new-container-back');
         $('.my-borders').css({
-          height: '2px',
-          width: '2px'
+          height: '1px',
+          width: '1px'
         })
+
         $('.about-border').css({height: '100%'})
         $('.contact-border').css({height: '100%'})
         $('.projects-border').css({width: '100%'})

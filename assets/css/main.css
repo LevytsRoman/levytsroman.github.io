@@ -238,13 +238,6 @@ i {
 .back-link:hover {
   text-decoration: underline; }
 
-#scroll-top {
-  display: none;
-  position: fixed;
-  top: 85%;
-  left: 90%;
-  background-color: darkgrey !important; }
-
 @media only screen and (max-width: 500px) {
   #scroll-top {
     left: 80%; } }
@@ -735,7 +728,7 @@ button.fill:hover:before {
   height: 0px;
   width: 0px;
   position: absolute;
-  background-color: #EFF2EF; }
+  background-color: #FCF5C7; }
 
 .about-border {
   bottom: 0;
