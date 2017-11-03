@@ -299,6 +299,12 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.oldContainer).hide();
           $el.animate({opacity: 1}, 300, () => {
             this.done();
+            $(".button-collapse").sideNav({
+              menuWidth: 200,
+              edge: 'left',
+              closeOnClick: true,
+              draggable: true
+            });
           })
         })
         // $(this.oldContainer).animate({
