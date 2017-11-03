@@ -8,16 +8,25 @@ layout: not_homepage
 </div>
 
 <div class="container">
-  <div class="words">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="row">
+    <img src="/assets/images/profile_picture.jpg" class="col m2 s3 responsive circle about_img" alt="me">
+    <div class="about_paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
   </div>
-  <div class="stuff">
-    <h3>my arsenal:</h3>
-    {% assign technologies = site.technologies | split: ' ' %}
-    {% for item in technologies%}
-      <div class="">
-        - {{item}}
+  <div class="row">
+    <h3 class="heading skills_heading center-align">Skills:</h3>
+    {% for tech_group in site.data.skills %}
+    <div class="{% cycle '', '', 'row' %}">
+      <div class="col m4 s6">
+        <h4 class="heading">{{tech_group.name}}:</h4>
+        <div class="skills">
+          {% for tech in tech_group.skills %}
+            <i class="about_skill_icon devicon-{{tech.class}}"></i><span class="skill_names">{{tech.skill_name}}</span><br/>
+          {% endfor %}
+        </div>
       </div>
+    </div>
     {% endfor %}
   </div>
 </div>
