@@ -6,12 +6,56 @@ function initializeScripts(){
     draggable: true
   });
 
+  $('.email_me').submit(function(e){
+    e.preventDefault();
+
+    $.ajax({
+        url: "https://formspree.io/r.levyts@gmail.com",
+        method: "POST",
+        data: $('.email_me').serialize(),
+        dataType: "json"
+    }).done(function(res) {
+      $('.email_input').val('')
+      // alert('Thanks!!')
+      $('#modal1').modal('open');
+    })
+  })
+
   $('.my-borders').css({
     height: '0px',
     width: '0px'
   })
   // $('.carousel.carousel-slider').carousel({fullWidth: true});
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+  function randomAnswer(){
+    var answers = [
+    "It is certain",
+    "It is decidedly so",
+    "Without a doubt",
+    "Yes definitely",
+    "You may rely on it",
+    "As I see it, yes",
+    "Most likely",
+    "Outlook good",
+    "Yes",
+    "Signs point to yes",
+    "Reply hazy try again",
+    "Ask again later",
+    "Better not tell you now",
+    "Cannot predict now",
+    "Concentrate and ask again",
+    "Don't count on it",
+    "My reply is no",
+    "My sources say no",
+    "Outlook not so good",
+    "Very doubtful",
+    ]
+
+    var ans = answers[Math.round(Math.random()*19)]
+    $('.answer').html(ans);
+  }
+
+  $('.8ball').click(randomAnswer);
 
   $('#textarea1').trigger('autoresize');
 

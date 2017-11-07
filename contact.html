@@ -17,34 +17,36 @@ layout: not_homepage
 </div>
 
 <div class="container">
-  <form class="" action="index.html" method="post">
+  <form class="email_me" action="https://formspree.io/r.levyts@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="//localhost:4000/contact" />
+    <input type="text" name="_gotcha" style="display:none" />
     <div class="row">
       <div class="input-field col m6 s12">
         <i class="material-icons prefix">account_circle</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">First Name</label>
+        <input id="icon_prefix" type="text" name="name" class="validate email_input">
+        <label for="icon_prefix">Full Name</label>
       </div>
       <div class="input-field col m6 s12">
         <i class="material-icons prefix">phone</i>
-        <input id="icon_telephone" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" class="validate">
-        <label for="icon_telephone" data-error="Make sure your number matches ths format 234-546-6789">Telephone</label>
+        <input id="icon_telephone" name="phone" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" class="validate email_input">
+        <label for="icon_telephone" data-error="Make sure your number matches this format XXX-XXX-XXXX">Telephone</label>
       </div>
       <div class="input-field col m6 s12">
         <i class="material-icons prefix">email</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">Email</label>
+        <input id="icon_prefix" name="_replyto" type="email" class="validate email_input">
+        <label for="icon_prefix" data-error="Make sure you've entered a valid email">Email</label>
       </div>
       <div class="input-field col m6 s12">
-        <i class="material-icons prefix">title</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">title</label>
+        <i class="material-icons prefix">S</i>
+        <input id="icon_prefix" type="text" name="_subject" class="email_input"/>
+        <label for="icon_prefix">stuff</label>
       </div>
     </div>
 
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">mode_edit</i>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <textarea id="textarea1" name="message" class="materialize-textarea email_input"></textarea>
         <label for="textarea1">Textarea</label>
       </div>
     </div>
@@ -54,4 +56,17 @@ layout: not_homepage
       </button>
     </div>
   </form>
+  <!-- Modal Trigger -->
+  <br/>
+  <a class="waves-effect waves-light btn modal-trigger" href="#email_modal">Modal</a>
+
+  <div id="email_modal" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 </div>

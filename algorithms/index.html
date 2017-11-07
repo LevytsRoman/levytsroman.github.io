@@ -5,40 +5,11 @@ layout: not_homepage
   <div class="quote">didn't know what to put here so here's a telepathic magic 8-ball, you can ask it questions.
   </div>
   <div class="row">
-    <button type="button" onclick="randomAnswer()" class="fill col m4 offset-m4" name="button">ask</button>
+    <button type="button" class="8ball fill col m4 offset-m4" name="button">ask</button>
   </div>
   <div class="answer quote center-align col m4 offset-m4">
   </div>
 </div>
-<script type="text/javascript">
-  function randomAnswer(){
-    var answers = [
-    "It is certain",
-    "It is decidedly so",
-    "Without a doubt",
-    "Yes definitely",
-    "You may rely on it",
-    "As I see it, yes",
-    "Most likely",
-    "Outlook good",
-    "Yes",
-    "Signs point to yes",
-    "Reply hazy try again",
-    "Ask again later",
-    "Better not tell you now",
-    "Cannot predict now",
-    "Concentrate and ask again",
-    "Don't count on it",
-    "My reply is no",
-    "My sources say no",
-    "Outlook not so good",
-    "Very doubtful",
-    ]
-
-    var ans = answers[Math.round(Math.random()*19)]
-    document.querySelector('.answer').innerHTML = ans;
-  }
-</script>
 <!-- <div class="" id="algorithms">
   <div class="row">
     <div class="col s10 m6 offset-m3 center-align">
