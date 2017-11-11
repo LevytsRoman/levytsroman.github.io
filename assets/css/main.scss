@@ -42,6 +42,8 @@ $cover-color: #f9f0ae;
 //   background-image: url('/assets/images/construction-2682641_1920.jpg');
 // }
 
+
+
 body {
   background-color: $background-color;
   min-height: 100%;
@@ -149,31 +151,37 @@ nav ul li {
   margin-right: auto ;
 }
 
-.modal .modal-content {
-  padding: 0 !important;
-  margin: 0;
-  height: 100%;
+.projects-botom {
+  margin-top: 50px;
 }
 
-.modal {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 90vh;
-  max-height: 90vh;
-  margin-top: 5vh;
-  // width: auto;
-  // max-height: 100vh !important;
-  // margin-top: 5vh;
-  // height: 90vh;
-  // width: 90vw;
-  // max-width: 1300px;
-  // max-height: 600px;
-  // width: 80%;
-  // margin-top: 5%
-  // height: 80vh;
-  // max-width: 1300px;
-  // height: 1000px;
+.project_list {
+  .modal .modal-content {
+    padding: 0 !important;
+    margin: 0;
+    height: 100%;
+  }
+
+  .modal {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 90vh;
+    max-height: 90vh;
+    margin-top: 5vh;
+    // width: auto;
+    // max-height: 100vh !important;
+    // margin-top: 5vh;
+    // height: 90vh;
+    // width: 90vw;
+    // max-width: 1300px;
+    // max-height: 600px;
+    // width: 80%;
+    // margin-top: 5%
+    // height: 80vh;
+    // max-width: 1300px;
+    // height: 1000px;
+  }
 }
 
 .carousel {

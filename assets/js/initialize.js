@@ -72,7 +72,7 @@ function initializeScripts(){
     }, 200)
   })
 
-  $('.modal').modal({
+  $('.project_list .modal').modal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: .8, // Opacity of modal background
       inDuration: 200, // Transition in duration

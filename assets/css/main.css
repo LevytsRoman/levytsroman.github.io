@@ -238,9 +238,6 @@ i {
 .back-link:hover {
   text-decoration: underline; }
 
-@media only screen and (max-width: 500px) {
-  #scroll-top {
-    left: 80%; } }
 .highlight {
   background-color: #ffffcc;
   border-radius: 5px; }
@@ -598,12 +595,14 @@ nav ul li {
   margin-left: auto;
   margin-right: auto; }
 
-.modal .modal-content {
+.projects-botom {
+  margin-top: 50px; }
+
+.project_list .modal .modal-content {
   padding: 0 !important;
   margin: 0;
   height: 100%; }
-
-.modal {
+.project_list .modal {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;

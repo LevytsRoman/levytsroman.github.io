@@ -16,3 +16,9 @@ about:
   words: Hi, I'm a programmer
   class: m5 about
   border: about
+algorithms:
+  url: /algorithms
+  heading: Algorithms
+  words: Stuff
+  class: m6 algorithms
+  border: algorithms
