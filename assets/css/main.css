@@ -598,6 +598,10 @@ nav ul li {
 .projects-botom {
   margin-top: 50px; }
 
+#email_modal {
+  background-color: #292929;
+  color: #FCF5C7; }
+
 .project_list .modal .modal-content {
   padding: 0 !important;
   margin: 0;
@@ -609,6 +613,13 @@ nav ul li {
   height: 90vh;
   max-height: 90vh;
   margin-top: 5vh; }
+.project_list .modal .modal-content .row {
+  background-color: #292929;
+  color: #EFF2EF;
+  height: 100%;
+  margin: 0; }
+.project_list .modal_heading {
+  color: #FCF5C7; }
 
 .carousel {
   margin: 0;
@@ -617,15 +628,6 @@ nav ul li {
 
 .valign-wrapper {
   height: 100%; }
-
-.modal .modal-content .row {
-  background-color: #292929;
-  color: #EFF2EF;
-  height: 100%;
-  margin: 0; }
-
-.modal_heading {
-  color: #FCF5C7; }
 
 button {
   position: relative;
@@ -687,7 +689,8 @@ button.fill:hover:before {
   font-family: "Raleway", sans-serif;
   margin-bottom: 30px;
   font-weight: 200;
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-size: 1.5rem; }
 
 .cover {
   background-color: #f9f0ae;

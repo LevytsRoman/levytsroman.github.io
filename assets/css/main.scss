@@ -155,6 +155,11 @@ nav ul li {
   margin-top: 50px;
 }
 
+#email_modal {
+  background-color: $dark-grey;
+  color: $modal-text;
+}
+
 .project_list {
   .modal .modal-content {
     padding: 0 !important;
@@ -182,6 +187,17 @@ nav ul li {
     // max-width: 1300px;
     // height: 1000px;
   }
+
+  .modal .modal-content .row {
+    background-color: $dark-grey;
+    color: $text-color;
+    height: 100%;
+    margin: 0;
+  }
+
+  .modal_heading {
+    color: $modal-text;
+  }
 }
 
 .carousel {
@@ -194,16 +210,7 @@ nav ul li {
   height: 100%;
 }
 
-.modal .modal-content .row {
-  background-color: $dark-grey;
-  color: $text-color;
-  height: 100%;
-  margin: 0;
-}
 
-.modal_heading {
-  color: $modal-text;
-}
 
 button {
   position: relative;
@@ -278,6 +285,7 @@ button.fill:hover:before {
   margin-bottom: 30px;
   font-weight: 200;
   margin-top: 30px;
+  font-size: 1.5rem;
 }
 
 .cover {

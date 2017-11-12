@@ -9,16 +9,15 @@ function initializeScripts(){
   $('.email_me').submit(function(e){
     e.preventDefault();
 
-    $.ajax({
-        url: "https://formspree.io/r.levyts@gmail.com",
-        method: "POST",
-        data: $('.email_me').serialize(),
-        dataType: "json"
-    }).done(function(res) {
-      $('.email_input').val('')
-      // alert('Thanks!!')
-      $('#modal1').modal('open');
-    })
+    // $.ajax({
+    //     url: "https://formspree.io/r.levyts@gmail.com",
+    //     method: "POST",
+    //     data: $('.email_me').serialize(),
+    //     dataType: "json"
+    // }).done(function(res) {
+    // })
+    $('.email_input').val('');
+    $('#email_modal').modal('open');
   })
 
   $('.my-borders').css({
@@ -70,6 +69,14 @@ function initializeScripts(){
       var nextId = (parseInt(thisId) + 1).toString();
       $('#' + nextId).modal('open')
     }, 200)
+  })
+
+  $('#email_modal').modal({
+    opacity: .8, // Opacity of modal background
+    inDuration: 200, // Transition in duration
+    outDuration: 200, // Transition out duration
+    startingTop: '30%', // Starting top style attribute
+    endingTop: '35%',
   })
 
   $('.project_list .modal').modal({

@@ -46,9 +46,9 @@ layout: not_homepage
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">mode_edit</i>
-        <textarea id="textarea1" name="message" class="materialize-textarea email_input"></textarea>
+        <textarea id="textarea1" aria-required="true" name="message" class="materialize-textarea email_input validate"></textarea>
 
-        <label for="textarea1">Textarea</label>
+        <label for="textarea1" data-error="Make sure you've entered a message">Textarea</label>
       </div>
     </div>
 
@@ -59,15 +59,19 @@ layout: not_homepage
   </form>
   <!-- Modal Trigger -->
   <br/>
-  <a class="waves-effect waves-light btn modal-trigger" href="#email_modal">Modal</a>
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#email_modal">Modal</a> -->
 
   <div id="email_modal" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    <div class="container">
+      <div class="modal-content row">
+        <h4 class="center-align">Your email is on the way!</h4>
+        <p class="center-align description">I usually reply fast</p>
+      </div>
+      <div class="row">
+        <div class="buttons col s8 offset-s2 m8 offset-m2 l8 offset-l2">
+          <a class="button_wrapper modal-action modal-close" ><button class="fill col s12">back to site</button></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
