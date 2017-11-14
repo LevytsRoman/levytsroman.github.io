@@ -164,11 +164,13 @@ var FadeTransition = Barba.BaseTransition.extend({
           width: '1px'
         })
 
+        // var le = $('.about-border').position().left
+        // $('.algorithms-border').css('left', le);
+        //
         $('.about-border').css({height: '100%'})
         $('.contact-border').css({height: '100%'})
         $('.projects-border').css({width: '100%'})
         $('.algorithms-border').css({width: '100%'})
-
         // $('.algorithms-border').css({left: - $('.contact-border').offset().left + $('.about-border').offset().left + 'px', top: '-1px'})
         // var pos = $('.about').position().left + 'px'
         // $('.algorithms-border').css({left: pos})
@@ -246,9 +248,11 @@ var FadeTransition = Barba.BaseTransition.extend({
         var pros = [pro1, pro2, pro3, pro4];
 
         Promise.all(pros).then(() => {
+          // debugger
           $(this.newContainer).removeClass('barba-old-container')
           //  $(this.oldContainer).css();
 
+          $('.algorithms-border').css('top', '-1px');
           _this.done();
           var proBorder1 = new Promise((resolve, reject) => {
             $('.about-border').animate({
@@ -284,10 +288,9 @@ var FadeTransition = Barba.BaseTransition.extend({
           var borderPromises = [proBorder1,proBorder2,proBorder3,proBorder4]
 
           Promise.all(borderPromises).then(()=>{
-            // debugger
             $(this.newContainer).removeClass('barba-old-container')
             //  $(this.oldContainer).css();
-            console.log("me")
+            // console.log("me")
             // _this.done();
           })
         })
