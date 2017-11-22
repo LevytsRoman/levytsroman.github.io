@@ -507,6 +507,10 @@ i {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+.my_footer {
+  background-color: #292929;
+  margin-top: 40px; }
+
 .resume-wrapper button {
   margin-top: 50px; }
 
@@ -598,7 +602,7 @@ nav ul li {
   margin-left: auto;
   margin-right: auto; }
 
-.projects-botom {
+.projects-bottom {
   margin-top: 50px; }
 
 #email_modal {

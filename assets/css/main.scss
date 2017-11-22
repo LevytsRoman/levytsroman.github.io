@@ -54,6 +54,10 @@ $cover-color: #f9f0ae;
 //   background-color: orange;
 //
 // }
+.my_footer {
+  background-color: $dark-grey;
+  margin-top: 40px;
+}
 
 .resume-wrapper {
   button {
@@ -168,7 +172,7 @@ nav ul li {
   margin-right: auto ;
 }
 
-.projects-botom {
+.projects-bottom {
   margin-top: 50px;
 }
 
