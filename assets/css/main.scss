@@ -55,8 +55,10 @@ $cover-color: #f9f0ae;
 //
 // }
 
-.resume-image {
-  max-width:100%
+.resume-wrapper {
+  button {
+    margin-top: 50px;
+  }
 }
 body {
   background-color: $background-color;

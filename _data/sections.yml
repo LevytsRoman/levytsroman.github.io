@@ -4,12 +4,6 @@ projects:
   words: A list of projects and experiments
   class: m7 projects
   border: projects
-contact:
-  url: /contact
-  heading: Contact
-  words: Feel free to shoot me an email
-  class: m6 contact
-  border: contact
 about:
   url: /about
   heading: Me
@@ -22,3 +16,9 @@ resume:
   words: Stuff
   class: m6 algorithms
   border: algorithms
+contact:
+  url: /contact
+  heading: Contact
+  words: Feel free to shoot me an email
+  class: m6 contact
+  border: contact

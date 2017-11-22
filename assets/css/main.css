@@ -507,8 +507,8 @@ i {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-.resume-image {
-  max-width: 100%; }
+.resume-wrapper button {
+  margin-top: 50px; }
 
 body {
   background-color: #FCF5C7;

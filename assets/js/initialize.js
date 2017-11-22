@@ -1,4 +1,5 @@
 function initializeScripts(){
+  $( document ).tooltip();
   $(".button-collapse").sideNav({
     menuWidth: 200,
     edge: 'left',
