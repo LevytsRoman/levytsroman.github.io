@@ -9,15 +9,15 @@ function initializeScripts(){
   $('.email_me').submit(function(e){
     e.preventDefault();
 
-    // $.ajax({
-    //     url: "https://formspree.io/r.levyts@gmail.com",
-    //     method: "POST",
-    //     data: $('.email_me').serialize(),
-    //     dataType: "json"
-    // }).done(function(res) {
-    // })
-    $('.email_input').val('');
-    $('#email_modal').modal('open');
+    $.ajax({
+        url: "https://formspree.io/r.levyts@gmail.com",
+        method: "POST",
+        data: $('.email_me').serialize(),
+        dataType: "json"
+    }).done(function(res) {
+      $('.email_input').val('');
+      $('#email_modal').modal('open');
+    })
   })
 
   $('.my-borders').css({

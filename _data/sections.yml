@@ -16,9 +16,9 @@ about:
   words: Hi, I'm a programmer
   class: m5 about
   border: about
-algorithms:
-  url: /algorithms
-  heading: Algorithms
+resume:
+  url: /resume
+  heading: Resume
   words: Stuff
   class: m6 algorithms
   border: algorithms

@@ -43,7 +43,21 @@ $cover-color: #f9f0ae;
 // }
 
 
+// .resume {
+//   width: 100%;
+//   max-width: 875px;
+//   min-height: 100vh;
+//   max-height: 1000px;
+// }
+// .resume-img-wrapper {
+//   width: 100px;
+//   background-color: orange;
+//
+// }
 
+.resume-image {
+  max-width:100%
+}
 body {
   background-color: $background-color;
   min-height: 100%;
@@ -65,6 +79,7 @@ nav ul li a {
 
 .project_img {
   height: 90vh;
+
 }
 
 .projects_container {
@@ -134,11 +149,11 @@ nav ul li {
 
 .skills_heading {
   margin-top: 60px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .skill_names {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: $dark-grey;
   font-style: $font2;
   font-weight: 200;
@@ -368,7 +383,7 @@ button.fill:hover:before {
 }
 
 .about_paragraph {
-  font-size: 1.5em;
+  font-size: 1.8em;
   letter-spacing: +.5px;
   font-weight: 200;
 }

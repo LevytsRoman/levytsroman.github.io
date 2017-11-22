@@ -507,6 +507,9 @@ i {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+.resume-image {
+  max-width: 100%; }
+
 body {
   background-color: #FCF5C7;
   min-height: 100%; }
@@ -581,10 +584,10 @@ nav ul li {
 
 .skills_heading {
   margin-top: 60px;
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .skill_names {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #292929;
   font-style: "Raleway", sans-serif;
   font-weight: 200;
@@ -752,7 +755,7 @@ button.fill:hover:before {
   filter: sepia(0.3); }
 
 .about_paragraph {
-  font-size: 1.5em;
+  font-size: 1.8em;
   letter-spacing: +.5px;
   font-weight: 200; }
 
