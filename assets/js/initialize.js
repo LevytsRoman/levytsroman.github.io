@@ -1,12 +1,16 @@
 function initializeScripts(){
-  $( document ).tooltip();
+  // $( document ).tooltip();
+  $('.materialboxed').materialbox();
   $(".button-collapse").sideNav({
     menuWidth: 200,
     edge: 'left',
     closeOnClick: true,
     draggable: true
   });
-
+  // $('.carousel-arrows').click(function(e){
+  //   var arrow = e.target;
+  //   debugger
+  // })
   $('.email_me').submit(function(e){
     e.preventDefault();
 
@@ -60,6 +64,7 @@ function initializeScripts(){
   $('#textarea1').trigger('autoresize');
 
   $('.project_list').on('click', '.next', function(e){
+    e.preventDefault();
     var thisId = $(this).attr('id');
     var nextId = (parseInt(thisId) + 1).toString();
 
