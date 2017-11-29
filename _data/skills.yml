@@ -76,5 +76,5 @@
 
 - name: mobile
   skills:
-    - class: react-original colored
+    - class: react-original
       skill_name: React Native
