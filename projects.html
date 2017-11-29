@@ -8,6 +8,7 @@ layout: not_homepage
 </div>
 
 <div class="project_list">
+  <h2 class="heading center">Projects and Experiments:</h2>
   {% for item in site.data.projects %}
     <div class="project row" style="background-image: url({{item.cover}}); background-size: cover;">
       <div class="cover {% cycle 'left', 'right'%} col m5 s12">
@@ -20,10 +21,11 @@ layout: not_homepage
         </div>
 
         <!-- Modal Structure -->
-        <div id="{{item.id}}" class="modal">
+        <!-- <div id="{{item.id}}" class="modal">
           <div class="modal-content">
             <div class="row">
               <div class="carousel carousel-slider center col s12 m12 l9" data-indicators="true">
+                <div class="left-arrow carousel-arrows">left</div>
                 {% for image in item.images %}
                 <div class="white-text carousel-item">
                   <div class="image_wrapper">
@@ -31,6 +33,9 @@ layout: not_homepage
                   </div>
                 </div>
                 {% endfor %}
+                <div class="right-arrow carousel-arrows">
+                  right
+                </div>
               </div>
               <div class="col s12 m12 l3">
                 <div class="projects_container">
@@ -69,6 +74,69 @@ layout: not_homepage
                 </div>
               </div>
             </div>
+          </div>
+        </div> -->
+        <!-- Modal Trigger -->
+        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+        <!-- Modal Structure -->
+        <div id="{{item.id}}" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <div class="carousel carousel-slider center" data-indicators="true">
+              <!-- <div class="left-arrow carousel-arrows">left</div> -->
+              {% for image in item.images %}
+              <div class="white-text carousel-item">
+                <div class="image_wrapper">
+                  <img class="responsive-img project_img" src="{{image}}" alt="">
+                </div>
+              </div>
+              {% endfor %}
+              <!-- <div class="right-arrow carousel-arrows">
+                right
+              </div> -->
+            </div>
+            <div class="project_info">
+              <div class="row">
+                <div class="col s3 m2 info_type">
+                  title:
+                </div>
+                <h4 class="col s9 m10">{{item.title}}</h4>
+              </div>
+              <div class="row">
+                <div class="col s3 m2 info_type">
+                  description:
+                </div>
+                <p class="description col s9 m10">{{item.description}}</p>
+              </div>
+              <div class="row">
+                <div class="col s3 m2 info_type">
+                  skills:
+                </div>
+                <div class="col s9 m10">
+                  {% for tech in item.technologies %}
+                    <i class="devicon-{{tech}} project_icons"></i>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer center-align">
+            <!-- <div class="buttons row">
+              <div class="col s4"> -->
+              <div class="buttons">
+
+                <a class="button_wrapper" target="_blank" href="{{item.url}}"><button class="fill">live</button></a>
+              <!-- </div>
+              <div class="col s4"> -->
+                <a class="button_wrapper" target="_blank" href="{{item.github_url}}"><button class="fill">github</button></a>
+              <!-- </div>
+              <div class="col s4"> -->
+                <a href="" class="button_wrapper">
+                  <button id="{{item.id}}" class="next fill">Next</button>
+                </a>
+              </div>
+              <!-- </div>
+            </div> -->
           </div>
         </div>
       </div>
