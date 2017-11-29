@@ -21,6 +21,7 @@ function initializeScripts(){
         dataType: "json"
     }).done(function(res) {
       $('.email_input').val('');
+      $('.email_input').removeClass('valid');
       $('#email_modal').modal('open');
     })
   })
