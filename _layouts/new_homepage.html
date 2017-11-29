@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<style media="screen">
+#homepage {
+  min-height: 100vh;
+}
+.my-box {
+  height: 50vh;
+  position: relative !important;
+}
+.my-border {
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  background-color: yellow;
+}
+.red-border {
+  bottom: 0;
+  right: 0;
+}
+.green-border {
+  top: 0;
+  right: 0;
+}
+.purple-border {
+  top: 0;
+  left: 0;
+}
+.blue-border {
+  bottom: 0;
+  left: 0;
+}
+</style>
+<div id="homepage">
+  <div class="row">
+    <div class="col m4 my-box contact" style="background: red">
+      <div class="my-border red-border">
+
+      </div>
+    </div>
+    <div class="col m8 my-box current" style="background: blue">
+      <div class="my-border blue-border">
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <a href='/projects'>
+      <div class="col m6 my-box completed" style="background: green">
+        <div class="my-border green-border">
+
+        </div>
+      </div>
+    </a>
+
+    <div class="col m6 my-box about" style="background: purple">
+      <div class="my-border purple-border">
+
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+
+  $('body').click(function(e){
+    animatron();
+  })
+</script>

@@ -1,0 +1,77 @@
+---
+layout: not_homepage
+---
+
+<div class="quote_box row">
+  <p class="quote">Email,
+    instant messaging,
+    and cell phones
+    give us fabulous
+    communication ability,
+    but because we live and work
+    in our own little worlds,
+    communication
+    is totally disorganized.
+  </p>
+  <p class="author right"> – Marilyn vos Savant</p>
+</div>
+
+<div class="container">
+  <form class="email_me" action="https://formspree.io/r.levyts@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="//localhost:4000/contact" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <div class="row">
+      <div class="input-field col m6 s12">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" name="name" class="validate email_input">
+        <label for="icon_prefix">Full Name</label>
+      </div>
+      <div class="input-field col m6 s12">
+        <i class="material-icons prefix">phone</i>
+        <input id="icon_telephone" name="phone" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" class="validate email_input">
+        <label for="icon_telephone" data-error="Make sure your number matches this format XXX-XXX-XXXX">Telephone</label>
+      </div>
+      <div class="input-field col m6 s12">
+        <i class="material-icons prefix">email</i>
+        <input id="icon_prefix" name="_replyto" type="email" class="validate email_input">
+        <label for="icon_prefix" data-error="Make sure you've entered a valid email">Email</label>
+      </div>
+      <div class="input-field col m6 s12">
+        <i class="material-icons prefix">S</i>
+        <input id="icon_prefix" type="text" name="_subject" class="email_input"/>
+        <label for="icon_prefix">Subject</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="textarea1" aria-required="true" name="message" class="materialize-textarea email_input validate"></textarea>
+
+        <label for="textarea1" data-error="Make sure you've entered a message">Message</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="fill col s8 offset-s2 m4 offset-m4" type="submit" name="action">Submit
+      </button>
+    </div>
+  </form>
+  <!-- Modal Trigger -->
+  <br/>
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#email_modal">Modal</a> -->
+
+  <div id="email_modal" class="modal">
+    <div class="container">
+      <div class="modal-content row">
+        <h4 class="center-align">Your email is on the way!</h4>
+        <p class="center-align description">I usually reply fast</p>
+      </div>
+      <div class="row">
+        <div class="buttons col s8 offset-s2 m8 offset-m2 l8 offset-l2">
+          <a class="button_wrapper modal-action modal-close" ><button class="fill col s12">back to site</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

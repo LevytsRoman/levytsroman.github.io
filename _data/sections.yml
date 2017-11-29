@@ -2,14 +2,23 @@ projects:
   url: /projects
   heading: Projects
   words: A list of projects and experiments
-  class: m8 current
-algorithms:
-  url: /algorithms
-  heading: Algorithms
-  words: Solutions and animations of common programming algorithms
-  class: m6 completed
+  class: m7 projects
+  border: projects
 about:
   url: /about
-  heading: About me
-  words: Who I am, where I come from, and why I do what I do.
-  class: m6 about
+  heading: Me
+  words: Hi, I'm a programmer
+  class: m5 about
+  border: about
+resume:
+  url: /resume
+  heading: Resume
+  words: Check out or download my resume
+  class: m6 algorithms
+  border: algorithms
+contact:
+  url: /contact
+  heading: Contact
+  words: Feel free to shoot me an email
+  class: m6 contact
+  border: contact

@@ -1,44 +1,50 @@
 #homepage {
   overflow: hidden; }
-  #homepage h3 {
-    font-family: 'Abril Fatface', cursive; }
-  #homepage .box {
-    height: 50vh;
-    min-height: 300px;
-    color: white;
-    font-weight: 600; }
+  #homepage .home_heading {
+    font-family: "Josefin Slab", serif;
+    font-size: 4rem; }
   #homepage .row {
     margin: 0; }
   #homepage .about {
-    background-color: #8e5572; }
+    background-image: url("/assets/images/me.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear; }
   #homepage .about:hover {
-    background-color: rgba(142, 85, 114, 0.9);
-    border: 2px solid white;
-    border-radius: 5px; }
-  #homepage .current {
-    background-color: #F46036; }
-  #homepage .current:hover {
-    background-color: rgba(244, 96, 54, 0.9);
-    border: 2px solid white;
-    border-radius: 5px; }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
+  #homepage .projects {
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-image: url("/assets/images/projects.jpg");
+    background-size: cover; }
+  #homepage .projects:hover {
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact a {
     margin-left: 10px; }
   #homepage .contact a:hover {
     color: #F46036; }
-  #homepage .completed {
-    background-color: #2E294E; }
-  #homepage .completed:hover {
+  #homepage .algorithms {
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-image: url("/assets/images/resume.jpg");
+    background-size: cover; }
+  #homepage .algorithms:hover {
     background-color: #443C72;
-    border: 2px solid white;
-    border-radius: 5px; }
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .contact {
-    background-color: #F2F7F2; }
+    background-image: url("/assets/images/contact.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-size: cover; }
+  #homepage .contact:hover {
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.6); }
   #homepage .profile_picture {
     border-radius: 35%; }
   #homepage .words {
-    font-size: 1.3em;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200; }
+    font-size: 1.3rem;
+    letter-spacing: +2px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100; }
   #homepage li {
     display: inline-block; }
   @media all and (max-height: 600px) {
@@ -53,6 +59,34 @@
 .brand-logo {
   margin-left: 5px;
   margin-top: 5px; }
+
+.barba-old-container {
+  position: absolute;
+  z-index: 5;
+  visibility: visible !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: transparent;
+  overflow-y: hidden !important; }
+
+.barba-new-container {
+  position: absolute;
+  overflow: hidden !important;
+  z-index: 0;
+  width: 100%;
+  top: 0px;
+  left: 0px; }
+
+.barba-new-container-back {
+  position: absolute;
+  z-index: 5;
+  visibility: visible !important;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: transparent;
+  overflow-y: hidden !important; }
 
 #projects h3, .about-me h3, #algorithms h3 {
   font-family: 'Abril Fatface', cursive;
@@ -86,7 +120,7 @@
     min-width: 320px;
     margin: 5% 1% 5% 1%; } }
 #projects .description, .about-me .description, #algorithms .description {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.1em; }
 #projects .about-me p, .about-me .about-me p, #algorithms .about-me p {
   color: white !important;
@@ -95,11 +129,11 @@
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 #nav-mobile a, #mobile-demo a {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
   margin: 0 10px 0 10px; }
 
 nav {
@@ -120,13 +154,13 @@ nav {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .projects-paragraph {
   color: white; }
 
 .about-me li {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5em !important;
   width: 30%;
   float: left; }
@@ -164,7 +198,7 @@ i {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 #algorithms h3 {
   color: white; }
@@ -186,7 +220,7 @@ i {
 
 .time {
   font-style: italic;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .small-info {
   color: darkgrey !important;
@@ -195,28 +229,15 @@ i {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .back-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2em; }
 
 .back-link:hover {
   text-decoration: underline; }
 
-#scroll-top {
-  display: none;
-  position: fixed;
-  top: 85%;
-  left: 90%;
-  background-color: darkgrey !important; }
-
-body {
-  transition: all 1s; }
-
-@media only screen and (max-width: 500px) {
-  #scroll-top {
-    left: 80%; } }
 .highlight {
   background-color: #ffffcc;
   border-radius: 5px; }
@@ -486,7 +507,372 @@ body {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+.my_footer {
+  background-color: #292929;
+  margin-top: 40px; }
+
+.resume-wrapper button {
+  margin-top: 50px; }
+
 body {
+  background-color: #FCF5C7;
   min-height: 100%; }
+
+nav {
+  margin-top: 40px;
+  margin-bottom: 100px; }
+
+nav ul li a {
+  font-weight: 600;
+  color: black; }
+
+.projects_container {
+  padding: 20px 10px 0 10px;
+  width: 100%;
+  margin: auto; }
+
+nav ul li a:hover {
+  transition: none !important;
+  background-color: transparent; }
+
+nav ul li {
+  transition: none !important;
+  background-color: transparent !important; }
+
+.nav-underline {
+  margin: 0 25px 0 25px;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width .3s; }
+
+.nav-underlined, .nav-hover-underlined {
+  width: 30%; }
+
+.heading {
+  color: #292929;
+  font-weight: 200px;
+  font-size: 2.3rem;
+  font-family: "Josefin Slab", serif; }
+
+.homepage-section {
+  display: block;
+  height: 50vh;
+  min-height: 300px;
+  color: #EFF2EF;
+  position: relative; }
+
+.quote_box {
+  padding: 0 5% 0 5%;
+  margin-bottom: 50px; }
+
+.quote {
+  font-size: 2rem;
+  font-weight: 300;
+  text-indent: 15%;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif; }
+
+.author {
+  padding-right: 5%;
+  margin-top: 0;
+  font-size: 1.7rem;
+  font-family: "Josefin Slab", serif;
+  font-style: italic; }
+
+.skills_heading {
+  margin-top: 60px;
+  font-size: 3rem; }
+
+.skill_names {
+  font-size: 1.5rem;
+  color: #292929;
+  font-style: "Raleway", sans-serif;
+  font-weight: 200;
+  margin-left: 10px; }
+
+.my_container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.carousel-arrows {
+  width: 50px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1000;
+  top: 0; }
+
+.carousel-arrows:hover {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.left-arrow {
+  left: 0; }
+
+.right-arrow {
+  left: 500px; }
+
+.projects-bottom {
+  margin-top: 50px; }
+
+.footer_titles {
+  font-family: "Josefin Slab", serif;
+  font-size: 35px; }
+
+.footer_icons {
+  font-size: 30px !important; }
+
+.footer_description_link {
+  color: #EFF2EF;
+  font-weight: 300;
+  font-style: italic;
+  transition: color .5s linear; }
+
+.footer_description_link:hover {
+  color: #FCF5C7; }
+
+.footer_link_text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 20px; }
+
+.about_me_links {
+  color: black;
+  font-weight: 200;
+  font-style: italic; }
+
+.about_me_links:hover {
+  font-weight: 300; }
+
+#email_modal {
+  background-color: #292929;
+  color: #FCF5C7; }
+
+.project_list .modal, .project_list .modal-footer {
+  background-color: #292929; }
+.project_list .project_info {
+  padding: 1%;
+  padding-top: 20px; }
+.project_list .modal {
+  color: #FCF5C7; }
+.project_list .buttons .button_wrapper {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  margin: 1%; }
+.project_list .modal-footer {
+  text-align: center !important;
+  height: auto;
+  height: 75px; }
+  .project_list .modal-footer .row {
+    margin-bottom: 0; }
+.project_list .project_icons {
+  margin-top: 20px;
+  font-size: 25px; }
+.project_list h4 {
+  margin: 0px; }
+.project_list p {
+  margin: 0 !important; }
+.project_list .info_type {
+  font-style: italic;
+  color: black;
+  font-family: "Lobster Two", cursive;
+  font-size: 20px; }
+.project_list .modal {
+  height: 90vh !important;
+  margin-top: 5vh;
+  min-height: 650px;
+  max-height: 90vh; }
+  .project_list .modal .modal-content {
+    padding: 0 !important;
+    margin: 0; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-height: 425px; }
+
+.valign-wrapper {
+  height: 100%; }
+
+button {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: .8px;
+  color: #292929;
+  border: 1px #292929 solid !important;
+  border-radius: 3px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in; }
+
+.buttons button {
+  color: #FCF5C7;
+  border: 1px #FCF5C7 solid !important; }
+
+button:focus {
+  background-color: transparent; }
+
+button.fill:hover {
+  background-color: transparent;
+  color: #f9f0ae; }
+
+button.fill:before {
+  content: "";
+  position: absolute;
+  background: #292929;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in; }
+
+.buttons button.fill:hover {
+  color: #292929; }
+
+.buttons button.fill:before {
+  background: #FCF5C7; }
+
+button.fill:hover:before {
+  top: -5px; }
+
+.description {
+  color: #FCF5C7;
+  letter-spacing: +1px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem; }
+
+.cover {
+  background-color: #f9f0ae;
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.skills {
+  margin-bottom: 40px;
+  color: #FCF5C7; }
+
+.project {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: 0 0 1000px 10px black inset; }
+
+.skill_icon {
+  color: #FCF5C7;
+  font-size: 1.5rem; }
+
+.about_skill_icon {
+  color: #292929;
+  font-size: 1.5rem; }
+
+.box {
+  height: 50vh; }
+
+.my-borders {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  background-color: #FCF5C7; }
+
+.about-border {
+  bottom: 0;
+  right: 0; }
+
+.algorithms-border {
+  top: 0;
+  right: 0; }
+
+.contact-border {
+  top: 0;
+  left: 0; }
+
+.projects-border {
+  bottom: 0;
+  left: 0; }
+
+.about_img {
+  margin-top: 15px;
+  margin-right: 15px;
+  -webkit-filter: sepia(0.3);
+  filter: sepia(0.3); }
+
+.about_paragraph {
+  font-size: 1.8em;
+  letter-spacing: +.5px;
+  font-weight: 200; }
+
+/* label color */
+.input-field label {
+  color: #292929 !important; }
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #292929 !important; }
+
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px solid #292929 !important;
+  box-shadow: 0 1px 0 0 #292929 !important; }
+
+/* valid color */
+.input-field input.valid {
+  border-bottom: 1px solid darkgreen !important;
+  box-shadow: 0 1px 0 0 darkgreen !important; }
+
+/* invalid color */
+.input-field input.invalid {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important; }
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #292929 !important; }
+
+textarea:focus {
+  outline: none !important;
+  border-bottom: 1px solid #292929 !important;
+  box-shadow: 0 1px 0 0 #292929 !important; }
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  font-size: 3rem; }
+
+@media only screen and (max-width: 993px) {
+  .nav-underlined, .nav-underline {
+    margin-left: 40px; }
+
+  .nav-underlined, .nav-hover-underlined {
+    width: 15%; } }
+@media only screen and (max-width: 601px) {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    font-size: 2.5rem; } }
 
 /*# sourceMappingURL=main.css.map */

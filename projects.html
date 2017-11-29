@@ -1,56 +1,183 @@
 ---
-layout: default
+layout: not_homepage
 ---
 
-{% include nav.html %}
-
-<div class="row">
-  <div class="col s10 offset-s1 center-align">
-    <p class="projects-paragraph">
-      This is a list of the projects I've worked on. Feel free to scroll through them or use the filter button below to display filtering options.
-    </p>
-    <a id="filter" class="waves-effect waves-light btn">filter</a>
-  </div>
+<div class="quote_box row">
+  <p class="quote">Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
+  <p class="author right"> - Pele</p>
 </div>
 
-
-
-<div class="content grey-lighten-3" id="projects">
-  <div class="row" style="display: none" id="tags">
-    <div class="col s12 ">
-    {% assign tags = site.select_options | split: " " %}
-    {% for item in tags %}
-      <a class="waves-effect waves-light btn tag" val={{item}} >{{item}}</a>
-    {% endfor %}
-    </div>
-  </div>
-
+<div class="project_list">
+  <h2 class="heading center">Projects and Experiments:</h2>
   {% for item in site.data.projects %}
-      <div class="card hoverable" tags="{{item.tags}}">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{ item.img }}">
+    <div class="project row" style="background-image: url({{item.cover}}); background-size: cover;">
+      <div class="cover {% cycle 'left', 'right'%} col m5 s12">
+        <div class="valign-wrapper">
+          <div class="col s8 offset-s2">
+            <h3 class="heading">{{item.title}}</h3>
+            <button class="fill col s12 modal-trigger" href="#{{item.id}}">learn more</button>
+          </div>
+          <!-- Modal Trigger -->
         </div>
-        <div class="card-reveal description">
-          <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
-          <p>{{ item.long_description }}</p>
-          <br>
-          <h5>Technologies:</h5>
-          <p>{{ item.technologies }}</p>
-        </div>
-        <div class="card-content">
-          <span class="card-title">{{ item.name }}<i class="material-icons right activator">more_vert</i></span>
-          <p class='description'>{{ item.short_description }}</p>
-        </div>
-        <div class="card-action">
-          {% unless item.url == "" %}
-            <a href="{{ item.url }}">Take me there</a>
-          {% endunless %}
-          <a href="{{ item.github_url }}">Github</a>
+
+        <!-- Modal Structure -->
+        <!-- <div id="{{item.id}}" class="modal">
+          <div class="modal-content">
+            <div class="row">
+              <div class="carousel carousel-slider center col s12 m12 l9" data-indicators="true">
+                <div class="left-arrow carousel-arrows">left</div>
+                {% for image in item.images %}
+                <div class="white-text carousel-item">
+                  <div class="image_wrapper">
+                    <img class="project_img" src="{{image}}" alt="">
+                  </div>
+                </div>
+                {% endfor %}
+                <div class="right-arrow carousel-arrows">
+                  right
+                </div>
+              </div>
+              <div class="col s12 m12 l3">
+                <div class="projects_container">
+                  <div class="row">
+                    <div class="col s6 m6 l12">
+                      <h3 class="modal_heading">{{item.title}}</h3>
+                      <div class="skills hide-on-large-only">
+                        <h5>Built with:</h5>
+                        {% for tech in item.technologies %}
+                        <i class="skill_icon devicon-{{tech}}"></i>
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <div class="col s6 m6 l12">
+                      <p class="description">{{item.description}}</p>
+                    </div>
+                    <div class="skills hide-on-med-and-down">
+                      <h5>Built with:</h5>
+                      {% for tech in item.technologies %}
+                      <i class="skill_icon devicon-{{tech}}"></i>
+                      {% endfor %}
+                    </div>
+
+                  </div>
+                  <div class="buttons row">
+                    <div class="col s4 m4 l12">
+                      <a class="button_wrapper" target="_blank" href="{{item.url}}"><button class="fill col s12">live</button></a>
+                    </div>
+                    <div class="col s4 m4 l12">
+                      <a class="button_wrapper" target="_blank" href="{{item.github_url}}"><button class="fill col s12">github</button></a>
+                    </div>
+                    <div class="col s4 m4 l12">
+                      <button id="{{item.id}}" class="next fill col s12">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- Modal Trigger -->
+        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+        <!-- Modal Structure -->
+        <div id="{{item.id}}" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <div class="carousel carousel-slider center" data-indicators="true">
+              <!-- <div class="left-arrow carousel-arrows">left</div> -->
+              {% for image in item.images %}
+              <div class="white-text carousel-item">
+                <div class="image_wrapper">
+                  <img class="responsive-img project_img" src="{{image}}" alt="">
+                </div>
+              </div>
+              {% endfor %}
+              <!-- <div class="right-arrow carousel-arrows">
+                right
+              </div> -->
+            </div>
+            <div class="project_info">
+              <div class="row">
+                <div class="col s3 m2 info_type">
+                  title:
+                </div>
+                <h4 class="col s9 m10">{{item.title}}</h4>
+              </div>
+              <div class="row">
+                <div class="col s3 m2 info_type">
+                  description:
+                </div>
+                <p class="description col s9 m10">{{item.description}}</p>
+              </div>
+              <div class="row">
+                <div class="col s3 m2 info_type">
+                  skills:
+                </div>
+                <div class="col s9 m10">
+                  {% for tech in item.technologies %}
+                    <i class="devicon-{{tech}} project_icons"></i>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer center-align">
+            <!-- <div class="buttons row">
+              <div class="col s4"> -->
+              <div class="buttons">
+
+                <a class="button_wrapper" target="_blank" href="{{item.url}}"><button class="fill">live</button></a>
+              <!-- </div>
+              <div class="col s4"> -->
+                <a class="button_wrapper" target="_blank" href="{{item.github_url}}"><button class="fill">github</button></a>
+              <!-- </div>
+              <div class="col s4"> -->
+                <a href="" class="button_wrapper">
+                  <button id="{{item.id}}" class="next fill">Next</button>
+                </a>
+              </div>
+              <!-- </div>
+            </div> -->
+          </div>
         </div>
       </div>
+    </div>
   {% endfor %}
 </div>
 
-<a id="scroll-top" title="scroll back top" class="btn-floating btn-large waves-effect waves-light red" style='display: none;'><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-
-<script type="text/javascript" src='/assets/js/script.js'></script>
+<div class="projects-bottom center-align">
+  <h1 class="heading">Have questions, comments, feedback? Feel free to reach out!</h1>
+  <div class="row">
+    <div class="col m6 offset-m3 s12">
+      <div class="row">
+        <div class="col s6">
+          <a href="/contact"><button type="button" class="fill col s12" name="button">contact</button></a>
+        </div>
+        <div class="col s6">
+          <button type="button" class="fill col s12" id="scroll-top" title="scroll back top" name="button">scroll back top</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- <div class="card hoverable" tags="{{item.tags}}">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{ item.img }}">
+      </div>
+      <div class="card-reveal description">
+        <span class="card-title grey-text text-darken-4">{{ item.name }}<i class="material-icons right">close</i></span>
+        <p>{{ item.long_description }}</p>
+        <br>
+        <h5>Technologies:</h5>
+        <p>{{ item.technologies }}</p>
+      </div>
+      <div class="card-content">
+        <span class="card-title">{{ item.name }}<i class="material-icons right activator">more_vert</i></span>
+        <p class='description'>{{ item.short_description }}</p>
+      </div>
+      <div class="card-action">
+        {% unless item.url == "" %}
+          <a href="{{ item.url }}">Take me there</a>
+        {% endunless %}
+        <a href="{{ item.github_url }}">Github</a>
+      </div>
+    </div> -->

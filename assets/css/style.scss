@@ -3,6 +3,38 @@
   margin-top: 5px;
 }
 
+.barba-old-container {
+  position: absolute;
+  z-index: 5;
+  visibility: visible !important;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  background-color: transparent;
+  overflow-y: hidden !important;
+}
+
+.barba-new-container {
+  position: absolute;
+  overflow: hidden !important;
+  // visibility: visible !important;
+  z-index: 0;
+  width:100%;
+  top: 0px;
+  left: 0px;
+}
+
+.barba-new-container-back {
+  position: absolute;
+  z-index: 5;
+  visibility: visible !important;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  background-color: transparent;
+  overflow-y: hidden !important;
+}
+
 #projects, .about-me, #algorithms {
 
   h3 {
@@ -55,7 +87,7 @@
   }
 
   .description {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font2;
     font-size: 1.1em;
   }
 
@@ -67,13 +99,13 @@
     font-weight: 400;
     text-align: justify;
     text-indent: 50px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font2;
   }
 }
 
 #nav-mobile a, #mobile-demo a {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-family: $font2;
+  font-size: 1.3rem;
   margin: 0 10px 0 10px;
 }
 
@@ -98,7 +130,7 @@ nav {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font2;
 }
 
 .projects-paragraph {
@@ -106,7 +138,7 @@ nav {
 }
 
 .about-me li {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 1.5em !important;
   width: 30%;
   float: left;
@@ -150,7 +182,7 @@ i {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font2;
 }
 
 #algorithms h3 {
@@ -178,7 +210,7 @@ i {
 
 .time {
   font-style: italic;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font2;
 }
 
 .small-info {
@@ -188,32 +220,14 @@ i {
   font-weight: 400;
   text-align: justify;
   text-indent: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font2;
 }
 
 .back-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: $font2;
   font-size: 1.2em;
 }
 
 .back-link:hover {
   text-decoration: underline;
-}
-
-#scroll-top {
-  display: none;
-  position: fixed;
-  top: 85%;
-  left: 90%;
-  background-color: darkgrey !important;
-}
-
-body {
-  transition: all 1s;
-}
-
-@media only screen and (max-width: 500px) {
-    #scroll-top {
-      left: 80%;
-    }
 }

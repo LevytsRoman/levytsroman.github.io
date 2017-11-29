@@ -1,0 +1,80 @@
+- name: web
+  skills:
+    - class: html5-plain
+      skill_name: HTML5
+    - class: css3-plain
+      skill_name: CSS3
+    - class: sass-plain
+      skill_name: SASS
+    - class: bootstrap-plain
+      skill_name: Bootstrap
+    - class: jquery-plain
+      skill_name: jQuery
+
+- name: languages
+  skills:
+    - class: javascript-plain
+      skill_name: JavaScript
+    - class: python-plain
+      skill_name: Python
+    - class: ruby-plain
+      skill_name: Ruby
+
+- name: databases
+  skills:
+    - class: postgresql-plain
+      skill_name: Postgresql
+    - class: mongodb-plain
+      skill_name: MongoDB
+    - class: mysql-plain
+      skill_name: MySQL
+
+- name: frontend frameworks
+  skills:
+    - class: react-plain
+      skill_name: React
+    - class: angularjs-plain
+      skill_name: Angular
+    - class: vuejs-plain
+      skill_name: Vue
+    - class: jekyll-plain
+      skill_name: Jekyll
+
+- name: backend frameworks
+  skills:
+    - class: rails-plain
+      skill_name: Ruby-on-Rails
+    - class: express-original
+      skill_name: Express
+    - class: nodejs-plain
+      skill_name: NodeJS
+    - class: django-plain
+      skill_name: Django
+
+- name: version control
+  skills:
+    - class: git-plain
+      skill_name: Git
+    - class: github-plain
+      skill_name: GitHub
+
+- name: deployment
+  skills:
+    - class: heroku-original
+      skill_name: Heroku
+    - class: docker-plain
+      skill_name: Docker
+
+- name: testing
+  skills:
+    - class: mocha-plain
+      skill_name: Mocha
+    - class: jasmine-plain
+      skill_name: Jasmine
+    - class: rspec-plain
+      skill_name: RSpec
+
+- name: mobile
+  skills:
+    - class: react-original
+      skill_name: React Native

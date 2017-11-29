@@ -1,33 +1,50 @@
 #homepage {
+
   overflow: hidden;
-  h3 {
-    font-family: 'Abril Fatface', cursive;
+
+  .home_heading {
+    font-family: $font1;
+    font-size: 4rem;
   }
-  .box {
-    height: 50vh;
-    min-height: 300px;
-    color: white;
-    font-weight: 600;
-  }
+  // .box {
+  //   height: 50vh;
+  //   min-height: 300px;
+  //   color: white;
+  //   font-weight: 600;
+  //   position: relative;
+  // }
   .row {
     margin: 0;
   }
+
   .about {
-    background-color: rgb(142,85,114);
-  }
-  .about:hover {
-    background-color: rgba(142,85,114, 0.9);
-    border: 2px solid white;
-    border-radius: 5px;
+    // background-color: #F2F7F2;
+    background-image: url('/assets/images/me.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
   }
 
-  .current {
-    background-color: #F46036;
+  .about:hover {
+    // background-color: rgba(142,85,114, 0.9);
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
+    // border: 2px solid white;
+    // border-radius: 5px;
   }
-  .current:hover {
-    background-color: rgba(244,96,54,0.9);
-    border: 2px solid white;
-    border-radius: 5px;
+
+  .projects {
+    // background-color: #F46036;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-image: url('/assets/images/projects.jpg');
+    background-size: cover;
+
+  }
+  .projects:hover {
+    // background-color: rgba(244,96,54,0.9);
+    box-shadow: inset 0 0 0 1000px rgba($color6,0.6);
+    // border: 2px solid white;
+    // border-radius: 5px;
   }
 
   .contact a {
@@ -37,17 +54,31 @@
   .contact a:hover {
     color: #F46036;
   }
-  .completed {
-    background-color: #2E294E;
+  .algorithms {
+    // background-color: #2E294E;
+
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-image: url('/assets/images/resume.jpg');
+    background-size: cover;
   }
-  .completed:hover {
+  .algorithms:hover {
     background-color: #443C72;
-    border: 2px solid white;
-    border-radius: 5px;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
+    // border: 2px solid white;
+    // border-radius: 5px;
   }
 
   .contact {
-    background-color: #F2F7F2;
+    // background-color: rgb(142,85,114);
+    background-image: url('/assets/images/contact.jpg');
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-size: cover;
+  }
+  .contact:hover {
+    // background-color: #F2F7F2;
+    box-shadow: inset 0 0 0 1000px rgba($color6,0.6);
   }
 
   .profile_picture {
@@ -55,9 +86,11 @@
   }
 
   .words {
-    font-size: 1.3em;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
+    font-size: 1.3rem;
+    letter-spacing: +2px;
+    font-family: $font2;
+    // color: black;
+    font-weight: 100;
   }
 
   li {
