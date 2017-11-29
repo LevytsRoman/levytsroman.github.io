@@ -119,7 +119,7 @@ function initializeScripts(){
     }
   });
   // debugger
-  if(urlString === 'http://localhost:4000/'){
+  if(urlString === 'http://localhost:4000/' || urlString === 'https://levytsroman.github.io/'){
     Barba.Pjax.getTransition = function() {
       return HideShowTransition;
     };
