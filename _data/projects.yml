@@ -42,6 +42,53 @@
     '/assets/images/project_images/tic_tac_toe/tictactoe3.png'
   ]
 
+- id: 3
+  title: Stack Overflow Clone
+  url: https://dbc-hackoverflow.herokuapp.com/
+  github_url: https://github.com/wvicioso/hackoverflow
+  description: A standard discussion board app that's an attempt at a very simple version of the popular programming platform <a href='stackoverflow.com'>StackOverflow</a>. It allows users to ask questions, give answers and make comments as well as vote up or down on each of the above.
+  technologies: [
+                  html5-plain,
+                  css3-plain-wordmark,
+                  javascript-plain,
+                  ruby-plain,
+                  sinatra-plain,
+                  postgresql-plain,
+                  heroku-original,
+                  materialize-plain
+                ]
+  cover: /assets/images/project_covers/hack-overflow-cover.png
+  images: [
+    '/assets/images/project_covers/hack-overflow-cover.png'
+  ]
+- id: 4
+  title: ShootThingsGame
+  url: https://levytsroman.github.io/shootThingsGame/
+  github_url: https://github.com/LevytsRoman/shootThingsGame
+  description: A small javaScript browser game, featuring a red plane (player) and an unhealthy onslaught of enemy planes flying over a pictureque rendering of my favorite planet (Earth) in MS Paint.
+  technologies: [
+                  html5-plain,
+                  css3-plain-wordmark,
+                  javascript-plain
+                ]
+  cover: /assets/images/project_covers/shoot-things-game-cover.png
+  images: [
+    '/assets/images/project_covers/shoot-things-game-cover.png'
+  ]
+- id: 5
+  title: movieLookUp
+  url: https://akhinchey.github.io/movieLookUp/
+  github_url: https://github.com/akhinchey/movieLookUp
+  description: A pure front-end app that allows users to search through various shows, movies and series to find the content they would like to watch or learn more about movies that they've already seen.
+  technologies: [
+                  react-original,
+                  css3-plain-wordmark,
+                  javascript-plain,
+                ]
+  cover: /assets/images/project_covers/movie-look-up-cover.jpg
+  images: [
+    '/assets/images/project_covers/movie-look-up-cover.jpg'
+  ]
 # - name: Tic-tac-toe
 #   url: https://dbc-engage-me.herokuapp.com/
 #   github_url: https://github.com/LevytsRoman/EngageMe
