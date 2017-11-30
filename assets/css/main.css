@@ -678,9 +678,9 @@ nav ul li {
   font-style: italic;
   color: darkgrey;
   font-family: "Josefin Slab", serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: +1px;
-  text-transform: uppercase; }
+  text-transform: capitalize; }
 .project_list .modal {
   height: 90vh !important;
   margin-top: 5vh;
@@ -883,12 +883,12 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .project_list .modal {
     margin-top: 2vh !important;
     min-height: 550px !important;
-    height: 80vh !important; }
+    height: 75vh !important; }
 
   .info_type {
     font-weight: 400 !important;
     letter-spacing: normal !important;
-    font-size: 0.7rem !important;
+    font-size: 0.9rem !important;
     font-family: "Josefin Slab", serif !important; } }
 
 /*# sourceMappingURL=main.css.map */
