@@ -21,8 +21,7 @@ $cover-color: #f9f0ae;
 
 @import
   "homepage",
-  "style",
-  "syntaxhighlight"
+  "style"
 ;
 .my_footer {
   background-color: $dark-grey;
@@ -405,7 +404,7 @@ button.fill:hover:before {
 
 .contact-border {
   top: 0;
-  left: 0;
+  left: -1px;
 }
 
 .projects-border {
