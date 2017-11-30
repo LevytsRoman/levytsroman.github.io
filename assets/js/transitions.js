@@ -199,6 +199,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).removeClass('barba-old-container')
 
           $('.algorithms-border').css('top', '-1px');
+
           _this.done();
           var proBorder1 = new Promise((resolve, reject) => {
             $('.about-border').animate({
@@ -252,6 +253,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.oldContainer).hide();
           $el.animate({opacity: 1}, 300, () => {
             this.done();
+            $("html, body").animate({ scrollTop: 0 }, 500);
             $(".button-collapse").sideNav({
               menuWidth: 200,
               edge: 'left',

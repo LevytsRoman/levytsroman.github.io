@@ -1,5 +1,6 @@
 function initializeScripts(){
   // $( document ).tooltip();
+
   $('.materialboxed').materialbox();
   $(".button-collapse").sideNav({
     menuWidth: 200,
