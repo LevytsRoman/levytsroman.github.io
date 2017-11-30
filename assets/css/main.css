@@ -669,21 +669,23 @@ nav ul li {
     margin-bottom: 0; }
 .project_list .project_icons {
   margin-top: 20px;
-  font-size: 25px; }
+  font-size: 1.3em; }
 .project_list h4 {
   margin: 0px; }
 .project_list p {
   margin: 0 !important; }
 .project_list .info_type {
   font-style: italic;
-  color: black;
-  font-family: "Lobster Two", cursive;
-  font-size: 20px; }
+  color: darkgrey;
+  font-family: "Josefin Slab", serif;
+  font-size: 1.3em;
+  letter-spacing: +1px;
+  text-transform: uppercase; }
 .project_list .modal {
   height: 90vh !important;
   margin-top: 5vh;
-  min-height: 650px;
-  max-height: 90vh; }
+  min-height: 600px;
+  max-height: 85vh; }
   .project_list .modal .modal-content {
     padding: 0 !important;
     margin: 0; }
@@ -873,6 +875,15 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     width: 15%; } }
 @media only screen and (max-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+
+  .description {
+    font-size: 0.9rem; }
+
+  .info_type {
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    font-size: 0.7rem !important;
+    font-family: "Josefin Slab", serif !important; } }
 
 /*# sourceMappingURL=main.css.map */

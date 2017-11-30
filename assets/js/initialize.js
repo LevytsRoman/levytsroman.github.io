@@ -107,7 +107,7 @@ function initializeScripts(){
         'about': 'rgb(142,85,114)',
         'projects': '#F46036',
         'contact': '#fcb',
-        'algorithms': '#2E294E'
+        'resume': '#2E294E'
       },
       urlString = window.location.href,
       scrollHeight = $(document).scrollTop();
