@@ -23,6 +23,20 @@ $cover-color: #f9f0ae;
   "homepage",
   "style"
 ;
+
+.about {
+  .skills_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill_group {
+    width: 30%;
+  }
+}
+
 .my_footer {
   background-color: $dark-grey;
   margin-top: 40px;
@@ -36,6 +50,7 @@ $cover-color: #f9f0ae;
 body {
   background-color: $background-color;
   min-height: 100%;
+  min-width: 300px;
 }
 
 nav {
@@ -492,5 +507,11 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     letter-spacing: normal !important;
     font-size: 0.9rem !important;
     font-family: $font1 !important;
+  }
+
+  .about {
+    .skill_group {
+      width: 50%;
+    }
   }
 }

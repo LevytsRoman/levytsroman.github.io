@@ -1,20 +1,10 @@
 ---
 layout: not_homepage
+quote: Email, instant messaging, and cell phones give us fabulous communication ability, but because we live and work in our own little worlds, communication is totally disorganized.
+author: Marilyn vos Savant
 ---
 
-<div class="quote_box row">
-  <p class="quote">Email,
-    instant messaging,
-    and cell phones
-    give us fabulous
-    communication ability,
-    but because we live and work
-    in our own little worlds,
-    communication
-    is totally disorganized.
-  </p>
-  <p class="author right"> – Marilyn vos Savant</p>
-</div>
+{% include quote.html quote=page.quote author=page.author %}
 
 <div class="container">
   <form class="email_me" action="https://formspree.io/r.levyts@gmail.com" method="POST">
