@@ -1,0 +1,47 @@
+<div id="{{project.id}}" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <div class="carousel carousel-slider center" data-indicators="true">
+      {% for image in project.images %}
+      <div class="white-text carousel-item">
+        <div class="image_wrapper">
+          <img class="responsive-img project_img" src="{{image}}" alt="">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="project_info">
+      <div class="row">
+        <div class="col s3 m2 info_type">
+          title:
+        </div>
+        <h4 class="col s9 m10">{{project.title}}</h4>
+      </div>
+      <div class="row">
+        <div class="col s3 m2 info_type">
+          description:
+        </div>
+        <p class="description col s9 m10">{{project.description}}</p>
+      </div>
+      <div class="row">
+        <div class="col s3 m2 info_type">
+          skills:
+        </div>
+        <div class="col s9 m10">
+          {% for tech in project.technologies %}
+            <i class="devicon-{{tech}} project_icons"></i>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer center-align">
+      <div class="buttons">
+        <a class="button_wrapper" target="_blank" href="{{project.url}}"><button class="fill">Live</button></a>
+        <a class="button_wrapper" target="_blank" href="{{project.github_url}}"><button class="fill">Github</button></a>
+        <a href="" class="button_wrapper">
+          <button id="{{project.id}}" class="next fill">Next</button>
+        </a>
+      </div>
+  </div>
+</div>
+</div>
