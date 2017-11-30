@@ -685,7 +685,7 @@ nav ul li {
   height: 90vh !important;
   margin-top: 5vh;
   min-height: 600px;
-  max-height: 85vh; }
+  max-height: 90vh; }
   .project_list .modal .modal-content {
     padding: 0 !important;
     margin: 0; }
@@ -879,6 +879,11 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
   .description {
     font-size: 0.9rem; }
+
+  .project_list .modal {
+    margin-top: 2vh !important;
+    min-height: 550px !important;
+    height: 80vh !important; }
 
   .info_type {
     font-weight: 400 !important;
