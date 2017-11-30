@@ -51,15 +51,12 @@
     - class: django-plain
       skill_name: Django
 
-- name: version control
+- name: devops
   skills:
     - class: git-plain
       skill_name: Git
     - class: github-plain
       skill_name: GitHub
-
-- name: deployment
-  skills:
     - class: heroku-original
       skill_name: Heroku
     - class: docker-plain

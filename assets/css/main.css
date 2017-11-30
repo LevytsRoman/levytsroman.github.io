@@ -241,6 +241,14 @@ i {
 .back-link:hover {
   text-decoration: underline; }
 
+.about .skills_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+.about .skill_group {
+  width: 30%; }
+
 .my_footer {
   background-color: #292929;
   margin-top: 40px; }
@@ -250,7 +258,8 @@ i {
 
 body {
   background-color: #FCF5C7;
-  min-height: 100%; }
+  min-height: 100%;
+  min-width: 300px; }
 
 nav {
   margin-top: 40px;
@@ -623,6 +632,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-weight: 400 !important;
     letter-spacing: normal !important;
     font-size: 0.9rem !important;
-    font-family: "Josefin Slab", serif !important; } }
+    font-family: "Josefin Slab", serif !important; }
+
+  .about .skill_group {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
