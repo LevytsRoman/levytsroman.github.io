@@ -18,10 +18,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
 
     var _this = this;
 
-    // debugger
     $(this.oldContainer).addClass('barba-old-container')
-    // $('body').css('backgroundColor', 'black')
-    // debugger
     var le = $('.algorithms-border').position().left - $('.about-border').position().left
 
     $('.algorithms-border').css({
@@ -33,8 +30,6 @@ var HideShowTransition = Barba.BaseTransition.extend({
       height: '1px',
       width: '1px'
     })
-    // var pos = $('.about').position().left + 'px'
-    // $('.algorithms-border').css({left: pos})
     var pro1 = new Promise((resolve, reject) => {
       $('.about-border').animate({
         height: '100%'
@@ -42,7 +37,6 @@ var HideShowTransition = Barba.BaseTransition.extend({
         resolve()
       })
 		});
-    // debugger
     var pro2 = new Promise((resolve, reject) => {
       $('.projects-border').animate({
         width: '100%'
@@ -66,8 +60,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
         resolve()
       })
 		});
-    // debugger
-    // var pro5
+
     Promise.all([pro1,pro2,pro3,pro4]).then(values => {
       // debugger
       // This line below fixes a weird bug that only happens on one page ...
@@ -98,7 +91,6 @@ var HideShowTransition = Barba.BaseTransition.extend({
         left: '-=' + algorithmsWidth + 'px',
         top: '+=' + algorithmsHeight + 'px'
       }, 400, function(){
-        // debugger
         $('.barba-old-container').removeClass('barba-old-container')
         $('.barba-new-container').removeClass('barba-new-container');
 
@@ -108,53 +100,18 @@ var HideShowTransition = Barba.BaseTransition.extend({
         $(this.oldContainer).find('.contact').finish();
         $('.my-borders').finish();
         $('html').css('overflow-y', 'visible')
-        // $('body').css('background-color','purple')
-        // debugger
-
         _this.done();
       }.bind(this))
-      // $(this.oldContainer).find('.projects').animate({ opacity: 0 })
-      // $(this.oldContainer).find('.algorithms').animate({ opacity: 0 })
-      // $(this.oldContainer).find('.about').animate({ opacity: 0 })
     })
   }
 });
 
 var FadeTransition = Barba.BaseTransition.extend({
   start: function() {
-
-    /**
-     * This function is automatically called as soon the Transition starts
-     * this.newContainerLoading is a Promise for the loading of the new container
-     * (Barba.js also comes with an handy Promise polyfill!)
-     */
-
-    // As soon the loading is finished and the old page is faded out, let's fade the new page
-    // Barba.Dispatcher.on('newPageReady', function(projectsStatus, oldStatus, container) {
-    // }.bind(this));
     Promise.all([this.newContainerLoading, this.fadeIn()]);
   },
 
-  fadeOut: function() {
-    /**
-     * this.oldContainer is the HTMLElement of the old Container
-     */
-    // $(this.oldContainer).addClass('animated bounceOutLeft');
-    // debugger
-    //  else {
-      // return $(this.oldContainer).animate({ opacity: 0 }, 1000).promise();
-    // }
-  },
-
   fadeIn: function() {
-    /**
-     * this.newContainer is the HTMLElement of the new Container
-     * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
-     * Please note, newContainer is available just after newContainerLoading is resolved!
-     */
-    //  debugger
-    //  $(this.newContainer).css('z-index', 10)
-    // debugger
     Promise.all([this._newContainerPromise]).then(() => {
       initializeScripts();
       if(this.newContainer.baseURI === "http://localhost:4000/" || this.newContainer.baseURI === "https://levytsroman.github.io/"){
@@ -164,16 +121,10 @@ var FadeTransition = Barba.BaseTransition.extend({
           width: '1px'
         })
 
-        // var le = $('.about-border').position().left
-        // $('.algorithms-border').css('left', le);
-        //
         $('.about-border').css({height: '100%'})
         $('.contact-border').css({height: '100%'})
         $('.projects-border').css({width: '100%'})
         $('.algorithms-border').css({width: '100%'})
-        // $('.algorithms-border').css({left: - $('.contact-border').offset().left + $('.about-border').offset().left + 'px', top: '-1px'})
-        // var pos = $('.about').position().left + 'px'
-        // $('.algorithms-border').css({left: pos})
         var contactXPos = $('.contact').position().left,
         contactYPos = $('.contact').position().top,
         projectsXPos = $('.projects').position().left,
@@ -190,7 +141,6 @@ var FadeTransition = Barba.BaseTransition.extend({
         algorithmsHeight = $('.algorithms').height(),
         aboutWidth = $('.about').width(),
         aboutHeight = $('.about').height();
-        // debugger
 
         $(this.newContainer).find('.about').css({
           left: '-='+ aboutWidth +'px',
@@ -209,7 +159,6 @@ var FadeTransition = Barba.BaseTransition.extend({
           top: '+=' + algorithmsHeight + 'px'
         })
 
-        // debugger
         var _this = this;
         var pro1 = new Promise((resolve, reject) => {
           $(this.newContainer).find('.about').animate({
@@ -243,14 +192,11 @@ var FadeTransition = Barba.BaseTransition.extend({
             resolve()
           })
         });
-        // debugger
         var _this = this;
         var pros = [pro1, pro2, pro3, pro4];
 
         Promise.all(pros).then(() => {
-          // debugger
           $(this.newContainer).removeClass('barba-old-container')
-          //  $(this.oldContainer).css();
 
           $('.algorithms-border').css('top', '-1px');
           _this.done();
@@ -289,12 +235,8 @@ var FadeTransition = Barba.BaseTransition.extend({
 
           Promise.all(borderPromises).then(()=>{
             $(this.newContainer).removeClass('barba-old-container')
-            //  $(this.oldContainer).css();
-            // console.log("me")
-            // _this.done();
           })
         })
-        // return $(this.oldContainer).animate({ opacity: 1 }, 1000).promise();
       } else {
         $('.barba-old-container').removeClass('barba-old-container')
         $('.barba-new-container').removeClass('barba-new-container')
@@ -318,28 +260,6 @@ var FadeTransition = Barba.BaseTransition.extend({
             });
           })
         })
-        // $(this.oldContainer).animate({
-        //   opacity: 0
-        // }, 400, () => {
-          // var _this = this;
-          // var $el = $(this.newContainer);
-          //
-          //
-          // $el.css({
-          //   visibility : 'visible',
-          //   opacity : 0
-          // });
-        //   // debugger
-        //   // $el.addClass('animated bounceInRight');
-        //   $el.animate({ opacity: 1 }, 400, function() {
-        //     _this.done();
-        //     /**
-        //     * Do not forget to call .done() as soon your transition is finished!
-        //     * .done() will automatically remove from the DOM the old Container
-        //     */
-        //
-        //   });
-        // });
       }
     });
   }
