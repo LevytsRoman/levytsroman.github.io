@@ -684,7 +684,7 @@ nav ul li {
 .project_list .modal {
   height: 90vh !important;
   margin-top: 5vh;
-  min-height: 600px;
+  min-height: 650px;
   max-height: 90vh; }
   .project_list .modal .modal-content {
     padding: 0 !important;
