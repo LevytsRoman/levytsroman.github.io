@@ -282,7 +282,7 @@ nav ul li {
 
   .project_icons {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 1.3em;
   }
 
   // .project_title {
@@ -299,15 +299,17 @@ nav ul li {
     // margin-top: 16px;
     // padding-top: 16px;
     font-style: italic;
-    color: black;
-    font-family: $font3;
-    font-size: 20px;
+    color: darkgrey;
+    font-family: $font1;
+    font-size: 1.3em;
+    letter-spacing: +1px;
+    text-transform: uppercase;
   }
   .modal {
     height: 90vh !important;
     margin-top: 5vh;
-    min-height: 650px;
-    max-height: 90vh;
+    min-height: 600px;
+    max-height: 85vh;
     .modal-content {
       padding: 0 !important;
       margin: 0;
@@ -592,5 +594,17 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (max-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .info_type {
+    // color: red !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    font-size: 0.7rem !important;
+    font-family: $font1 !important;
   }
 }
