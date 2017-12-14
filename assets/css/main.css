@@ -241,12 +241,12 @@ i {
 .back-link:hover {
   text-decoration: underline; }
 
-.about .skills_wrapper {
+.about_section .skills_wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
-.about .skill_group {
+.about_section .skill_group {
   width: 30%; }
 
 .my_footer {
@@ -634,7 +634,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-size: 0.9rem !important;
     font-family: "Josefin Slab", serif !important; }
 
-  .about .skill_group {
+  .about_section .skill_group {
     width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
