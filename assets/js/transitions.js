@@ -163,7 +163,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.about').animate({
             left: '+='+ aboutWidth +'px',
             top: '+=' + aboutHeight + 'px'
-          }, 4000, function(){
+          }, 400, function(){
             resolve()
           })
         });
@@ -171,7 +171,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.contact').animate({
             left: '-=' + contactWidth + 'px',
             top: '-=' + contactHeight + 'px'
-          }, 4000, function(){
+          }, 400, function(){
             resolve()
           })
         });
@@ -179,7 +179,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.projects').animate({
             left: '-=' + projectsWidth + 'px',
             top: '+=' + projectsHeight + 'px'
-          }, 4000, function(){
+          }, 400, function(){
             resolve()
           })
         });
@@ -187,7 +187,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.algorithms').animate({
             left: '+=' + algorithmsWidth + 'px',
             top: '-=' + algorithmsHeight + 'px'
-          }, 4000, function(){
+          }, 400, function(){
             resolve()
           })
         });
