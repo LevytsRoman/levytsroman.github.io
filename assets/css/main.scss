@@ -24,7 +24,7 @@ $cover-color: #f9f0ae;
   "style"
 ;
 
-.about {
+.about_section {
   .skills_wrapper {
     display: flex;
     flex-direction: row;
@@ -509,7 +509,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-family: $font1 !important;
   }
 
-  .about {
+  .about_section {
     .skill_group {
       width: 50%;
     }

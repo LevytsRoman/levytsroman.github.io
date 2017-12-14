@@ -120,7 +120,6 @@ var FadeTransition = Barba.BaseTransition.extend({
           height: '1px',
           width: '1px'
         })
-
         $('.about-border').css({height: '100%'})
         $('.contact-border').css({height: '100%'})
         $('.projects-border').css({width: '100%'})
@@ -164,7 +163,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.about').animate({
             left: '+='+ aboutWidth +'px',
             top: '+=' + aboutHeight + 'px'
-          }, 400, function(){
+          }, 4000, function(){
             resolve()
           })
         });
@@ -172,7 +171,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.contact').animate({
             left: '-=' + contactWidth + 'px',
             top: '-=' + contactHeight + 'px'
-          }, 400, function(){
+          }, 4000, function(){
             resolve()
           })
         });
@@ -180,7 +179,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.projects').animate({
             left: '-=' + projectsWidth + 'px',
             top: '+=' + projectsHeight + 'px'
-          }, 400, function(){
+          }, 4000, function(){
             resolve()
           })
         });
@@ -188,7 +187,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           $(this.newContainer).find('.algorithms').animate({
             left: '+=' + algorithmsWidth + 'px',
             top: '-=' + algorithmsHeight + 'px'
-          }, 400, function(){
+          }, 4000, function(){
             resolve()
           })
         });
