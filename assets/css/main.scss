@@ -1,28 +1,24 @@
-$font1: 'Josefin Slab', serif;
-$font2: 'Raleway', sans-serif;
-$font3: 'Lobster Two', cursive;
-$font4: 'Open Sans', sans-serif;
-$color1: #F2F7F2;
-$color2: #F46036;
-$color3: #2E294E;
+$font1: "Josefin Slab", serif;
+$font2: "Raleway", sans-serif;
+$font3: "Lobster Two", cursive;
+$font4: "Open Sans", sans-serif;
+$color1: #f2f7f2;
+$color2: #f46036;
+$color3: #2e294e;
 $color4: #8e5572;
 
 $color6: #292929;
 
+$text-color: #eff2ef;
 
-$text-color: #EFF2EF;
-
-$modal-text: #FCF5C7;
+$modal-text: #fcf5c7;
 
 $dark-grey: #292929;
-$background-color: #FCF5C7;
+$background-color: #fcf5c7;
 
 $cover-color: #f9f0ae;
 
-@import
-  "homepage",
-  "style"
-;
+@import "glitch", "homepage", "style";
 
 .about_section {
   .skills_wrapper {
@@ -84,10 +80,11 @@ nav ul li {
   width: 0%;
   height: 3px;
   background-color: black;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
-.nav-underlined, .nav-hover-underlined {
+.nav-underlined,
+.nav-hover-underlined {
   width: 30%;
 }
 
@@ -143,21 +140,21 @@ nav ul li {
 
 .my_container {
   max-width: 1300px;
-  margin-left: auto ;
-  margin-right: auto ;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-arrows {
   width: 50px;
   height: 100%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   z-index: 1000;
   top: 0;
 }
 
 .carousel-arrows:hover {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .left-arrow {
@@ -185,7 +182,7 @@ nav ul li {
   color: $text_color;
   font-weight: 300;
   font-style: italic;
-  transition: color .5s linear;
+  transition: color 0.5s linear;
 }
 
 .footer_description_link:hover {
@@ -214,7 +211,8 @@ nav ul li {
 }
 
 .project_list {
-  .modal, .modal-footer {
+  .modal,
+  .modal-footer {
     background-color: $dark-grey;
   }
   .project_info {
@@ -260,7 +258,7 @@ nav ul li {
     font-family: $font1;
     font-size: 1.5em;
     letter-spacing: +1px;
-    text-transform: capitalize  ;
+    text-transform: capitalize;
   }
   .modal {
     height: 90vh !important;
@@ -297,12 +295,12 @@ main {
 button {
   position: relative;
   font-family: $font2;
-  display:block;
+  display: block;
   height: 45px;
   line-height: 45px;
   width: 100%;
   font-size: 15px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   color: $dark-grey;
   border: 1px $dark-grey solid !important;
   border-radius: 3px;
@@ -311,10 +309,10 @@ button {
   background: none;
   z-index: 1;
   cursor: pointer;
-  transition:         0.2s ease-in;
-  -o-transition:      0.2s ease-in;
-  -ms-transition:     0.2s ease-in;
-  -moz-transition:    0.2s ease-in;
+  transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
 }
 
@@ -329,7 +327,7 @@ button:focus {
 
 button.fill:hover {
   background-color: transparent;
-  color: $cover-color;;
+  color: $cover-color;
 }
 
 button.fill:before {
@@ -345,7 +343,7 @@ button.fill:before {
 }
 
 .buttons button.fill:hover {
-  color: $dark-grey
+  color: $dark-grey;
 }
 
 .buttons button.fill:before {
@@ -408,7 +406,7 @@ button.fill:hover:before {
 }
 
 .about-border {
-  bottom: 0;
+  bottom: 0px;
   right: 0;
 }
 
@@ -436,58 +434,66 @@ button.fill:hover:before {
 
 .about_paragraph {
   font-size: 1.8em;
-  letter-spacing: +.5px;
+  letter-spacing: +0.5px;
   font-weight: 200;
 }
 
 /* label color */
 .input-field label {
- color: $dark-grey !important;
+  color: $dark-grey !important;
 }
 /* label focus color */
 .input-field input:focus + label {
- color: $dark-grey !important;
+  color: $dark-grey !important;
 }
 /* label underline focus color */
 .input-field input:focus {
- border-bottom: 1px solid $dark-grey !important;
- box-shadow: 0 1px 0 0 $dark-grey !important;
+  border-bottom: 1px solid $dark-grey !important;
+  box-shadow: 0 1px 0 0 $dark-grey !important;
 }
 /* valid color */
 .input-field input.valid {
- border-bottom: 1px solid darkgreen !important;
- box-shadow: 0 1px 0 0 darkgreen !important;
+  border-bottom: 1px solid darkgreen !important;
+  box-shadow: 0 1px 0 0 darkgreen !important;
 }
 /* invalid color */
 .input-field input.invalid {
- border-bottom: 1px solid red !important;
- box-shadow: 0 1px 0 0 red !important;
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
- color: $dark-grey !important;
+  color: $dark-grey !important;
 }
 textarea:focus {
- outline: none !important;
- border-bottom: 1px solid $dark-grey !important;
- box-shadow: 0 1px 0 0 $dark-grey !important;
+  outline: none !important;
+  border-bottom: 1px solid $dark-grey !important;
+  box-shadow: 0 1px 0 0 $dark-grey !important;
 }
 
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+nav,
+nav .nav-wrapper i,
+nav a.button-collapse,
+nav a.button-collapse i {
   font-size: 3rem;
 }
 
 @media only screen and (max-width: 993px) {
-  .nav-underlined, .nav-underline {
+  .nav-underlined,
+  .nav-underline {
     margin-left: 40px;
   }
-  .nav-underlined, .nav-hover-underlined {
+  .nav-underlined,
+  .nav-hover-underlined {
     width: 15%;
   }
 }
 
 @media only screen and (max-width: 601px) {
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i {
     font-size: 2.5rem;
   }
 
