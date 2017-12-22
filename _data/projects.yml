@@ -13,7 +13,7 @@
                   postgresql-plain,
                   heroku-original
                 ]
-  cover: /assets/images/project_covers/engage-me-cover.jpeg
+  cover: /assets/images/project_covers/engage-me-cover.jpg
   images: [
     '/assets/images/project_images/engage_me/engageme1.png', '/assets/images/project_images/engage_me/engageme2.png',
     '/assets/images/project_images/engage_me/engageme3.png', '/assets/images/project_images/engage_me/engageme4.png',
