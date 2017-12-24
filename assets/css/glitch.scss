@@ -34,8 +34,6 @@
 
 .glitch__img {
   position: absolute;
-  top: calc(-1 * var(--gap-vertical));
-  left: calc(-1 * var(--gap-horizontal));
   width: 100%;
   height: 50vh;
   box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
