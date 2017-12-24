@@ -25,26 +25,26 @@ var HideShowTransition = Barba.BaseTransition.extend({
 
     //fixes displaced borders due to glitch animation
 
-    $(".algorithms-border").css({
-      right: le + 20 + "px",
-      top: "-11px"
-    });
+    // $(".algorithms-border").css({
+    //   right: le + 20 + "px",
+    //   top: "-11px"
+    // });
 
-    $(".about-border").css({
-      right: "+20px"
-    });
+    // $(".about-border").css({
+    //   right: "+20px"
+    // });
 
-    $(".projects-border").css({
-      bottom: "+10px",
-      left: "-20px"
-    });
+    // $(".projects-border").css({
+    //   bottom: "+10px",
+    //   left: "-20px"
+    // });
+
+    // $(".contact-border").css({
+    //   top: "-10px",
+    //   left: "-20px"
+    // });
 
     // endFix
-
-    $(".contact-border").css({
-      top: "-10px",
-      left: "-20px"
-    });
 
     $(".my-borders").css({
       height: "1px",
@@ -297,27 +297,27 @@ var FadeTransition = Barba.BaseTransition.extend({
         Promise.all(pros).then(() => {
           $(this.newContainer).removeClass("barba-old-container");
 
-          // $(".algorithms-border").css("top", "-1px");
+          $(".algorithms-border").css("top", "-1px");
           //fixes displaced borders due to glitch animation
 
-          $(".algorithms-border").css({
-            right: "+20px",
-            top: "-11px"
-          });
+          // $(".algorithms-border").css({
+          //   right: "+20px",
+          //   top: "-11px"
+          // });
 
-          $(".about-border").css({
-            right: "+20px"
-          });
+          // $(".about-border").css({
+          //   right: "+20px"
+          // });
 
-          $(".projects-border").css({
-            bottom: "+10px",
-            left: "-20px"
-          });
+          // $(".projects-border").css({
+          //   bottom: "+10px",
+          //   left: "-20px"
+          // });
 
-          $(".contact-border").css({
-            left: "-20px",
-            top: "-10px"
-          });
+          // $(".contact-border").css({
+          //   left: "-20px",
+          //   top: "-10px"
+          // });
 
           // endFix
 
