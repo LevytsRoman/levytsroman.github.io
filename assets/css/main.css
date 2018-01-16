@@ -21,7 +21,6 @@
   --blend-color-4: transparent;
   --blend-color-5: #af4949; }
 
-/* Glitch styles */
 .glitch__img {
   position: absolute;
   width: 100%;
