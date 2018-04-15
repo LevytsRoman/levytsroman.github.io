@@ -53,7 +53,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
 
 RUBY VERSION
-   ruby 2.1.8p440
+   ruby 2.2.4p230
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
