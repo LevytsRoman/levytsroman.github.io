@@ -33,35 +33,6 @@ function initializeScripts(){
   })
   // $('.carousel.carousel-slider').carousel({fullWidth: true});
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-  function randomAnswer(){
-    var answers = [
-    "It is certain",
-    "It is decidedly so",
-    "Without a doubt",
-    "Yes definitely",
-    "You may rely on it",
-    "As I see it, yes",
-    "Most likely",
-    "Outlook good",
-    "Yes",
-    "Signs point to yes",
-    "Reply hazy try again",
-    "Ask again later",
-    "Better not tell you now",
-    "Cannot predict now",
-    "Concentrate and ask again",
-    "Don't count on it",
-    "My reply is no",
-    "My sources say no",
-    "Outlook not so good",
-    "Very doubtful",
-    ]
-
-    var ans = answers[Math.round(Math.random()*19)]
-    $('.answer').html(ans);
-  }
-
-  $('.8ball').click(randomAnswer);
 
   $('#textarea1').trigger('autoresize');
 
@@ -121,6 +92,9 @@ function initializeScripts(){
     }
   });
   // debugger
+  debugger
+  ga('set', 'page', '/new-page.html');
+
   if(urlString === 'http://localhost:4000/' || urlString === 'https://levytsroman.github.io/'){
     Barba.Pjax.getTransition = function() {
       return HideShowTransition;
