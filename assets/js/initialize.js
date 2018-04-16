@@ -91,9 +91,8 @@ function initializeScripts(){
       pagename = key;
     }
   });
-  // debugger
-  debugger
-  ga('set', 'page', '/new-page.html');
+
+  window.ga('set', 'page', window.location.pathname);
 
   if(urlString === 'http://localhost:4000/' || urlString === 'https://levytsroman.github.io/'){
     Barba.Pjax.getTransition = function() {
