@@ -1,26 +1,3 @@
-- id: 1
-  title: Enage Me
-  url: https://dbc-engage-me.herokuapp.com/
-  github_url: https://github.com/LevytsRoman/EngageMe
-  description: Presentation analytics tool that helps presenters capture, monitor and track the audience's emotional reaction to their content in real-time.
-  technologies: [
-                  html5-plain,
-                  css3-plain-wordmark
-                  javascript-plain,
-                  jquery-plain,
-                  ruby-plain,
-                  rails-plain,
-                  postgresql-plain,
-                  heroku-original
-                ]
-  cover: /assets/images/project_covers/engage-me-cover.jpg
-  images: [
-    '/assets/images/project_images/engage_me/engageme1.png', '/assets/images/project_images/engage_me/engageme2.png',
-    '/assets/images/project_images/engage_me/engageme3.png', '/assets/images/project_images/engage_me/engageme4.png',
-    '/assets/images/project_images/engage_me/engageme5.png', '/assets/images/project_images/engage_me/engageme6.png',
-    '/assets/images/project_images/engage_me/engageme7.png', '/assets/images/project_images/engage_me/engageme8.png'
-  ]
-
 - id: 2
   title: Tic tac toe
   url: https://tic-or-treat.herokuapp.com/
@@ -75,20 +52,6 @@
   cover: /assets/images/project_covers/shoot-things-game-cover.png
   images: [
     '/assets/images/project_covers/shoot-things-game-cover.png'
-  ]
-- id: 5
-  title: movieLookUp
-  url: https://akhinchey.github.io/movieLookUp/
-  github_url: https://github.com/akhinchey/movieLookUp
-  description: A pure front-end app that allows users to search through various shows, movies and series to find the content they would like to watch or learn more about movies that they've already seen.
-  technologies: [
-                  react-original,
-                  css3-plain-wordmark,
-                  javascript-plain,
-                ]
-  cover: /assets/images/project_covers/movie-look-up-cover.jpg
-  images: [
-    '/assets/images/project_covers/movie-look-up-cover.jpg'
   ]
 # - name: Tic-tac-toe
 #   url: https://dbc-engage-me.herokuapp.com/
