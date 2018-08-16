@@ -12,11 +12,12 @@ function initializeScripts(){
   //   var arrow = e.target;
   //   debugger
   // })
+
   $('.email_me').submit(function(e){
     e.preventDefault();
-
+    debugger
     $.ajax({
-        url: "https://formspree.io/r.levyts@gmail.com",
+        url: $(e.target).attr('action'),
         method: "POST",
         data: $('.email_me').serialize(),
         dataType: "json"
@@ -80,9 +81,11 @@ function initializeScripts(){
   $(document).scrollTop();
 
   var pagename = window.location.pathname.replace('/', '')
-
-  window.ga('set', 'page', window.location.pathname);
-  window.ga('send', 'pageview');
+  
+  if(window.ga) {
+    window.ga('set', 'page', window.location.pathname);
+    window.ga('send', 'pageview');
+  }
   
   if(pagename === ''){
     Barba.Pjax.getTransition = () => HideShowTransition;
