@@ -7,7 +7,7 @@ author: Marilyn vos Savant
 {% include quote.html quote=page.quote author=page.author %}
 
 <div class="container">
-  <form class="email_me" action="https://formspree.io/r.levyts@gmail.com" method="POST">
+  <form class="email_me" action="https://formspree.io/{{site.email}}" method="POST">
     <input type="text" name="_gotcha" style="display:none" />
     <div class="row">
       <div class="input-field col m6 s12">
@@ -46,10 +46,7 @@ author: Marilyn vos Savant
       </button>
     </div>
   </form>
-  <!-- Modal Trigger -->
   <br/>
-  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#email_modal">Modal</a> -->
-
   <div id="email_modal" class="modal">
     <div class="container">
       <div class="modal-content row">

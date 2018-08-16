@@ -75,38 +75,22 @@ function initializeScripts(){
       } // Callback for Modal close
     });
 
-  var colors = {
-        'about': 'rgb(142,85,114)',
-        'projects': '#F46036',
-        'contact': '#fcb',
-        'resume': '#2E294E'
-      },
-      urlString = window.location.href,
-      scrollHeight = $(document).scrollTop();
+  var urlString = window.location.href;
+  
+  $(document).scrollTop();
 
-  var pagename = ''
-  $.each(colors, function(key,val){
-    if(urlString.indexOf(key) > -1){
-      color = val;
-      pagename = key;
-    }
-  });
+  var pagename = window.location.pathname.replace('/', '')
 
   window.ga('set', 'page', window.location.pathname);
   window.ga('send', 'pageview');
   
-  if(urlString === 'http://localhost:4000/' || urlString === 'https://levytsroman.github.io/'){
-    Barba.Pjax.getTransition = function() {
-      return HideShowTransition;
-    };
+  if(pagename === ''){
+    Barba.Pjax.getTransition = () => HideShowTransition;
   } else {
-    Barba.Pjax.getTransition = function() {
-      return FadeTransition;
-    };
+    Barba.Pjax.getTransition = () => FadeTransition;
   }
 
   if(pagename){
-    // assignColors(pagename, color);
     $('nav a[href="/' + pagename + '"]').parent().find('div').addClass('nav-underlined');
   }
 
