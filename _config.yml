@@ -14,17 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Roman Levytskyy
-email: "r.levyts@gmail.com"
+title: Patryk Wajs
+email: "patrykwajs1996@gmail.com"
 description: >
-  Ambitious and eager full stack web developer, looking to share my programming journey, as well as keep an organized list of projects in one place.
+  Upcoming Web Developer/Designer - Digital Marketer . Just a student trying new things. Constantly Overthinking about Life and stuff
 about_me: >
-  I'm a recent DevBootcamp graduate going into programming from a mathematical background. I got into programming because I love making things, but in most cases that requires tools and a workshop. Now I can work anytime, anywhere with all the latest tools readily available at my fingertips.
+  I love Design, Marketing, Coding, Football, and Travelling
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://levytsroman.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-linked_in_link: "https://www.linkedin.com/in/levytsroman"
-github_link: "https://www.github.com/levytsroman"
-twitter_username: ""
+url: "https://patrykwajs.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+linked_in_link: ""
+github_link: "https://www.github.com/patrykwajs"
+twitter_username: "https://twitter.com/PatrikBais"
 google_analytics_id: 'UA-117297510-1'
 select_options: clear-filters HTML5 CSS3 SCSS javaScript jQuery materialize charts.js React jekyll Ruby-on-Rails Sinatra front-end back-end finished current
 sass:

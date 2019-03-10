@@ -7,7 +7,7 @@ projects:
 about:
   url: /about
   heading: Me
-  words: Hi, I'm a programmer
+  words: Hi, I'm a Student
   class: m5 about
   border: about
 resume:
@@ -19,6 +19,6 @@ resume:
 contact:
   url: /contact
   heading: Contact
-  words: Feel free to shoot me an email
+  words: Feel free to contact me via email
   class: m6 contact
   border: contact
