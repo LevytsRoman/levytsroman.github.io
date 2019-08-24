@@ -1,3 +1,6 @@
+---
+---
+
 $font1: "Josefin Slab", serif;
 $font2: "Raleway", sans-serif;
 $font3: "Lobster Two", cursive;
@@ -18,7 +21,7 @@ $background-color: #fcf5c7;
 
 $cover-color: #f9f0ae;
 
-@import "glitch", "homepage", "style";
+@import "_glitch", "_homepage", "_style";
 
 .about_section {
   .skills_wrapper {
