@@ -28,7 +28,7 @@ twitter_username: ""
 google_analytics_id: 'UA-117297510-1'
 select_options: clear-filters HTML5 CSS3 SCSS javaScript jQuery materialize charts.js React jekyll Ruby-on-Rails Sinatra front-end back-end finished current
 sass:
-  sass_dir: assets/css/main.css
+  sass_dir: _sass
   style: :nested
 
 gems:
