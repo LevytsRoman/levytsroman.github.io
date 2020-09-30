@@ -51,18 +51,7 @@
   opacity: 1;
 }
 
-
-</style>
-
-
-
-
-<div class="glitch__img m7 projects__bkgrnd">
-  <img src="me.jpg" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-  </div>
-</div>
-  
-</body>
-</html>
+.about__bkgrnd {
+  background-image: url("../images/me.jpg");
+}
 
