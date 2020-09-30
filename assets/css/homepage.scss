@@ -1,4 +1,3 @@
-  
 #homepage {
   a {
     box-sizing: border-box;
@@ -79,20 +78,19 @@
     box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
     transition: box-shadow 0.5s linear;
     background-size: cover;
-    max-width: 100%;
-    transition: transform 2s;
-    transform: scale (1.2);
   }
   .contact:hover {
     // background-color: #F2F7F2;
-    transform: scale (1.2);
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
   }
   
-  .glitch__img m6 contact__bkgrnd:hover {
+.glitch__img m6 contact__bkgrnd{
     // background-color: #F2F7F2;
-    transform: scale (1.2);
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
   }
-
+  
+  
+  
   .profile_picture {
     border-radius: 35%;
   }
