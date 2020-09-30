@@ -1,3 +1,4 @@
+  
 #homepage {
   a {
     box-sizing: border-box;
@@ -19,6 +20,69 @@
   .row {
     margin: 0;
     z-index: 10;
+  }
+
+  .about {
+    // background-color: #F2F7F2;
+    background-image: url("/assets/images/me.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+  }
+
+  // .about:hover {
+  //   // background-color: rgba(142,85,114, 0.9);
+  // box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
+  //   // border: 2px solid white;
+  //   // border-radius: 5px;
+  // }
+
+  .projects {
+    // background-color: #F46036;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-image: url("/assets/images/projects.jpg");
+    background-size: cover;
+  }
+  .projects:hover {
+    // background-color: rgba(244,96,54,0.9);
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
+    // border: 2px solid white;
+    // border-radius: 5px;
+  }
+
+  .contact a {
+    margin-left: 10px;
+  }
+
+  .contact a:hover {
+    color: #f46036;
+  }
+  .algorithms {
+    // background-color: #2E294E;
+
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-image: url("/assets/images/resume.jpg");
+    background-size: cover;
+  }
+  .algorithms:hover {
+    background-color: #443c72;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
+    // border: 2px solid white;
+    // border-radius: 5px;
+  }
+
+  .contact {
+    // background-color: rgb(142,85,114);
+    background-image: url("/assets/images/contact.jpg");
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+    transition: box-shadow 0.5s linear;
+    background-size: cover;
+  }
+  .contact:hover {
+    // background-color: #F2F7F2;
+    box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
   }
 
   .profile_picture {
