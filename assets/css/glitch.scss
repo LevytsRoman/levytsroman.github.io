@@ -24,6 +24,112 @@
 }
 
 .glitch__img {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
+  transition: box-shadow 0.5s linear;
+  background-color: var(--blend-color-1);
+  background-size: cover;
+  transform: translate3d(0, 0, 0);
+  background-blend-mode: var(--blend-mode-1);
+  box-sizing: border-box;
+}
+
+.about__bkgrnd {
+  background-image: url("../images/me.jpg");
+}
+
+.projects__bkgrnd {
+  background-image: url("../images/projects.jpg");
+}
+
+.algorithms__bkgrnd {
+  background-image: url("../images/resume.jpg");
+}
+
+.contact__bkgrnd {
+  background-image: url("../images/contact.jpg");
+}
+
+.glitch__img:nth-child(n + 2) {
+  opacity: 0;
+}
+
+.glitch:hover > .glitch__img:nth-child(n + 2) {
+  box-shadow: inset 0 0 0 1000px rgba($color6, 0.6);
+  animation-duration: var(--time-anim);
+  animation-delay: var(--delay-anim);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.glitch:hover > .box {
+  animation-name: glitch-anim-text;
+  animation-duration: var(--time-anim);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.glitch:hover > .glitch__img:nth-child(2) {
+  background-color: var(--blend-color-2);
+  background-blend-mode: var(--blend-mode-2);
+  animation-name: glitch-anim-1;
+}
+
+.glitch:hover > .glitch__img:nth-child(3) {
+  background-color: var(--blend-color-3);
+  background-blend-mode: var(--blend-mode-3);
+  animation-name: glitch-anim-2;
+}
+
+.glitch:hover > .glitch__img:nth-child(4) {
+  background-color: var(--blend-color-4);
+  background-blend-mode: var(--blend-mode-4);
+  animation-name: glitch-anim-3;
+}
+
+.glitch:hover > .glitch__img:nth-child(5) {
+  background-color: var(--blend-color-5);
+  background-blend-mode: var(--blend-mode-5);
+  animation-name: glitch-anim-flash;
+}
+
+/* Animations */
+
+@keyframes glitch-anim-1 {
+  0% {
+    opacity: 1;
+    transform: translate3d(var(--gap-horizontal), 0, 0);
+    -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+  }
+  
+  #homepage {
+  --color-text: #fff;
+  --color-bg: #000;
+  --color-link: #f9d77e;
+  --color-link-hover: #fff;
+  --color-info: #efc453;
+  --glitch-width: 100vw;
+  --glitch-height: 100vh;
+  --gap-horizontal: 20px;
+  --gap-vertical: 10px;
+  --time-anim: 4s;
+  --delay-anim: 0s;
+  --blend-mode-1: none;
+  --blend-mode-2: none;
+  --blend-mode-3: none;
+  --blend-mode-4: none;
+  --blend-mode-5: overlay;
+  --blend-color-1: transparent;
+  --blend-color-2: transparent;
+  --blend-color-3: transparent;
+  --blend-color-4: transparent;
+  --blend-color-5: #af4949;
+}
+
+.glitch__img {
   opacity: 1;
   display: block;
   width: 100%;
