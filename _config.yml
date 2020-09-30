@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Roman Levytskyy
+title: Pablo Garcia Cardone
 email: "r.levyts@gmail.com"
 description: >
   Ambitious and eager full stack web developer, looking to share my programming journey, as well as keep an organized list of projects in one place.
