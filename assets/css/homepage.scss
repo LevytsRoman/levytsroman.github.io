@@ -79,11 +79,12 @@
     box-shadow: inset 0 0 0 1000px rgba($color6, 0.9);
     transition: box-shadow 0.5s linear;
     background-size: cover;
+    max-width: 100%;
+    transition: transform 2s;
   }
   .contact:hover {
     // background-color: #F2F7F2;
-    max-width: 100%;
-    transition: transform 2s;
+    transform: scale (1.2);
   }
 
   .profile_picture {
