@@ -231,3 +231,56 @@ i {
 .back-link:hover {
   text-decoration: underline;
 }
+
+    body {
+        margin: 0px;
+        height: 2000px;
+    }
+
+
+
+    .headercss {
+        width: auto;
+        height: 320px;
+        position: relative;
+    }
+
+    .headerlogo {
+        width: auto;
+        height: 250px;
+        position: relative;
+    }
+
+    .nav {
+        width: auto;
+        height: 70px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float:left;
+        width:100%;
+        overflow: hidden;
+    }
+
+
+    li {
+        float: left;
+        width:25%;
+        min-width: 243px;
+        overflow: hidden;
+    }
+
+    a:link, a:visited {
+        display: block;
+        height: 68px;
+        min-width: 243px;
+        overflow: hidden;
+    }
+
+    a:hover, a:active {
+    }
